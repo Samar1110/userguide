@@ -14,7 +14,7 @@ A SeedSigner device consists of:
 
 ## WaveShare LCD Hat Controls
 
-![WaveShare LCD Hat](https://www.waveshare.com/w/upload/5/51/1.3inch_LCD_HAT-1.jpg)
+![WaveShare LCD Hat](images/WaveShare_LCD_Hat.png)
 
 The WaveShare LCD Hat has the following controls:
 
@@ -58,9 +58,9 @@ The WaveShare LCD Hat has the following controls:
 
    - Connect power to the device
    - You'll see the opening splash screen
-     ![OpeningSplashView](https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/home__splash.png)
+     ![OpeningSplashView](images/MainMenuViews/OpeningSplashView.png)
    - If partner logos are disabled, you'll see an alternate splash screen
-     ![OpeningSplashView_no_partner_logos](https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/home__splash_no_partner_logos.png)
+     ![OpeningSplashView_no_partner_logos](images/MainMenuViews/OpeningSplashView_no_partner_logos.png)
    - **Controls**: No action required, wait for the splash screen to transition automatically
 
 2. **Main Menu**
