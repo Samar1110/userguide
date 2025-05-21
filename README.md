@@ -1,6 +1,6 @@
 # SeedSigner Navigation Guide with WaveShare LCD Hat Controls
 
-![SeedSigner Logo](https://github.com/SeedSigner/seedsigner/raw/main/docs/img/seedsigner_logo.png)
+![SeedSigner Logo](images/SeedSigner_Logo.png)
 
 This guide provides step-by-step instructions for navigating all screens in the SeedSigner interface using the WaveShare 1.3inch LCD Hat. Each section contains detailed navigation paths and button control instructions to help users access every screen available in the SeedSigner firmware.
 
