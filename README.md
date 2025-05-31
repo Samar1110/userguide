@@ -159,20 +159,23 @@ The WaveShare LCD Hat has the following controls:
 1. **Accessing Seeds Menu**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__create_or_load.png" alt="Seeds Menu View" width="300"/>
+     <img src="images/seed_views/SeedsMenuView.png" alt="Seeds Menu View" width="300"/>
    </div>
 
-   - From the main menu, use the **Joystick** to navigate to the seeds icon (top left)
-   - Press **any key** to select
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between seed options
-     - Press **any key** to select an option
-     - To go back to the main menu, navigate to the back icon and press **any key**
+   * From the main menu, use the **Joystick** to navigate to the **Seeds icon** (top right)
+   * Press **any key** to select
+   * **Note**: This screen is shown **only if a seed has already been saved**.
+     If no seed exists, you will first be prompted to **load a new seed**.
+   * **Controls**:
+
+     * Use the **Joystick Up/Down** to navigate between seed options
+     * Press **any key** to select an option
+     * To return to the main menu, navigate to the back icon and press **any key**
 
 2. **Loading an Existing Seed**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__load_seed.png" alt="Load Seed View" width="300"/>
+     <img src="images/seed_views/LoadSeedView.png" alt="Load Seed View" width="300"/>
    </div>
 
    - From the Seeds menu, use the **Joystick** to select "Load Seed"
@@ -185,21 +188,28 @@ The WaveShare LCD Hat has the following controls:
 3. **Entering a Seed Phrase**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__mnemonic_entry.png" alt="Seed Mnemonic Entry View" width="300"/>
+     <img src="images/seed_views/SeedMnemonicEntryView.png" alt="Seed Mnemonic Entry View" width="300"/>
    </div>
 
-   - If you select "Enter 12-Word Seed" or "Enter 24-Word Seed", you'll see this screen
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a letter or button
-     - Navigate to the delete button and press **any key** to delete the last letter
-     - Navigate to the word suggestion toggle and press **any key** to toggle between word suggestion lists
-     - Navigate to "OK" and press **any key** when done
+   * If you choose to add a passphrase, you'll be presented with an **on-screen keyboard** to enter your words.
+   * **Note**: Seed phrases are **case-insensitive**, so there is no distinction between lowercase and uppercase.
+   * **Controls**:
+
+     * Use the **Joystick** to move across the keyboard and highlight any letter
+     * **Press the Joystick (center press)** to select a letter or button
+     * To delete the last character, navigate to the **delete** button and press the **Joystick**
+     * On the **right side** of the keyboard, a list of **completed word suggestions** is shown
+
+       * To **navigate up** in the suggestion list, press **Key1 (A)**
+       * To **navigate down**, press **Key3 (C)**
+       * To **select a word** from the list, press **Key2 (B)**
+     * Continue entering and selecting words until you have completed your **12 or 24-word** seed phrase
+
 
 4. **Invalid Seed Warning**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__mnemonic_invalid.png" alt="Seed Mnemonic Invalid View" width="300"/>
+     <img src="images/seed_views/SeedMnemonicInvalidView.png" alt="Seed Mnemonic Invalid View" width="300"/>
    </div>
 
    - If the entered seed is invalid, you'll see this warning
@@ -208,7 +218,7 @@ The WaveShare LCD Hat has the following controls:
 5. **Finalizing Seed**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__finalize.png" alt="Seed Finalize View" width="300"/>
+     <img src="images/seed_views/SeedFinalizeView.png" alt="Seed Finalize View" width="300"/>
    </div>
 
    - After entering a valid seed, you'll be taken to this screen to confirm
@@ -222,7 +232,7 @@ The WaveShare LCD Hat has the following controls:
 1. **Adding a Passphrase (Lowercase)**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__add_passphrase_lowercase.png" alt="Seed Add Passphrase View (Lowercase)" width="300"/>
+     <img src="images/seed_views/SeedAddPassphraseView_lowercase.png" alt="Seed Add Passphrase View (Lowercase)" width="300"/>
    </div>
 
    - If you choose to add a passphrase, you'll start with the lowercase keyboard
@@ -235,7 +245,7 @@ The WaveShare LCD Hat has the following controls:
 2. **Adding a Passphrase (Uppercase)**
 
    <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__add_passphrase_uppercase.png" alt="Seed Add Passphrase View (Uppercase)" width="300"/>
+     <img src="images/seed_views/SeedAddPassphraseView_uppercase.png" alt="Seed Add Passphrase View (Uppercase)" width="300"/>
    </div>
 
    - Switch to uppercase by selecting the "abc" button
