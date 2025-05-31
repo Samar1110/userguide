@@ -544,7 +544,3 @@ SeedSigner is open-source software. Contributions, bug reports, and feedback are
 ## ⚖️ License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/SeedSigner/seedsigner) file for details.
-
----
-
-**⚠️ Disclaimer**: This software is provided "as is" without warranty. Always verify your backups and test with small amounts first. The developers are not responsible for lost funds due to user error.
