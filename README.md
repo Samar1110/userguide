@@ -1,1137 +1,836 @@
-# SeedSigner Navigation Guide with WaveShare LCD Hat Controls
+# SeedSigner User Guide
 
 <div align="center">
   <img src="images/SeedSigner_Logo.png" alt="SeedSigner Logo" width="400"/>
 </div>
 
-This guide provides step-by-step instructions for navigating all screens in the SeedSigner interface using the WaveShare 1.3inch LCD Hat. Each section contains detailed navigation paths and button control instructions to help users access every screen available in the SeedSigner firmware.
+SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you manage seed phrases and sign transactions securely. This guide provides step-by-step instructions organized by common workflows.
+
+## 📋 Table of Contents
+
+- [Hardware Components](#hardware-components)
+- [Getting Started](#-getting-started)
+- [Creating New Seeds](#-creating-new-seeds)
+- [Loading Existing Seeds](#-loading-existing-seeds)
+- [Working with Loaded Seeds](#-working-with-loaded-seeds)
+- [Signing Transactions](#️-signing-transactions)
+- [Verification and Security](#️-verification-and-security)
+- [Device Settings](#️-device-settings)
+- [Troubleshooting](#-troubleshooting)
+- [Additional Resources](#-additional-resources)
+
+---
 
 ## Hardware Components
 
 A SeedSigner device consists of:
 
-1. Raspberry Pi Zero
-2. Raspberry Pi Camera
-3. WaveShare 1.3inch LCD Hat
+1. **Raspberry Pi Zero** - The main computing unit
+2. **Raspberry Pi Camera** - For QR code scanning and entropy capture
+3. **WaveShare 1.3inch LCD Hat** - Display and control interface
 
-## WaveShare LCD Hat Controls
+### WaveShare LCD Hat Controls
 
 <div align="center">
   <img src="images/WaveShare_LCD_Hat.png" alt="WaveShare LCD Hat" width="350"/>
 </div>
 
-The WaveShare LCD Hat has the following controls:
+The WaveShare LCD Hat provides the following controls:
 
-- **Joystick**: Used for navigating menus (Up, Down, Left, Right)
-- **Key1 (A)**: Selection/confirm button
-- **Key2 (B)**: Selection/confirm button
-- **Key3 (C)**: Selection/confirm button
+- **Joystick**: Four-directional navigation (Up, Down, Left, Right) plus center press
+- **Key1 (A)**: Primary action button
+- **Key2 (B)**: Secondary action button  
+- **Key3 (C)**: Tertiary action button
 
-### Button Functions
+### Button Functions Reference
 
-| Button         | Function                                    |
+| Control        | Function                                    |
 | -------------- | ------------------------------------------- |
 | Joystick Up    | Move selection up                           |
 | Joystick Down  | Move selection down                         |
 | Joystick Left  | Move selection left                         |
 | Joystick Right | Move selection right                        |
+| Joystick Press | Alternative selection/confirm (context-dependent) |
 | Key1 (A)       | Select highlighted option or confirm action |
 | Key2 (B)       | Select highlighted option or confirm action |
 | Key3 (C)       | Select highlighted option or confirm action |
 
-**Important Note**: All three keys (Key1, Key2, Key3) function identically for selection and confirmation. To go back to a previous screen, you must first navigate to the back icon/button on the screen using the joystick, then press any of the three keys to activate it.
+**Important Navigation Notes**: 
+- All three keys (A, B, C) function identically for selection and confirmation
+- To go back to a previous screen, navigate to the back arrow/button using the joystick first, then press any key to activate it
+- The joystick center press may have different functions depending on the current screen context
 
-## Table of Contents
+---
 
-- [Startup and Main Menu](#startup-and-main-menu)
-- [Seed Management](#seed-management)
-  - [Seed Creation and Loading](#seed-creation-and-loading)
-  - [Seed Options and Management](#seed-options-and-management)
-  - [Seed Backup and Export](#seed-backup-and-export)
-  - [Multisig and Address Verification](#multisig-and-address-verification)
-  - [Message Signing](#message-signing)
-- [Transaction Signing (PSBT)](#transaction-signing-psbt)
-- [Tools](#tools)
-- [Settings](#settings)
-- [Power Options](#power-options)
-- [Error Screens](#error-screens)
+## 🚀 Getting Started
 
-## Startup and Main Menu
+### Initial Setup and Power On
 
-### Startup Process
+#### Starting Your Device
 
-1. **Power on the SeedSigner**
+1. **Connect Power**: Use a Micro USB cable to power your SeedSigner
+2. **Wait for Boot**: Wait for few seconds for the complete boot sequence
+3. **Dismiss Initial Notification**: Press any key (A, B, or C) to dismiss the "You can remove the SD card now" message
 
-   <div align="center">
-     <img src="images/MainMenuViews/OpeningSplashView.png" alt="Opening Splash Screen" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu after successful boot" width="300"/>
+</div>
 
-   - Connect power to the device
-   - You'll see the opening splash screen as shown above
-   - **Controls**: No action required, wait for the splash screen to transition automatically
+> **💡 Pro Tip**: Once the operating system loads into RAM, you can safely remove the SD card. This ensures that seed phrases cannot be accidentally stored on the device, maintaining air-gapped security.
 
-   <div align="center">
-     <img src="images/MainMenuViews/OpeningSplashView_no_partner_logos.png" alt="Opening Splash Screen without Partner Logos" width="300"/>
-   </div>
+#### Navigation Basics
 
-   - If partner logos are disabled, you'll see the alternate splash screen shown above
+- Use the **joystick** to highlight menu options
+- Press **any key (A, B, or C)** to select the highlighted option
+- Look for **back arrows** or **"Back" buttons** to return to previous screens
+- The **power icon** in the top-right corner provides power options
 
-2. **Main Menu**
+#### Powering Off Safely
 
-   <div align="center">
-     <img src="images/MainMenuViews/MainMenuView.png" alt="Main Menu View" width="300"/>
-   </div>
+**Method 1: Proper Shutdown**
+1. Navigate to the **power icon** (top right of main menu)
+2. Press any key to open the power menu
+3. Select **"Power Off"** and confirm your choice
 
-   - After the splash screen, you'll be taken to the main menu
-   - **Controls**:
-     - Use the **Joystick** to navigate between menu options
-     - Press **any key (A, B, or C)** to select a menu option
-     - To go back (if applicable), navigate to the back icon and press **any key**
+<div align="center">
+     <img src="images/main_menu_views/PowerOffView.png" alt="Power off menu screen" width="300"/>
+</div>
 
-### SD Card Notifications
+**Method 2: Direct Unplugging**
+You can safely unplug the device at any time. SeedSigner stores nothing permanently, so all sensitive data is automatically cleared when power is removed.
 
-1. **SD Card Removal Detected**
+---
 
-   <div align="center">
-     <img src="images/MainMenuViews/MainMenuView_SDCardStateChangeToast_removed.png" alt="SD Card Removed Toast" width="300"/>
-   </div>
+## 🌱 Creating New Seeds
 
-   - If an SD card is removed while the device is on, you'll see this notification
-   - **Controls**: No action required, notification will disappear automatically
+### Camera-Based Seed Generation
 
-2. **SD Card Insertion Detected**
+Create truly random seeds using environmental entropy captured by the camera. This method provides excellent randomness by capturing unpredictable visual data.
 
-   <div align="center">
-     <img src="images/MainMenuViews/MainMenuView_SDCardStateChangeToast_inserted.png" alt="SD Card Inserted Toast" width="300"/>
-   </div>
+#### Step-by-Step Process
 
-   - If an SD card is inserted while the device is on, you'll see this notification
-   - **Controls**: No action required, notification will disappear automatically
+1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"** → **"Create a seed"**
+2. **Select Method**: Choose **"New Seed"** with the camera icon
+3. **Capture Entropy**: 
+   - Point the camera at a random, changing scene (moving trees, clouds, etc.)
+   - Press any key to capture the entropy
+4. **Review Capture**: 
+   - Move joystick **left** to retake the photo
+   - Move joystick **right** to continue with current capture
+5. **Choose Length**: Select **12 words** or **24 words** (24 words recommended for maximum security)
+6. **Acknowledge Security Warning**: Press **"I Understand"** after reading the classified information warning
+7. **Record Your Seed Words**: 
+   - Words are displayed 4 at a time
+   - **Write down every word carefully** in the exact order shown
+   - Double-check each word as you write it
+8. **Verify Your Backup**: Complete the verification process to confirm you've recorded everything correctly
 
-3. **Remove SD Card Prompt**
+<div align="center">
+     <img src="images/tools_views/ToolsMenuView.png" alt="Camera entropy capture screen" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="images/MainMenuViews/MainMenuView_RemoveSDCardToast.png" alt="Remove SD Card Toast" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/seed_views/SeedMnemonicEntryView.png" alt="Seed words display screen" width="300"/>
+</div>
 
-   - In certain situations, you may be prompted to remove the SD card
-   - **Controls**: Remove the SD card as instructed, then press **any key** to continue
+> **⚠️ Critical Security Warning**: If you write down even one word incorrectly, you could lose access to your Bitcoin forever. The verification step is mandatory - never skip it!
 
-### Power Options
+### Dice-Based Seed Generation
 
-1. **Accessing Power Menu**
+Generate seeds using physical dice for maximum security and provable randomness. This method is preferred by security-conscious users who want complete control over the randomness source.
 
-   <div align="center">
-     <img src="images/MainMenuViews/PowerOptionsView.png" alt="Power Options View" width="300"/>
-   </div>
+#### Step-by-Step Process
 
-   - From the main menu, use the **Joystick** to navigate to the power icon (top right)
-   - Press **any key** to select
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between power options
-     - Press **any key** to select an option
-     - To go back to the main menu, navigate to the back icon and press **any key**
+1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"** → **"Create a seed"**
+2. **Select Method**: Choose **"New Seed"** with the dice icon
+3. **Choose Length**: 
+   - **12 words** requires 50 dice rolls
+   - **24 words** requires 99 dice rolls (recommended)
+4. **Prepare Physical Dice**: Use a standard 6-sided die
+5. **Roll and Enter**: 
+   - Roll your physical die
+   - Select the corresponding number (1-6) on the screen
+   - Repeat for all required rolls
+6. **Complete All Rolls**: The progress indicator shows your completion status
+7. **Record Generated Words**: Write down all seed words in order
+8. **Verify Your Backup**: Complete the verification process
 
-2. **Restart Device**
+<div align="center">
+     <img src="images/tools_views/DiceEntryView.png" alt="Dice roll entry screen" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="images/MainMenuViews/RestartView.png" alt="Restart View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/tools_views/ToolsDiceEntropyEntryView.png" alt="Dice roll progress indicator" width="300"/>
+</div>
 
-   - From the power menu, use the **Joystick** to select "Restart"
-   - Press **any key** to confirm
-   - **Controls**: Press **any key** to confirm restart or navigate to cancel and press **any key** to cancel
+> **🎲 Why Use Dice?** Physical dice provide true randomness that cannot be compromised by software vulnerabilities, hardware backdoors, or electromagnetic interference. This method gives you complete control over the entropy source.
 
-3. **Power Off Device**
+### Calculate Final Word (12th/24th Word)
 
-   <div align="center">
-     <img src="images/MainMenuViews/PowerOffView.png" alt="Power Off View" width="300"/>
-   </div>
+Use this feature when you have an incomplete seed (11 out of 12 words, or 23 out of 24 words) and need to calculate the valid final word with proper checksum.
 
-   - From the power menu, use the **Joystick** to select "Power Off"
-   - Press **any key** to confirm
-   - **Controls**: Press **any key** to confirm power off or navigate to cancel and press **any key** to cancel
+#### Basic Word Entry Process
+1. **Navigate**: Main Menu → **Tools** → **"Calc 12th/24th word"**
+2. **Choose Length**: Select **12 words** or **24 words**
+3. **Enter Existing Words**: Use the on-screen keyboard with intelligent word suggestions:
+   - **Key A**: Move up in the suggestions list
+   - **Key C**: Move down in the suggestions list  
+   - **Key B**: Select the highlighted suggested word
+   - Type manually if the word doesn't appear in suggestions
 
-## Seed Management
+<div align="center">
+     <img src="images/tools_views/WordEntry.png" alt="On-screen keyboard with word suggestions" width="300"/>
+</div>
 
-### Seed Creation and Loading
+#### Entropy Methods for Final Word Calculation
 
-1. **Accessing Seeds Menu**
+**🪙 Coin Flip Entropy Method**
+- Flip a physical coin exactly 7 times
+- For each flip, select **1 for Heads** or **0 for Tails**
+- The system displays your binary string and calculates the checksum
+- This provides additional randomness for the final word selection
 
-   <div align="center">
-     <img src="images/seed_views/SeedsMenuView.png" alt="Seeds Menu View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/tools_views/ToolsCalcFinalWordCoinFlipsView.png" alt="Coin flip entropy interface" width="300"/>
+</div>
 
-   * From the main menu, use the **Joystick** to navigate to the **Seeds icon** (top right)
-   * Press **any key** to select
-   * **Note**: This screen is shown **only if a seed has already been saved**.
-     If no seed exists, you will first be prompted to **load a new seed**.
-   * **Controls**:
+**📝 Word Selection Entropy Method**
+- Choose any word from the BIP39 wordlist as your entropy source
+- The system calculates the final word using the selected word's 11-bit binary value plus the required 4-bit checksum
 
-     * Use the **Joystick Up/Down** to navigate between seed options
-     * Press **any key** to select an option
-     * To return to the main menu, navigate to the back icon and press **any key**
+**🔢 Finalize with Zeros Method**
+- Uses a simple 7-bit string of zeros plus the calculated 4-bit checksum
+- This is the quickest method but provides no additional entropy
 
-2. **Loading an Existing Seed**
+<div align="center">
+     <img src="images/tools_views/ToolsCalcFinalWordShowFinalWordView_coin_flips.png" alt="Final word calculation screen" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="images/seed_views/LoadSeedView.png" alt="Load Seed View" width="300"/>
-   </div>
+> **📚 Technical Note**: The final word in any BIP39 seed contains both entropy bits and checksum bits. The checksum ensures the seed phrase is mathematically valid and helps detect transcription errors.
 
-   - From the Seeds menu, use the **Joystick** to select "Load Seed"
-   - Press **any key** to confirm
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between load options
-     - Press **any key** to select an option
-     - To go back to the seeds menu, navigate to the back icon and press **any key**
+---
 
-3. **Entering a Seed Phrase**
+## 📥 Loading Existing Seeds
 
-   <div align="center">
-     <img src="images/seed_views/SeedMnemonicEntryView.png" alt="Seed Mnemonic Entry View" width="300"/>
-   </div>
+### Manual Seed Entry
 
-   * If you choose to add a passphrase, you'll be presented with an **on-screen keyboard** to enter your words.
-   * **Note**: Seed phrases are **case-insensitive**, so there is no distinction between lowercase and uppercase.
-   * **Controls**:
+Enter your existing mnemonic phrase using the on-screen keyboard system.
 
-     * Use the **Joystick** to move across the keyboard and highlight any letter
-     * **Press the Joystick (center press)** to select a letter or button
-     * To delete the last character, navigate to the **delete** button and press the **Joystick**
-     * On the **right side** of the keyboard, a list of **completed word suggestions** is shown
+#### Step-by-Step Process
 
-       * To **navigate up** in the suggestion list, press **Key1 (A)**
-       * To **navigate down**, press **Key3 (C)**
-       * To **select a word** from the list, press **Key2 (B)**
-     * Continue entering and selecting words until you have completed your **12 or 24-word** seed phrase
+1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"**
+2. **Choose Length**: Select **"Enter 12-word seed"** or **"Enter 24-word seed"**
+3. **Enter Each Word**: 
+   - Use the on-screen keyboard with intelligent word suggestions
+   - Type the first few letters and select from suggestions for faster entry
+     - **Key A**: Move up in the suggestions list
+     - **Key C**: Move down in the suggestions list  
+     - **Key B**: Select the highlighted suggested word
+   - Verify each word before proceeding to the next
+4. **Review Seed Fingerprint**: Check the unique identifier on the "Finalize Seed" screen
+5. **Complete Loading**: 
+   - Select **"Done"** to load the seed as-is
+   - Or select **"BIP-39 Passphrase"** to add an additional security layer
 
+<div align="center">
+     <img src="images/tools_views/WordEntry.png" alt="Manual seed entry keyboard" width="300"/>
+</div>
 
-4. **Invalid Seed Warning**
+<div align="center">
+     <img src="images/tools_views/ToolsCalcFinalWordDoneView.png" alt="Seed finalization screen with fingerprint" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="images/seed_views/SeedMnemonicInvalidView.png" alt="Seed Mnemonic Invalid View" width="300"/>
-   </div>
+> **⚡ Speed Tip**: The word suggestion feature dramatically speeds up entry. Type just the first 2-3 letters of each word and select from the filtered suggestions rather than typing each letter individually.
 
-   - If the entered seed is invalid, you'll see this warning
-   - **Controls**: Press **any key** to acknowledge and try again
+### SeedQR Scanning
 
-5. **Finalizing Seed**
+Quickly and securely load seeds from SeedQR codes - a compact QR code format specifically designed for seed phrases.
 
-   <div align="center">
-     <img src="images/seed_views/SeedFinalizeView.png" alt="Seed Finalize View" width="300"/>
-   </div>
+#### Step-by-Step Process
 
-   - After entering a valid seed, you'll be taken to this screen to confirm
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
+1. **Navigate**: Main Menu → **Scan**
+2. **Position QR Code**: Point the camera at your SeedQR code
+3. **Wait for Recognition**: The device will automatically detect and process valid SeedQR codes
+4. **Review Details**: Check the seed information on the "Finalize Seed" screen
+5. **Complete Loading**: Select **"Done"** to load the seed
 
-### Seed Passphrase Management
+<div align="center">
+     <img src="images/seed_views/SeedQRScan.png" alt="SeedQR scanning interface" width="300"/>
+</div>
 
-1. **Adding a Passphrase (Lowercase)**
+> **❌ Troubleshooting**: If you see "Unknown QR Type", the QR code format isn't recognized as a valid SeedQR. Press "Done" to return to scanning mode and verify you're using a properly formatted SeedQR code.
 
-   <div align="center">
-     <img src="images/seed_views/SeedAddPassphraseView_lowercase.png" alt="Seed Add Passphrase View (Lowercase)" width="300"/>
-   </div>
+### Adding BIP-39 Passphrase
 
-   - If you choose to add a passphrase, you'll start with the lowercase keyboard
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a letter or button
-     - Navigate to the delete button and press **any key** to delete the last character
-     - Use **Joystick** to navigate to "abc" and press **any key** to switch to uppercase
+Enhance your seed security with an optional passphrase. This creates an entirely different wallet even with the same seed words.
 
-2. **Adding a Passphrase (Uppercase)**
+#### Step-by-Step Process
 
-   <div align="center">
-     <img src="images/seed_views/SeedAddPassphraseView_uppercase.png" alt="Seed Add Passphrase View (Uppercase)" width="300"/>
-   </div>
+1. **Access Passphrase Entry**: From the "Finalize Seed" screen, select **"BIP-39 Passphrase"**
+2. **Enter Your Passphrase**: Use the on-screen keyboard with multiple character sets:
+   - **Default Mode**: Lowercase letters (a-z)
+   - **Key A**: Switch to uppercase letters (A-Z)
+   - **Key B**: Access numbers (0-9) and symbols (!@#$%^&*)
+   - **Key C**: Confirm and finalize your passphrase
+3. **Review Your Entry**: Double-check your passphrase for accuracy
+4. **Confirm or Edit**: Select **"Done"** to confirm, or make corrections if needed
 
-   - Switch to uppercase by selecting the "abc" button
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a letter or button
-     - Navigate to the delete button and press **any key** to delete the last character
-     - Use **Joystick** to navigate to "123" and press **any key** to switch to digits
+<div align="center">
+     <img src="images/seed_views/SeedAddPassphraseView_lowercase.png" alt="Passphrase entry screen" width="300"/>
+</div>
 
-3. **Adding a Passphrase (Digits)**
+> **🔐 Critical Security Note**: A BIP-39 passphrase creates an entirely different wallet from the same seed words. You must store your passphrase separately from your seed words. Losing the passphrase means losing access to that wallet forever.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__add_passphrase_digits.png" alt="Seed Add Passphrase View (Digits)" width="300"/>
-   </div>
+---
 
-   - Switch to digits by selecting the "123" button
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a digit or button
-     - Navigate to the delete button and press **any key** to delete the last character
-     - Use **Joystick** to navigate to "#$%" and press **any key** to switch to symbols
+## 🔧 Working with Loaded Seeds
 
-4. **Adding a Passphrase (Symbols 1)**
+### Export Public Key (Xpub)
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__add_passphrase_symbols_1.png" alt="Seed Add Passphrase View (Symbols 1)" width="300"/>
-   </div>
+Create watch-only wallets in your favorite Bitcoin software by exporting your public key. This allows you to monitor balances and prepare transactions without exposing your private keys.
 
-   - Switch to symbols by selecting the "#$%" button
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a symbol or button
-     - Navigate to the delete button and press **any key** to delete the last character
-     - Use **Joystick** to navigate to "→" and press **any key** to see more symbols
+#### Step-by-Step Process
 
-5. **Adding a Passphrase (Symbols 2)**
+1. **Access Export**: From the seed's main screen, select **"Export Xpub"**
+2. **Choose Signature Type**: 
+   - **"Single Sig"** - For standard personal wallets
+   - **"Multisig"** - For multi-signature wallets requiring multiple devices
+3. **Select Script Type**:
+   - **Native Segwit** (bech32) - Recommended for lowest fees
+   - **Nested Segwit** (P2SH) - For compatibility with older systems
+   - **Taproot** - For advanced privacy and smart contract features
+4. **Choose Wallet Software**: Select your preferred wallet from supported options:
+   - BlueWallet
+   - Nunchuk
+   - Sparrow Wallet
+   - Specter Desktop
+   - Generic/Other
+5. **Acknowledge Privacy Warning**: Press **"I Understand"** after reading the xpub privacy implications
+6. **Generate QR Code**: Select **"Export XPub"** to display the shareable QR code
+7. **Import to Wallet**: Scan the QR code with your chosen wallet software
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__add_passphrase_symbols_2.png" alt="Seed Add Passphrase View (Symbols 2)" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/seed_views/SeedExportXpubSigTypeView.png" alt="Xpub export options screen" width="300"/>
+</div>
 
-   - Access additional symbols by selecting the "→" button
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a symbol or button
-     - Navigate to the delete button and press **any key** to delete the last character
-     - Navigate to "DONE" and press **any key** when finished
+<div align="center">
+     <img src="images/seed_views/SeedExportXpubDetailsView.png" alt="Generated Xpub QR code" width="300"/>
+</div>
 
-6. **Passphrase Exit Dialog**
+> **🔒 Privacy Warning**: Your xpub (extended public key) reveals all your Bitcoin addresses and transaction history. Only share it with wallet software you trust, and never post it publicly online.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__add_passphrase_exit_dialog.png" alt="Seed Add Passphrase Exit Dialog View" width="300"/>
-   </div>
+### Generate Receiving Addresses
 
-   - If you try to exit while entering a passphrase, you'll see this confirmation
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "Cancel" or "Exit"
-     - Press **any key** to confirm your selection
+View and share your Bitcoin receiving addresses for accepting payments.
 
-7. **Reviewing Passphrase**
+#### Step-by-Step Process
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__review_passphrase.png" alt="Seed Review Passphrase View" width="300"/>
-   </div>
+1. **Navigate**: From seed main screen → **"Address Explorer"**
+2. **Select Script Type**: Choose from:
+   - **Native Segwit** - Most efficient, lowest fees
+   - **Nested Segwit** - Good compatibility
+   - **Taproot** - Enhanced privacy features
+3. **View Address List**: Select **"Receive addresses"** to see your addresses (displays 10 at a time)
+4. **Share Specific Address**: Select any address to display its individual QR code for sharing
+5. **Navigate Pages**: Use navigation controls to view additional addresses if needed
 
-   - After entering a passphrase, you'll be asked to review it
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
+<div align="center">
+     <img src="images/tools_views/ToolsAddressExplorerSelectSourceView.png" alt="Address explorer interface" width="300"/>
+</div>
 
-### Seed Options and Management
+<div align="center">
+     <img src="images/tools_views/ToolsAddressExplorerAddressListView.png" alt="Individual address QR code display" width="300"/>
+</div>
 
-1. **Seed Options Menu**
+> **💡 Best Practice**: Generate a new receiving address for each transaction to maintain privacy. Bitcoin addresses can be reused but it's not recommended for privacy reasons.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__seed_options.png" alt="Seed Options View" width="300"/>
-   </div>
+### View Seed Words
 
-   - After loading or creating a seed, you'll see the seed options
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between options
-     - Press **any key** to select an option
-     - To go back to the previous menu, navigate to the back icon and press **any key**
+Access your seed words for backup verification or recovery purposes.
 
-2. **Seed Backup Options**
+#### Step-by-Step Process
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__backup.png" alt="Seed Backup View" width="300"/>
-   </div>
+1. **Navigate**: From seed main screen → **"Backup Seed"** → **"View Seed Words"**
+2. **Acknowledge Security Warning**: Press **"I Understand"** for the classified information warning
+3. **Review All Words**: View your complete seed phrase (displayed 4 words at a time)
+4. **Optional Verification**: Complete backup verification process if prompted
+5. **Exit Securely**: Ensure you're in a private location before viewing
 
-   - If you select "Backup Seed" from the seed options, you'll see these options
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between options
-     - Press **any key** to select an option
-     - To go back to seed options, navigate to the back icon and press **any key**
+<div align="center">
+     <img src="images/seed_views/SeedWordsView.png" alt="Seed words display screen" width="300"/>
+</div>
 
-### Seed Export and Xpub Management
+> **🔐 Critical Security Warning**: Only view seed words in a completely private, secure location away from cameras, other people, and any recording devices. Consider covering the screen from different angles.
 
-1. **Export Xpub Signature Type Selection**
+### Create SeedQR Backup
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__export_xpub_sig_type.png" alt="Seed Export Xpub Sig Type View" width="300"/>
-   </div>
+Generate compact QR code backups of your seed phrase for convenient storage and recovery.
 
-   - When exporting an Xpub, first select the signature type
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between signature types
-     - Press **any key** to select a signature type
-     - To go back, navigate to the back icon and press **any key**
+#### Step-by-Step Process
 
-2. **Export Xpub Script Type Selection**
+1. **Navigate**: From seed main screen → **"Backup Seed"** → **"Export as SeedQR"**
+2. **Choose Format**: 
+   - **"Standard: 25x25"** - Larger, easier to scan
+   - **"Compact: 21x21"** - Smaller, requires more precise scanning
+3. **Acknowledge Warning**: Confirm that you understand SeedQR contains your complete private key
+4. **Review Complete QR**: View the full QR code, then select **"Begin"** to examine zoomed sections
+5. **Navigate All Sections**: Use the joystick to review every part of the QR code for accuracy
+6. **Complete Process**: Press any key when you've finished reviewing
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__export_xpub_script_type.png" alt="Seed Export Xpub Script Type View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/seed_views/SeedTranscribeSeedQRFormatView.png" alt="SeedQR format selection" width="300"/>
+</div>
 
-   - Then select the script type
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between script types
-     - Press **any key** to select a script type
-     - To go back, navigate to the back icon and press **any key**
+<div align="center">
+     <img src="images/seed_views/SeedTranscribeSeedQRWholeQRView_12_Compact.png" alt="Generated SeedQR code" width="300"/>
+</div>
 
-3. **Custom Derivation Path**
+> **⚠️ Security Equivalent**: SeedQR codes are functionally equivalent to your written seed backup. Store them with the same security measures - in fireproof safes, safety deposit boxes, or other secure locations.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__export_xpub_custom_derivation.png" alt="Seed Export Xpub Custom Derivation View" width="300"/>
-   </div>
+---
 
-   - If needed, you can set a custom derivation path
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard and input numbers
-     - Press **any key** to select a character or button
-     - Navigate to the delete button and press **any key** to delete the last character
-     - Navigate to "DONE" and press **any key** when finished
+## ✍️ Signing Transactions
 
-4. **Selecting Coordinator**
+### Sign Bitcoin Transaction (PSBT)
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__export_xpub_coordinator.png" alt="Seed Export Xpub Coordinator View" width="300"/>
-   </div>
+Securely approve and sign Bitcoin transactions created by your wallet software. PSBT (Partially Signed Bitcoin Transaction) is the standard format for unsigned transactions.
 
-   - Select which wallet coordinator to use
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between coordinators
-     - Press **any key** to select a coordinator
-     - To go back, navigate to the back icon and press **any key**
+#### Step-by-Step Process
 
-5. **Xpub Export Warning**
+1. **Access Signing**: From your seed's main screen, select **"Scan PSBT"**
+2. **Scan Transaction QR**: Point the camera at the transaction QR code generated by your wallet software
+3. **Review Transaction Details**: Carefully verify ALL information:
+   - ✅ **Recipient address** - Confirm this matches your intended destination
+   - ✅ **Amount being sent** - Verify the exact Bitcoin amount
+   - ✅ **Transaction fee** - Check that the fee is reasonable
+   - ✅ **Change address** - Ensure change returns to your wallet
+4. **Select Signing Seed**: Choose the appropriate seed if multiple are loaded
+5. **Authorize Signing**: Confirm you want to sign this transaction
+6. **Wait for Completion**: Allow time for the "Signing Complete" message
+7. **Broadcast Transaction**: Scan the resulting signed QR code back into your wallet software
+8. **Confirm Broadcast**: Your wallet will broadcast the transaction to the Bitcoin network
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__export_xpub_warning.png" alt="Seed Export Xpub Warning View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/PSBTViews/psbt_scan.png" alt="PSBT scanning interface" width="300"/>
+</div>
 
-   - Before exporting, you'll see this privacy warning
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "Cancel" or "Continue"
-     - Press **any key** to confirm your selection
+<div align="center">
+     <img src="images/psbt_views/PSBTOverviewView.png" alt="Transaction details review screen" width="300"/>
+</div>
 
-6. **Xpub Details**
+<div align="center">
+     <img src="images/psbt_views/PSBTFinalizeView.png" alt="Transaction signing completion" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__export_xpub_details.png" alt="Seed Export Xpub Details View" width="300"/>
-   </div>
+> **🚨 Critical Security Check**: Bitcoin transactions are irreversible once broadcast to the network. ALWAYS verify the recipient address and amount before signing. Double-check that the recipient address matches your intended destination exactly.
 
-   - View the xpub details before finalizing
-   - **Controls**:
-     - Use the **Joystick Up/Down** to scroll through the details
-     - Press **any key** to continue to the QR code
-     - To go back, navigate to the back icon and press **any key**
+---
 
-### Seed Words Management
+## 🛡️ Verification and Security
 
-1. **Seed Words Warning**
+### Verify Address Ownership
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words_warning.png" alt="Seed Words Warning View" width="300"/>
-   </div>
+Confirm that a specific Bitcoin address was actually generated by your seed phrase. This protects against address substitution attacks.
 
-   - Before showing seed words, you'll see this privacy warning
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "Cancel" or "Continue"
-     - Press **any key** to confirm your selection
+#### Step-by-Step Process
 
-2. **Seed Words View (Page 1)**
+1. **Navigate**: Main Menu → **Tools** → **"Verify Address"**
+2. **Scan Address QR**: Point the camera at the Bitcoin address QR code you want to verify
+3. **Select Verification Seed**: Choose from currently loaded seeds or load a new one
+4. **Review Results**: 
+   - **Success**: Shows the address belongs to your seed with its derivation path index
+   - **Failure**: Address was not generated by the selected seed
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words.png" alt="Seed Words View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/seed_views/SeedSelectSeedView_address_verification.png" alt="Address verification interface" width="300"/>
+</div>
 
-   - First page of seed words
-   - **Controls**:
-     - Press **any key** to proceed to the next page or finish
-     - To go back, navigate to the back icon and press **any key**
-     - Use **Joystick Right** to advance to the next page (if available)
+<div align="center">
+     <img src="images/seed_views/SeedAddressVerificationSuccessView.png" alt="Successful address verification" width="300"/>
+</div>
 
-3. **Seed Words View (Page 2)**
+> **🔍 Why Verify Addresses?** This feature protects you against sophisticated attacks where malicious software might substitute a different address when you think you're sending to your own wallet. Always verify addresses when in doubt.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words_2.png" alt="Seed Words View (Page 2)" width="300"/>
-   </div>
+### Discard Loaded Seed
 
-   - Second page of seed words (for 24-word seeds)
-   - **Controls**:
-     - Press **any key** to finish
-     - To go back to page 1, navigate to the back icon and press **any key**
-     - Use **Joystick Left** to go back to the previous page
+Remove sensitive seed data from device memory when you're finished using it.
 
-### BIP85 Child Seed Generation
+#### Step-by-Step Process
 
-1. **BIP85 Application Mode**
+1. **Access Discard**: From the seed's main screen, select **"Discard Seed"**
+2. **Confirm Action**: Choose **"Discard"** to confirm you want to remove the seed from memory
+3. **Verify Removal**: The seed is immediately cleared from device memory
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__bip85_application_mode.png" alt="Seed BIP85 Application Mode View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/seed_views/SeedDiscardView.png" alt="Seed discard confirmation" width="300"/>
+</div>
 
-   - Select which application to generate a child seed for
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between applications
-     - Press **any key** to select an application
-     - To go back, navigate to the back icon and press **any key**
+> **📝 Important Note**: Discarding only removes the seed from temporary device memory. Your written backup and any other storage locations remain completely safe and unaffected.
 
-2. **BIP85 Child Index Selection**
+---
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__bip85_select_child_index.png" alt="Seed BIP85 Select Child Index View" width="300"/>
-   </div>
+## ⚙️ Device Settings
 
-   - Select the index number for the child seed
-   - **Controls**:
-     - Use the **Joystick** to navigate the number pad
-     - Press **any key** to select a digit
-     - Navigate to the delete button and press **any key** to delete the last digit
-     - Navigate to "OK" and press **any key** when finished
+### Language Configuration
 
-3. **BIP85 Invalid Child Index**
+Set your preferred language for the SeedSigner interface.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__bip85_invalid_child_index.png" alt="Seed BIP85 Invalid Child Index View" width="300"/>
-   </div>
+#### Step-by-Step Process
 
-   - If you enter an invalid index, you'll see this error
-   - **Controls**: Press **any key** to acknowledge and try again
+1. **Navigate**: Main Menu → **Settings** → **Language**
+2. **Select Language**: Choose your preferred language from the available options
+3. **Confirm Selection**: The interface will update to use your chosen language
 
-### Seed Words Backup Test
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_locale.png" alt="Language selection menu" width="300"/>
+</div>
 
-1. **Backup Test Prompt**
+### Persistent Settings
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words_backup_test_prompt.png" alt="Seed Words Backup Test Prompt View" width="300"/>
-   </div>
+Configure whether your settings are saved permanently or reset on each boot.
 
-   - If you choose to test your backup, you'll see this prompt
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "Cancel" or "Continue"
-     - Press **any key** to confirm your selection
+#### Step-by-Step Process
 
-2. **Backup Test Entry**
+1. **Navigate**: Main Menu → **Settings** → **Persistent Settings**  
+2. **Choose Mode**: 
+   - **"Enabled"** - Saves settings to SD card (survives reboots)
+   - **"Disabled"** - Temporary settings only (resets on power cycle)
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words_backup_test.png" alt="Seed Words Backup Test View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_persistent_settings.png" alt="Persistent settings toggle" width="300"/>
+</div>
 
-   - Enter your backed-up seed words to test them
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a letter or button
-     - Navigate to the delete button and press **any key** to delete the last letter
-     - Navigate to the word suggestion toggle and press **any key** to toggle between word suggestion lists
-     - Navigate to "OK" and press **any key** when done
+> **🔒 Security Consideration**: Enabled persistent settings provide convenience but store configuration data on the SD card. Disabled persistent settings provide maximum security but require reconfiguring preferences after each boot.
 
-3. **Backup Test Mistake**
+### Coordinator Software Support
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words_backup_test_mistake.png" alt="Seed Words Backup Test Mistake View" width="300"/>
-   </div>
+Enable or disable support for specific wallet applications. This customizes QR code formats and compatibility.
 
-   - If you make a mistake, you'll see this warning
-   - **Controls**: Press **any key** to acknowledge and try again
+#### Step-by-Step Process
 
-4. **Backup Test Success**
+1. **Navigate**: Main Menu → **Settings** → **Coordinator Software**
+2. **Configure Support** for each wallet:
+   - ✅ **BlueWallet** - Mobile Bitcoin wallet
+   - ✅ **Nunchuk** - Collaborative custody wallet  
+   - ✅ **Sparrow Wallet** - Desktop Bitcoin wallet
+   - ✅ **Specter Desktop** - Privacy-focused wallet
+   - ✅ **Keeper** - Inheritance planning wallet
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__words_backup_test_success.png" alt="Seed Words Backup Test Success View" width="300"/>
-   </div>
-
-   - If successful, you'll see this confirmation
-   - **Controls**: Press **any key** to continue
-
-### SeedQR Management
-
-1. **SeedQR Format Selection**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__transcribe_seedqr_format.png" alt="Seed Transcribe SeedQR Format View" width="300"/>
-   </div>
-
-   - When working with SeedQR, select the format
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between formats
-     - Press **any key** to select a format
-     - To go back, navigate to the back icon and press **any key**
-
-2. **SeedQR Warning**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__transcribe_seedqr_warning.png" alt="Seed Transcribe SeedQR Warning View" width="300"/>
-   </div>
-
-   - Before proceeding, you'll see this warning
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "Cancel" or "Continue"
-     - Press **any key** to confirm your selection
-
-3. **SeedQR Display (12-word Compact)**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__transcribe_seedqr_whole_qr_12_compact.png" alt="Seed Transcribe SeedQR Whole QR View (12-word Compact)" width="300"/>
-   </div>
-
-   - View the SeedQR for a 12-word seed in compact format
-   - **Controls**:
-     - Press **any key** to zoom in
-     - To go back, navigate to the back icon and press **any key**
-     - Navigate to the next step button and press **any key** to proceed
-
-4. **SeedQR Zoomed In View**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__transcribe_seedqr_zoomed_in_12_compact.png" alt="Seed Transcribe SeedQR Zoomed In View (12-word Compact)" width="300"/>
-   </div>
-
-   - View a zoomed-in portion of a SeedQR
-   - **Controls**:
-     - Use the **Joystick** to pan across the QR code
-     - Press **any key** to zoom out
-     - To go back, navigate to the back icon and press **any key**
-
-5. **SeedQR Confirmation Prompt**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__transcribe_seedqr_confirm_qr_prompt.png" alt="Seed Transcribe SeedQR Confirm QR Prompt View" width="300"/>
-   </div>
-
-   - When verifying a SeedQR, you'll see this prompt
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select an option
-     - Press **any key** to confirm your selection
-
-### Multisig and Address Verification
-
-1. **Seed Selection for Address Verification**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__select_seed_address_verification.png" alt="Seed Select Seed View (Address Verification)" width="300"/>
-   </div>
-
-   - Select which seed to use for address verification
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between seeds
-     - Press **any key** to select a seed
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Address Verification Signature Type Selection**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__address_verification_sig_type.png" alt="Address Verification Sig Type View" width="300"/>
-   </div>
-
-   - Select the signature type for address verification
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between signature types
-     - Press **any key** to select a signature type
-     - To go back, navigate to the back icon and press **any key**
-
-3. **Address Verification**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__address_verification.png" alt="Seed Address Verification View" width="300"/>
-   </div>
-
-   - Verify the address matches the expected value
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-4. **Address Verification Success**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__address_verification_success.png" alt="Seed Address Verification Success View" width="300"/>
-   </div>
-
-   - If the address is verified, you'll see this confirmation
-   - **Controls**: Press **any key** to continue
-
-### Message Signing
-
-1. **Seed Selection for Message Signing**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__select_seed_sign_message.png" alt="Seed Select Seed View (Sign Message)" width="300"/>
-   </div>
-
-   - Select which seed to use for signing a message
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between seeds
-     - Press **any key** to select a seed
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Message Signing Confirmation**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__sign_message_confirm_message.png" alt="Seed Sign Message Confirm Message View" width="300"/>
-   </div>
-
-   - Confirm the message content that you want to sign
-   - **Controls**:
-     - Use the **Joystick Up/Down** to scroll through the message if needed
-     - Press **any key** to confirm and sign the message
-     - To cancel and go back, navigate to the cancel option and press **any key**
-
-3. **Message Signing Script Type Selection**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__sign_message_script_type.png" alt="Seed Sign Message Script Type View" width="300"/>
-   </div>
-
-   - Select the script type for message signing
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between script types
-     - Press **any key** to select a script type
-     - To go back, navigate to the back icon and press **any key**
-
-4. **Message Signing Success**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/seed__sign_message_signature_display.png" alt="Seed Sign Message Signature Display View" width="300"/>
-   </div>
-
-   - After successful message signing, view the signature
-   - **Controls**:
-     - Use the **Joystick Up/Down** to scroll through the signature details
-     - Press **any key** to continue or export
-     - To go back, navigate to the back icon and press **any key**
-
-## Transaction Signing (PSBT)
-
-### PSBT Loading and Verification
-
-1. **PSBT Overview**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/psbt__overview.png" alt="PSBT Overview View" width="300"/>
-   </div>
-
-   - View the transaction overview before signing
-   - **Controls**:
-     - Use the **Joystick Up/Down** to scroll through transaction details
-     - Press **any key** to proceed to signing options
-     - To go back, navigate to the back icon and press **any key**
-
-2. **PSBT Change Warning**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/psbt__change_warning.png" alt="PSBT Change Warning View" width="300"/>
-   </div>
-
-   - Warning about change outputs in the transaction
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "Cancel" or "Continue"
-     - Press **any key** to confirm your selection
-
-3. **PSBT Seed Selection**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/psbt__seed_selection.png" alt="PSBT Seed Selection View" width="300"/>
-   </div>
-
-   - Select which seed to use for signing the transaction
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between available seeds
-     - Press **any key** to select a seed
-     - To go back, navigate to the back icon and press **any key**
-
-4. **PSBT Address Verification**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/psbt__address_verification.png" alt="PSBT Address Verification View" width="300"/>
-   </div>
-
-   - Verify that addresses in the transaction are correct
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between verification options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-5. **PSBT Signing Complete**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/psbt__signing_complete.png" alt="PSBT Signing Complete View" width="300"/>
-   </div>
-
-   - Transaction has been successfully signed
-   - **Controls**:
-     - Press **any key** to view the signed transaction QR code
-     - To go back, navigate to the back icon and press **any key**
-
-### PSBT Export and QR Display
-
-1. **PSBT Export QR Code**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/psbt__export_qr.png" alt="PSBT Export QR View" width="300"/>
-   </div>
-
-   - Display the signed transaction as a QR code for export
-   - **Controls**:
-     - Use **Joystick Left/Right** to navigate between QR code parts (if animated)
-     - Press **any key** to pause/resume animation
-     - To go back, navigate to the back icon and press **any key**
-
-## Tools
-
-### Tools Menu
-
-1. **Tools Overview**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__overview.png" alt="Tools Overview View" width="300"/>
-   </div>
-
-   - Access various utility tools
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between tool options
-     - Press **any key** to select a tool
-     - To go back to main menu, navigate to the back icon and press **any key**
-
-### Image Processing Tools
-
-1. **Image Processing Options**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__image_processing.png" alt="Tools Image Processing View" width="300"/>
-   </div>
-
-   - Select image processing operations
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between processing options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Camera Preview**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__camera_preview.png" alt="Tools Camera Preview View" width="300"/>
-   </div>
-
-   - Live camera preview before capturing
-   - **Controls**:
-     - Press **any key** to capture the image
-     - To go back, navigate to the back icon and press **any key**
-
-3. **Image Capture Success**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__image_capture_success.png" alt="Tools Image Capture Success View" width="300"/>
-   </div>
-
-   - Confirmation that image was captured successfully
-   - **Controls**:
-     - Press **any key** to continue with processing
-     - To retake, navigate to the retake option and press **any key**
-
-### Address Explorer
-
-1. **Address Explorer Input**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__address_explorer_input.png" alt="Tools Address Explorer Input View" width="300"/>
-   </div>
-
-   - Enter an address to explore
-   - **Controls**:
-     - Use the **Joystick** to navigate the keyboard
-     - Press **any key** to select a character
-     - Navigate to delete button and press **any key** to delete last character
-     - Navigate to "DONE" and press **any key** when finished
-
-2. **Address Explorer Results**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__address_explorer_results.png" alt="Tools Address Explorer Results View" width="300"/>
-   </div>
-
-   - View address exploration results
-   - **Controls**:
-     - Use the **Joystick Up/Down** to scroll through results
-     - Press **any key** to select an option or continue
-     - To go back, navigate to the back icon and press **any key**
-
-### Dice Roll Entropy
-
-1. **Dice Roll Instructions**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__dice_instructions.png" alt="Tools Dice Instructions View" width="300"/>
-   </div>
-
-   - Instructions for using dice to generate entropy
-   - **Controls**:
-     - Press **any key** to continue to dice input
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Dice Roll Input**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__dice_input.png" alt="Tools Dice Input View" width="300"/>
-   </div>
-
-   - Enter dice roll results
-   - **Controls**:
-     - Use the **Joystick** to navigate between dice values (1-6)
-     - Press **any key** to select a dice value
-     - Navigate to delete button and press **any key** to remove last roll
-     - Navigate to "DONE" and press **any key** when sufficient entropy is collected
-
-### Coin Flip Entropy
-
-1. **Coin Flip Instructions**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__coin_flip_instructions.png" alt="Tools Coin Flip Instructions View" width="300"/>
-   </div>
-
-   - Instructions for using coin flips to generate entropy
-   - **Controls**:
-     - Press **any key** to continue to coin flip input
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Coin Flip Input**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/tools__coin_flip_input.png" alt="Tools Coin Flip Input View" width="300"/>
-   </div>
-
-   - Enter coin flip results
-   - **Controls**:
-     - Use the **Joystick Left/Right** to select "H" (Heads) or "T" (Tails)
-     - Press **any key** to record the flip result
-     - Navigate to delete button and press **any key** to remove last flip
-     - Navigate to "DONE" and press **any key** when sufficient entropy is collected
-
-## Settings
-
-### Settings Menu
-
-1. **Settings Overview**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__overview.png" alt="Settings Overview View" width="300"/>
-   </div>
-
-   - Access device configuration options
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between setting categories
-     - Press **any key** to select a category
-     - To go back to main menu, navigate to the back icon and press **any key**
-
-### Display Settings
-
-1. **Display Settings Menu**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__display.png" alt="Settings Display View" width="300"/>
-   </div>
-
-   - Configure display-related settings
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between display options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Brightness Control**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__brightness.png" alt="Settings Brightness View" width="300"/>
-   </div>
-
-   - Adjust screen brightness
-   - **Controls**:
-     - Use the **Joystick Left/Right** to decrease/increase brightness
-     - Press **any key** to confirm the setting
-     - To go back, navigate to the back icon and press **any key**
-
-### Network Settings
-
-1. **Network Settings Menu**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__network.png" alt="Settings Network View" width="300"/>
-   </div>
-
-   - Configure network-related settings
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between network options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-### Wallet Settings
-
-1. **Wallet Settings Menu**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__wallet.png" alt="Settings Wallet View" width="300"/>
-   </div>
-
-   - Configure wallet-related settings
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between wallet options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Wallet Selection**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__wallet_selection.png" alt="Settings Wallet Selection View" width="300"/>
-   </div>
-
-   - Select default wallet software
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between wallet options
-     - Press **any key** to select a wallet
-     - To go back, navigate to the back icon and press **any key**
-
-### Hardware Settings
-
-1. **Hardware Settings Menu**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__hardware.png" alt="Settings Hardware View" width="300"/>
-   </div>
-
-   - Configure hardware-related settings
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between hardware options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
-
-2. **Camera Settings**
-
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__camera.png" alt="Settings Camera View" width="300"/>
-   </div>
-
-   - Configure camera settings
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between camera options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_coordinators.png" alt="Wallet software compatibility settings" width="300"/>
+</div>
 
 ### Advanced Settings
 
-1. **Advanced Settings Menu**
+#### Bitcoin Network Selection
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__advanced.png" alt="Settings Advanced View" width="300"/>
-   </div>
+Choose which Bitcoin network to use for addresses and transactions.
 
-   - Access advanced configuration options
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between advanced options
-     - Press **any key** to select an option
-     - To go back, navigate to the back icon and press **any key**
+1. **Navigate**: Settings → **Advanced** → **Bitcoin Network**
+2. **Select Network**:
+   - **Mainnet** - Real Bitcoin network (default for normal use)
+   - **Testnet** - Test network for development and experimentation
+   - **Regtest** - Local regression testing network
 
-2. **Debug Settings**
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_network.png" alt="Bitcoin network selection" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/settings__debug.png" alt="Settings Debug View" width="300"/>
-   </div>
+> **⚠️ Network Warning**: Always ensure you're using Mainnet for real Bitcoin transactions. Testnet and Regtest are for development purposes only.
 
-   - Configure debugging options
-   - **Controls**:
-     - Use the **Joystick Up/Down** to navigate between debug options
-     - Press **any key** to toggle an option
-     - To go back, navigate to the back icon and press **any key**
+#### QR Code Density
 
-## Error Screens
+Adjust the density of generated QR codes to balance size and scannability.
 
-### Common Error Messages
+1. **Navigate**: Settings → **Advanced** → **QR Code Density**
+2. **Choose Density**:
+   - **Low** - Larger, easier to scan QR codes
+   - **Medium** - Balanced size and compatibility (default)
+   - **High** - Smaller, more data-dense QR codes
 
-1. **Invalid QR Code Error**
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_qr_density.png" alt="QR code density options" width="300"/>
+</div>
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/error__invalid_qr.png" alt="Error Invalid QR View" width="300"/>
-   </div>
+#### Camera Rotation
 
-   - Displayed when an invalid QR code is scanned
-   - **Controls**: Press **any key** to acknowledge and try again
+Adjust camera orientation to match your device setup.
 
-2. **Camera Error**
+1. **Navigate**: Settings → **Advanced** → **Camera Rotation**
+2. **Select Rotation**:
+   - **0 degrees** - No rotation
+   - **90 degrees** - Quarter turn clockwise
+   - **180 degrees** - Upside down (default for most setups)
+   - **270 degrees** - Quarter turn counter-clockwise
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/error__camera.png" alt="Error Camera View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_camera_rotation.png" alt="Camera rotation settings" width="300"/>
+</div>
 
-   - Displayed when camera cannot be accessed
-   - **Controls**: Press **any key** to acknowledge and return to previous screen
+#### BIP-39 Passphrase Configuration
 
-3. **SD Card Error**
+Control how the device handles BIP-39 passphrases.
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/error__sd_card.png" alt="Error SD Card View" width="300"/>
-   </div>
+1. **Navigate**: Settings → **Advanced** → **BIP-39 Passphrase**
+2. **Choose Mode**:
+   - **Enabled** - Passphrase is optional (default recommended setting)
+   - **Disabled** - No passphrase support at all
+   - **Required** - Every seed must have a passphrase
 
-   - Displayed when there's an SD card issue
-   - **Controls**: Press **any key** to acknowledge, check SD card, and try again
+<div align="center">
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_passphrase.png" alt="Passphrase configuration options" width="300"/>
+</div>
 
-4. **Low Battery Warning**
+### Hardware I/O Testing
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/error__low_battery.png" alt="Error Low Battery View" width="300"/>
-   </div>
+Verify that all device components are functioning correctly.
 
-   - Warning when battery is running low
-   - **Controls**: Press **any key** to acknowledge and consider charging the device
+#### Step-by-Step Process
 
-5. **Generic Error**
+1. **Navigate**: Main Menu → **Settings** → **I/O Test**
+2. **Test Each Component**:
+   - 🕹️ **Joystick** - Test all four directions plus center press
+   - 🔘 **All Three Keys** - Verify A, B, and C buttons respond  
+   - 📷 **Camera** - Check camera feed and focus
 
-   <div align="center">
-     <img src="https://github.com/SeedSigner/seedsigner-screenshots/raw/dev/en/error__generic.png" alt="Error Generic View" width="300"/>
-   </div>
+<div align="center">
+     <img src="images/settings_views/IOTestView.png" alt="Hardware I/O test interface" width="300"/>
+</div>
 
-   - Generic error message for unexpected issues
-   - **Controls**: Press **any key** to acknowledge and try again or restart the device
+> **🔧 When to Use I/O Testing**: After initial device assembly, when troubleshooting hardware issues, or if you suspect component problems. This helps identify hardware problems vs. software issues.
 
-## Navigation Tips
+---
 
-### General Navigation Rules
+## 🔧 Troubleshooting
 
-1. **Moving Between Options**
+### Common Error Messages and Solutions
 
-   - Always use the **Joystick Up/Down** to navigate vertically through menu items
-   - Use **Joystick Left/Right** to navigate horizontally when applicable
-   - All three keys (A, B, C) perform the same selection function
+| Error Message | Cause | Solution |
+|---------------|-------|----------|
+| **"Unknown QR Type"** | QR code format not recognized | Ensure you're scanning a valid SeedQR, PSBT, or Bitcoin address QR code |
+| **Camera feed black/distorted** | Hardware connection issue | Check camera ribbon cable connection and clean lens |
+| **Buttons not responding** | Hardware or navigation issue | Test in I/O menu; remember all three keys work identically |
+| **"Invalid checksum"** | Incorrect seed words entered | Double-check each word in your seed phrase |
+| **Device freezes/hangs** | Software temporary issue | Unplug and restart; no permanent damage possible |
 
-2. **Going Back**
+<div align="center">
+     <img src="images/misc_error_views/ScanInvalidQRTypeView.png" alt="Unknown QR type error message" width="300"/>
+</div>
 
-   - Look for the back arrow icon on each screen
-   - Navigate to the back icon using the joystick
-   - Press any key to activate and return to the previous screen
+### Frequently Asked Questions
 
-3. **Text Entry**
+#### 🤔 "I forgot to write down my seed words - are they lost?"
+If the seed is still loaded in memory: Navigate to **Backup Seed** → **View Seed Words** to display them again. Write them down immediately!
 
-   - Use the joystick to navigate on-screen keyboards
-   - Press any key to select characters
-   - Look for delete buttons to remove characters
-   - Navigate to "DONE" or "OK" to complete text entry
+#### 🧊 "My device is frozen and won't respond"
+Simply unplug the device and restart it. SeedSigner stores nothing permanently, so there's no risk of data corruption or permanent damage.
 
-4. **Scrolling Content**
+#### 🔍 "I can't find a specific screen mentioned in the guide"
+Use the back arrow button to navigate up the menu hierarchy step by step, then follow the guide's navigation path from a known starting point (usually the main menu).
 
-   - On screens with long content, use **Joystick Up/Down** to scroll
-   - Content that extends beyond the screen will have scroll indicators
+#### 🙃 "My camera shows everything upside down"
+Go to **Settings** → **Advanced** → **Camera Rotation** and adjust to 180° or the appropriate orientation for your setup.
 
-5. **QR Code Interaction**
-   - On QR code screens, press any key to zoom in/out
-   - Use the joystick to pan when zoomed in
-   - Some QR codes may be animated - press any key to pause/resume
+#### 💾 "My settings don't save between reboots"
+Enable **Persistent Settings** in the Settings menu and ensure your SD card is properly inserted.
 
-### Troubleshooting Navigation Issues
+#### 📱 "My wallet software can't scan the QR codes"
+Try adjusting the **QR Code Density** in Advanced Settings. Lower density creates larger, easier-to-scan codes.
 
-1. **Screen Not Responding**
+#### 🔒 "How do I know my device is secure?"
+SeedSigner is air-gapped (no network connections), open-source (auditable code), and stateless (nothing stored permanently). Remove the SD card after boot for maximum security.
 
-   - Ensure the joystick is being pressed firmly in the desired direction
-   - Try pressing one of the three keys (A, B, or C) to select the highlighted option
-   - If still unresponsive, try restarting the device
+### Hardware Troubleshooting
 
-2. **Can't Find Back Button**
+#### Camera Issues
+- **Symptom**: Black screen or no camera feed
+- **Solutions**: 
+  - Check ribbon cable connection between camera and Pi
+  - Clean camera lens with soft cloth
+  - Test camera in I/O Test menu
+  - Try different camera rotation settings
 
-   - Look for arrow icons, typically in corners of the screen
-   - Some screens may use text labels like "Cancel" or "Exit"
-   - Navigate to these options using the joystick, then press any key
+#### Button/Joystick Issues  
+- **Symptom**: Controls not responding
+- **Solutions**:
+  - Test all controls in I/O Test menu
+  - Remember all three keys (A, B, C) function identically
+  - Use joystick first to navigate, then press any key to select
+  - Check for physical obstructions or debris
 
-3. **Text Entry Problems**
-   - Make sure you're navigating to individual characters before pressing keys
-   - Use the word suggestion toggles when entering seed words
-   - Look for keyboard mode switches (abc, 123, symbols) for different character sets
+#### Display Issues
+- **Symptom**: Screen problems or distorted display
+- **Solutions**:
+  - Check LCD hat connection to Pi GPIO pins
+  - Verify power supply provides adequate current
+  - Try reseating all connections
 
-This comprehensive guide covers all the major screens and navigation paths in the SeedSigner interface. Remember that the key to successful navigation is patience and systematic use of the joystick to highlight options before pressing any of the three selection keys.
+<!-- <div align="center">
+     <img src="images/misc_error_views/UnhandledExceptionView.png" alt="Unhandled Exception View" width="300"/>
+</div> -->
+
+### Getting Help
+
+If you encounter issues not covered in this troubleshooting section:
+
+1. **Check the FAQ** on the official website
+2. **Review the documentation** for detailed technical information  
+3. **Search GitHub issues** for similar problems and solutions
+4. **Post a new issue** on GitHub with detailed description and screenshots
+
+---
+
+## 📚 Additional Resources
+
+### Official Resources
+- 🌐 **Official Website**: [seedsigner.com](https://seedsigner.com)
+- 📖 **Comprehensive Documentation**: [SeedSigner Docs & FAQs](https://seedsigner.com/faqs/)
+- 💻 **Source Code Repository**: [GitHub - SeedSigner](https://github.com/SeedSigner/seedsigner)
+- 📷 **Complete Screenshot Collection**: [SeedSigner Screenshots](https://github.com/SeedSigner/seedsigner-screenshots)
+- 📺 **Video Tutorials**: Available on the official website and community channels
+- 📋 **Hardware Assembly Guide**: Detailed build instructions for DIY assembly
+
+### Community Resources
+- 💬 **Discussion Forums**: Active community discussions and support
+- 🛠️ **Hardware Suppliers**: Recommended vendors for components
+- 🎓 **Educational Content**: Tutorials, best practices, and security guides
+- 🔧 **Development Resources**: For contributors and developers
+
+### Security Best Practices
+
+#### Seed Storage Security
+- **Multiple Backups**: Store seed words in at least 2-3 separate secure locations
+- **Fire/Water Protection**: Use fireproof and waterproof storage solutions
+- **Geographic Distribution**: Don't keep all backups in the same location
+- **Regular Verification**: Periodically test your backups to ensure they're readable
+
+#### Operational Security
+- **Air-Gapped Usage**: Keep SeedSigner permanently offline
+- **Clean Environment**: Use in private spaces away from cameras and observers
+- **Verify Everything**: Always double-check addresses, amounts, and recipients
+- **Minimal Exposure**: Load seeds only when needed, discard immediately after use
+
+#### Physical Security
+- **Secure Storage**: Store device in a secure location when not in use
+- **Tamper Evidence**: Consider tamper-evident storage solutions
+- **Access Control**: Limit who has physical access to the device
+- **Regular Updates**: Keep firmware updated for security patches
+
+### Understanding Bitcoin Security
+
+#### Why Hardware Signers Matter
+Hardware signing devices like SeedSigner provide crucial security benefits:
+- **Private Key Isolation**: Keys never touch internet-connected devices
+- **Transaction Verification**: Visual confirmation before signing
+- **Malware Resistance**: Immune to computer viruses and malware
+- **User Control**: You maintain complete control over your private keys
+
+#### Best Practices for Bitcoin Storage
+- **Never share private keys or seed phrases** with anyone
+- **Verify all receiving addresses** before sending Bitcoin
+- **Use multiple signatures** for large amounts (multisig)
+- **Test with small amounts** before large transactions
+- **Keep software wallets updated** and from trusted sources
+
+---
+
+## 🤝 Contributing
+
+SeedSigner is open-source software that benefits from community contributions. Ways to help:
+
+### For Users
+- **Report Bugs**: Submit detailed issue reports on GitHub
+- **Improve Documentation**: Suggest clarifications or additions
+- **Share Experiences**: Help others with setup and usage questions
+- **Test Beta Features**: Try new releases and provide feedback
+
+### For Developers
+- **Code Contributions**: Submit pull requests for new features or fixes
+- **Security Audits**: Review code for potential vulnerabilities
+- **Translation**: Help translate the interface to new languages
+- **Testing**: Automated and manual testing of new releases
+
+### Contribution Guidelines
+- **Follow coding standards** established in the repository
+- **Include thorough testing** for all new features
+- **Document changes clearly** in pull request descriptions
+- **Respect the security-first philosophy** of the project
+
+---
+
+## 🔐 Security Considerations
+
+### Air-Gapped Security
+SeedSigner is designed to be completely air-gapped for maximum security:
+- **No Network Connections**: Never connects to WiFi, Bluetooth, or internet
+- **QR Code Communication**: All data transfer via visual QR codes only
+- **Temporary Memory**: All sensitive data cleared when power is removed
+- **Open Source**: Code is publicly auditable for security verification
+
+### Threat Model Protection
+SeedSigner protects against:
+- **Malware on computers** - Private keys never touch connected devices
+- **Network attacks** - No network connectivity means no remote attacks
+- **Supply chain attacks** - Open source hardware and software
+- **Physical tampering** - Stateless design prevents persistent backdoors
+
+### Limitations to Understand
+- **Physical security required** - Device must be physically secured
+- **User verification critical** - You must verify all transaction details
+- **Backup security essential** - Seed phrase backup security is your responsibility
+- **Single points of failure** - Losing seed phrase means losing Bitcoin access
+
+---
+
+## ⚖️ License and Legal
+
+### Software License
+This project is licensed under the MIT License, which allows:
+- **Free use** for personal and commercial purposes
+- **Modification** of the source code
+- **Distribution** of original or modified versions
+- **No warranty** - software provided "as is"
+
+### Hardware Considerations
+- **DIY Assembly**: Users are responsible for proper hardware assembly
+- **Component Quality**: Use genuine, quality components for reliability
+- **Safety**: Follow proper electrical safety practices during assembly
+- **Compliance**: Ensure compliance with local electronics regulations
+
+### Disclaimer
+- **No Financial Advice**: This software is a tool; not financial advice
+- **User Responsibility**: Users are responsible for their Bitcoin security
+- **No Warranty**: No guarantee of software or hardware performance
+- **Educational Purpose**: Documentation is for educational use
+
+---
+
+## 📞 Support and Community
+
+### Getting Help
+1. **Read This Guide**: Most questions are answered in this comprehensive guide
+2. **Check the FAQ**: Visit the official FAQ for common questions
+3. **Search GitHub Issues**: Look for existing solutions to your problem
+4. **Community Forums**: Engage with other users for help and tips
+5. **Create New Issues**: For bugs or feature requests, create detailed GitHub issues
+
+### Community Guidelines
+- **Be Respectful**: Treat all community members with respect
+- **Stay On Topic**: Keep discussions focused on SeedSigner
+- **No Financial Advice**: Don't provide investment or trading advice
+- **Security First**: Always prioritize security in recommendations
+- **Help Others**: Share your knowledge to help new users
+
+### Reporting Security Issues
+If you discover a security vulnerability:
+1. **Do NOT post publicly** on GitHub or forums
+2. **Contact maintainers privately** through secure channels
+3. **Provide detailed information** about the vulnerability
+4. **Allow time for fixes** before public disclosure
+5. **Follow responsible disclosure** practices
+
+---
+
+This comprehensive guide should help you use SeedSigner safely and effectively. Remember that your Bitcoin security depends on following best practices and understanding the tools you're using. When in doubt, ask questions and verify everything before proceeding with real Bitcoin transactions.
+
+**Stay secure, and enjoy using SeedSigner!** 🚀
