@@ -406,33 +406,35 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
 #### Complete Step-by-Step Process with All Screenshots
 
 1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"**
-
 <div align="center">
-     <img src="images/seed_views/SeedSelectSeedView.png" alt="Load seed menu" width="300"/>
+     <img src="images/loading_existing_seeds/SeedsOptionSelectView.png" alt="Tools menu selection" width="200"/>
+</div>
+<div align="center">
+     <img src="images/loading_existing_seeds/LoadASeedMainOptionSelectView.png" alt="Load seed menu" width="200"/>
 </div>
 
 2. **Choose Length**: Select **"Enter 12-word seed"** or **"Enter 24-word seed"**
-
 <div align="center">
-     <img src="images/seed_views/SeedMnemonicLengthView.png" alt="Manual entry seed length selection" width="300"/>
+     <img src="images/loading_existing_seeds/LoadASeedMainMenuView.png" alt="Manual entry seed length selection" width="200"/>
+</div>
+<div align="center">
+     <img src="images/loading_existing_seeds/SeedMnemonicLengthView.png" alt="Manual entry seed length selection" width="200"/>
 </div>
 
 3. **Enter Each Word**: 
    - Use the on-screen keyboard with intelligent word suggestions
    - Type the first few letters and select from suggestions for faster entry
+   - **Key A**: Move up in the suggestions list
+   - **Key C**: Move down in the suggestions list  
+   - **Key B**: Select the highlighted suggested word
 
 <div align="center">
-     <img src="images/tools_views/WordEntry.png" alt="Manual seed entry keyboard" width="300"/>
-</div>
-
-<div align="center">
-     <img src="images/seed_views/SeedMnemonicEnterView.png" alt="Seed word entry in progress" width="300"/>
+     <img src="images/loading_existing_seeds/SeedWordEnterView.png" alt="Seed word entry in progress" width="200"/>
 </div>
 
 4. **Review Seed Fingerprint**: Check the unique identifier on the "Finalize Seed" screen
-
 <div align="center">
-     <img src="images/seed_views/SeedFinalizeView.png" alt="Seed finalization screen with fingerprint" width="300"/>
+     <img src="images/loading_existing_seeds/SeedFinalizeView.png" alt="Seed finalization screen with fingerprint" width="200"/>
 </div>
 
 5. **Complete Loading**: 
