@@ -144,18 +144,18 @@ The WaveShare LCD Hat provides the following controls:
 **Method 1: Proper Shutdown**
 1. Navigate to the **power icon** (top right of main menu)
 <div align="center">
-     <img src="images/getting_started/PowerIconSelectedScreen.png" alt="Power icon select menu screen" width="200"/>
+     <img src="images/getting_started/PowerIconSelectedScreen.png" alt="Power icon select menu screen" width="250"/>
 </div>
 
 2. Press any key to open the power menu
 <div align="center">
-     <img src="images/getting_started/PowerOptionsView.png" alt="Power option menu screen" width="200"/>
+     <img src="images/getting_started/PowerOptionsView.png" alt="Power option menu screen" width="250"/>
 </div>
 
 3. Select **"Power Off"** and confirm your choice
 
 <div align="center">
-     <img src="images/main_menu_views/PowerOffView.png" alt="Power off menu screen" width="200"/>
+     <img src="images/main_menu_views/PowerOffView.png" alt="Power off menu screen" width="250"/>
 </div>
 
 **Method 2: Direct Unplugging**
@@ -165,19 +165,19 @@ You can safely unplug the device at any time. SeedSigner stores nothing permanen
 
 1. **Navigate to Power Menu**: Use the joystick to navigate to the **power icon** in the top-right corner of the home screen
 <div align="center">
-     <img src="images/getting_started/PowerIconSelectedScreen.png" alt="Power icon select menu screen" width="200"/>
+     <img src="images/getting_started/PowerIconSelectedScreen.png" alt="Power icon select menu screen" width="250"/>
 </div>
 
 2. **Open Power Options**: Press any key (A, B, or C) to access the power menu
 3. **Select Restart**: Choose **"Restart"** from the available options
 <div align="center">
-     <img src="images/getting_started/PowerOptionsView.png" alt="Power option menu screen" width="200"/>
+     <img src="images/getting_started/PowerOptionsView.png" alt="Power option menu screen" width="250"/>
 </div>
 
 4. **Confirm Action**: The device will reboot and return to the main menu
 
 <div align="center">
-     <img src="images/main_menu_views/RestartView.png" alt="Restart option in power menu" width="200"/>
+     <img src="images/main_menu_views/RestartView.png" alt="Restart option in power menu" width="250"/>
 </div>
 
 > **🔄 Quick Reset**: Restarting clears all temporary data and returns the device to its initial state while preserving your configured settings (if persistent settings are enabled).
@@ -195,13 +195,13 @@ Create truly random seeds using environmental entropy captured by the camera. Th
 1. **Navigate**: Main Menu → **Tools**
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="200"/>
+     <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="250"/>
 </div>
 
 2. **Select Method**: Choose **"New Seed"** with the camera icon
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsMenuView.png" alt="New seed method selection" width="200"/>
+     <img src="images/creating_new_seeds/ToolsMenuView.png" alt="New seed method selection" width="250"/>
 </div>
 
 3. **Capture Entropy**: 
@@ -209,7 +209,7 @@ Create truly random seeds using environmental entropy captured by the camera. Th
    - Press any key to capture the entropy
 
 <div align="center">
-     <img src="images/creating_new_seeds/SeedCameraEntropyView.png" alt="Camera entropy capture interface" width="200"/>
+     <img src="images/creating_new_seeds/SeedCameraEntropyView.png" alt="Camera entropy capture interface" width="250"/>
 </div>
 
 4. **Review Capture**: 
@@ -217,19 +217,19 @@ Create truly random seeds using environmental entropy captured by the camera. Th
    - Move joystick **right** to continue with current capture
 
 <div align="center">
-     <img src="images/creating_new_seeds/SeedEntropyPreviewView.png" alt="Entropy capture preview" width="200"/>
+     <img src="images/creating_new_seeds/SeedEntropyPreviewView.png" alt="Entropy capture preview" width="250"/>
 </div>
 
 5. **Choose Length**: Select **12 words** or **24 words** (24 words recommended for maximum security)
 
 <div align="center">
-     <img src="images/creating_new_seeds/SeedMnemonicLengthView.png" alt="Seed length selection" width="200"/>
+     <img src="images/creating_new_seeds/SeedMnemonicLengthView.png" alt="Seed length selection" width="250"/>
 </div>
 
 6. **Acknowledge Security Warning**: Press **"I Understand"** after reading the classified information warning
 
 <div align="center">
-     <img src="images/creating_new_seeds/SeedWarningView.png" alt="Security warning screen" width="200"/>
+     <img src="images/creating_new_seeds/SeedWarningView.png" alt="Security warning screen" width="250"/>
 </div>
 
 7. **Record Your Seed Words**: 
@@ -237,12 +237,12 @@ Create truly random seeds using environmental entropy captured by the camera. Th
    - **Write down every word carefully** in the exact order shown
    - Double-check each word as you write it
 <div align="center">
-     <img src="images/creating_new_seeds/SeedMnemonicEntryView.png" alt="Seed words display screen" width="200"/>
+     <img src="images/creating_new_seeds/SeedMnemonicEntryView.png" alt="Seed words display screen" width="250"/>
 </div>
 
 8. **Verify Your Backup**: Complete the verification process to confirm you've recorded everything correctly
 <div align="center">
-     <img src="images/creating_new_seeds/SeedBackupTestView.png" alt="Seed backup verification screen" width="200"/>
+     <img src="images/creating_new_seeds/SeedBackupTestView.png" alt="Seed backup verification screen" width="250"/>
 </div>
 
 > **⚠️ Critical Security Warning**: If you write down even one word incorrectly, you could lose access to your Bitcoin forever. The verification step is mandatory - never skip it!
@@ -255,12 +255,12 @@ Generate seeds using physical dice for maximum security and provable randomness.
 
 1. **Navigate**: Main Menu → **Tools**
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="200"/>
+     <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="250"/>
 </div>
 
 2. **Select Method**: Choose **"New Seed"** with the dice icon
 <div align="center">
-     <img src="images/creating_new_seeds/SeedGenerateDiceMethodView.png" alt="Dice method selection" width="200"/>
+     <img src="images/creating_new_seeds/SeedGenerateDiceMethodView.png" alt="Dice method selection" width="250"/>
 </div>
 
 3. **Choose Length**: 
@@ -268,7 +268,7 @@ Generate seeds using physical dice for maximum security and provable randomness.
    - **24 words** requires 99 dice rolls (recommended)
 
 <div align="center">
-     <img src="images/creating_new_seeds/SeedMnemonicLengthDiceView.png" alt="Seed length for dice method" width="200"/>
+     <img src="images/creating_new_seeds/SeedMnemonicLengthDiceView.png" alt="Seed length for dice method" width="250"/>
 </div>
 
 4. **Prepare Physical Dice**: Use a standard 6-sided die
@@ -278,27 +278,27 @@ Generate seeds using physical dice for maximum security and provable randomness.
    - Select the corresponding number (1-6) on the screen by pressing the **Joystick**
    - Repeat for all required rolls
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsDiceEntropyEntryView.png" alt="Dice rolling instructions" width="200"/>
+     <img src="images/creating_new_seeds/ToolsDiceEntropyEntryView.png" alt="Dice rolling instructions" width="250"/>
 </div>
 
 6. **Complete All Rolls**: The progress indicator shows your completion status
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsDiceEntropyProgressView.png" alt="Dice roll progress indicator" width="200"/>
+     <img src="images/creating_new_seeds/ToolsDiceEntropyProgressView.png" alt="Dice roll progress indicator" width="250"/>
 </div>
 
 7. **Acknowledge Security Warning**: Press **"I Understand"** after reading the classified information warning
 <div align="center">
-     <img src="images/creating_new_seeds/SeedWarningView.png" alt="Security warning for dice-generated seed" width="200"/>
+     <img src="images/creating_new_seeds/SeedWarningView.png" alt="Security warning for dice-generated seed" width="250"/>
 </div>
 
 8. **Record Generated Words**: Write down all seed words in order
 <div align="center">
-     <img src="images/creating_new_seeds/SeedMnemonicEntryView.png" alt="Seed words display screen" width="200"/>
+     <img src="images/creating_new_seeds/SeedMnemonicEntryView.png" alt="Seed words display screen" width="250"/>
 </div>
 
 9. **Verify Your Backup**: Complete the verification process
 <div align="center">
-     <img src="images/creating_new_seeds/SeedBackupTestView.png" alt="Seed backup verification screen" width="200"/>
+     <img src="images/creating_new_seeds/SeedBackupTestView.png" alt="Seed backup verification screen" width="250"/>
 </div>
 
 > **🎲 Why Use Dice?** Physical dice provide true randomness that cannot be compromised by software vulnerabilities, hardware backdoors, or electromagnetic interference. This method gives you complete control over the entropy source.
@@ -312,16 +312,16 @@ This seed creation method allows you to generate a cryptographically secure seed
 1. **Navigate**: Main Menu → **Tools** → **"Calc 12th/24th word"**
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="200"/>
+     <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="250"/>
 </div>
 <div align="center">
-     <img src="images/creating_new_seeds/SeedGenerateCalcMethodView.png" alt="Dice method selection" width="200"/>
+     <img src="images/creating_new_seeds/SeedGenerateCalcMethodView.png" alt="Dice method selection" width="250"/>
 </div>
 
 2. **Choose Length**: Select **12 words** or **24 words**
 
 <div align="center">
-     <img src="images/creating_new_seeds/SeedMnemonicLengthCalcView.png" alt="Final word calculation seed length" width="200"/>
+     <img src="images/creating_new_seeds/SeedMnemonicLengthCalcView.png" alt="Final word calculation seed length" width="250"/>
 </div>
 
 3. **Enter Existing Words**: Use the on-screen keyboard with intelligent word suggestions:
@@ -330,18 +330,18 @@ This seed creation method allows you to generate a cryptographically secure seed
    - **Key B**: Select the highlighted suggested word
 
 <div align="center">
-     <img src="images/creating_new_seeds/WordEntry.png" alt="On-screen keyboard with word suggestions" width="200"/>
+     <img src="images/creating_new_seeds/WordEntry.png" alt="On-screen keyboard with word suggestions" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordEnterSeedView.png" alt="Entering existing seed words" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordEnterSeedView.png" alt="Entering existing seed words" width="250"/>
 </div>
 
 #### Entropy Methods for Final Word Calculation
 
 The system provides three different entropy sources to calculate the final word, ensuring cryptographic security:
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordFinalizePromptView.png" alt="Final seed word" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordFinalizePromptView.png" alt="Final seed word" width="250"/>
 </div>
 
 **🪙 Coin Flip Entropy Method**
@@ -350,13 +350,13 @@ The system provides three different entropy sources to calculate the final word,
 - This method provides 7 bits of entropy for the final word calculation
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordCoinFlipsView.png" alt="Coin flip entropy interface" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordCoinFlipsView.png" alt="Coin flip entropy interface" width="250"/>
 </div>
 
 - The system displays your binary string and calculates the checksum
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordCoinFlipResultView.png" alt="Coin flip result display" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordCoinFlipResultView.png" alt="Coin flip result display" width="250"/>
 </div>
 
 **📝 Word Selection Entropy Method**
@@ -364,7 +364,7 @@ The system provides three different entropy sources to calculate the final word,
 - The selected word provides the entropy bits needed for final word calculation
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordWordEntropyView.png" alt="Word selection entropy method" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordWordEntropyView.png" alt="Word selection entropy method" width="250"/>
 </div>
 
 **🔢 Finalize with Zeros Method**
@@ -372,7 +372,7 @@ The system provides three different entropy sources to calculate the final word,
 - This is the simplest method but still produces a valid final word
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordZerosMethodView.png" alt="Zeros method selection" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordZerosMethodView.png" alt="Zeros method selection" width="250"/>
 </div>
 
 #### Final Word Display and Completion
@@ -382,7 +382,7 @@ The system provides three different entropy sources to calculate the final word,
 - Displays the entropy source used and checksum calculation
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordShowFinalWordView.png" alt="Final word calculation screen" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordShowFinalWordView.png" alt="Final word calculation screen" width="250"/>
 </div>
 
 **Completion Screen**
@@ -390,7 +390,7 @@ The system provides three different entropy sources to calculate the final word,
 - Your seed is now ready for backup and use
 
 <div align="center">
-     <img src="images/creating_new_seeds/ToolsCalcFinalWordDoneView.png" alt="Final word calculation completion" width="200"/>
+     <img src="images/creating_new_seeds/ToolsCalcFinalWordDoneView.png" alt="Final word calculation completion" width="250"/>
 </div>
 
 > **📚 Technical Note**: The final word in any BIP39 seed contains both entropy bits and checksum bits. The checksum ensures the seed phrase is mathematically valid and helps detect transcription errors.
@@ -407,18 +407,18 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
 
 1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"**
 <div align="center">
-     <img src="images/loading_existing_seeds/SeedsOptionSelectView.png" alt="Tools menu selection" width="200"/>
+     <img src="images/loading_existing_seeds/SeedsOptionSelectView.png" alt="Tools menu selection" width="250"/>
 </div>
 <div align="center">
-     <img src="images/loading_existing_seeds/LoadASeedMainOptionSelectView.png" alt="Load seed menu" width="200"/>
+     <img src="images/loading_existing_seeds/LoadASeedMainOptionSelectView.png" alt="Load seed menu" width="250"/>
 </div>
 
 2. **Choose Length**: Select **"Enter 12-word seed"** or **"Enter 24-word seed"**
 <div align="center">
-     <img src="images/loading_existing_seeds/LoadASeedMainMenuView.png" alt="Manual entry seed length selection" width="200"/>
+     <img src="images/loading_existing_seeds/LoadASeedMainMenuView.png" alt="Manual entry seed length selection" width="250"/>
 </div>
 <div align="center">
-     <img src="images/loading_existing_seeds/SeedMnemonicLengthView.png" alt="Manual entry seed length selection" width="200"/>
+     <img src="images/loading_existing_seeds/SeedMnemonicLengthView.png" alt="Manual entry seed length selection" width="250"/>
 </div>
 
 3. **Enter Each Word**: 
@@ -429,12 +429,12 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
    - **Key B**: Select the highlighted suggested word
 
 <div align="center">
-     <img src="images/loading_existing_seeds/SeedWordEnterView.png" alt="Seed word entry in progress" width="200"/>
+     <img src="images/loading_existing_seeds/SeedWordEnterView.png" alt="Seed word entry in progress" width="250"/>
 </div>
 
 4. **Review Seed Fingerprint**: Check the unique identifier on the "Finalize Seed" screen
 <div align="center">
-     <img src="images/loading_existing_seeds/SeedFinalizeView.png" alt="Seed finalization screen with fingerprint" width="200"/>
+     <img src="images/loading_existing_seeds/SeedFinalizeView.png" alt="Seed finalization screen with fingerprint" width="250"/>
 </div>
 
 5. **Complete Loading**: 
@@ -452,31 +452,27 @@ Quickly and securely load seeds from SeedQR codes - a compact QR code format spe
 1. **Navigate**: Main Menu → **Scan**
 
 <div align="center">
-     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu highlighting Scan option" width="300"/>
+     <img src="images/loading_existing_seeds/MainMenuView.png" alt="Main menu highlighting Scan option" width="250"/>
 </div>
 
 2. **Position QR Code**: Point the camera at your SeedQR code
 
 <div align="center">
-     <img src="images/seed_views/SeedQRScan.png" alt="SeedQR scanning interface" width="300"/>
+     <img src="images/loading_existing_seeds/SeedQRScan.png" alt="SeedQR scanning interface" width="250"/>
 </div>
 
 3. **Wait for Recognition**: The device will automatically detect and process valid SeedQR codes
 
-<div align="center">
-     <img src="images/seed_views/SeedQRDetectedView.png" alt="SeedQR successfully detected" width="300"/>
-</div>
-
 4. **Review Details**: Check the seed information on the "Finalize Seed" screen
 
 <div align="center">
-     <img src="images/seed_views/SeedFinalizeView.png" alt="SeedQR finalization screen" width="300"/>
+     <img src="images/loading_existing_seeds/SeedFinalizeView.png" alt="SeedQR finalization screen" width="250"/>
 </div>
 
 5. **Handle Errors**: If you see "Unknown QR Type", the QR code format isn't recognized
 
 <div align="center">
-     <img src="images/misc_error_views/ScanInvalidQRTypeView.png" alt="Unknown QR type error message" width="300"/>
+     <img src="images/loading_existing_seeds/ScanInvalidQRTypeView.png" alt="Unknown QR type error message" width="250"/>
 </div>
 
 6. **Complete Loading**: Select **"Done"** to load the seed
@@ -492,38 +488,40 @@ Enhance your seed security with an optional passphrase. This creates an entirely
 1. **Access Passphrase Entry**: From the "Finalize Seed" screen, select **"BIP-39 Passphrase"**
 
 <div align="center">
-     <img src="images/seed_views/SeedFinalizeView.png" alt="Accessing passphrase entry from finalize screen" width="300"/>
+     <img src="images/loading_existing_seeds/BIP-39PassphraseSelectView.png" alt="Accessing passphrase entry from finalize screen" width="250"/>
 </div>
 
 2. **Enter Your Passphrase**: Use the on-screen keyboard with multiple character sets:
    - **Default Mode**: Lowercase letters (a-z)
 
 <div align="center">
-     <img src="images/seed_views/SeedAddPassphraseView_lowercase.png" alt="Passphrase entry screen - lowercase" width="300"/>
+     <img src="images/loading_existing_seeds/SeedAddPassphraseView_lowercase.png" alt="Passphrase entry screen - lowercase" width="250"/>
 </div>
 
    - **Key A**: Switch to uppercase letters (A-Z)
 
 <div align="center">
-     <img src="images/seed_views/SeedAddPassphraseView_uppercase.png" alt="Passphrase entry screen - uppercase" width="300"/>
+     <img src="images/loading_existing_seeds/SeedAddPassphraseView_uppercase.png" alt="Passphrase entry screen - uppercase" width="250"/>
 </div>
 
    - **Key B**: Access numbers (0-9) and symbols
 
 <div align="center">
-     <img src="images/seed_views/SeedAddPassphraseView_symbols.png" alt="Passphrase entry screen - symbols and numbers" width="300"/>
+     <img src="images/loading_existing_seeds/SeedAddPassphraseView_digits.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
+</div>
+<div align="center">
+     <img src="images/loading_existing_seeds/SeedAddPassphraseView_symbols_1.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
+</div>
+<div align="center">
+     <img src="images/loading_existing_seeds/SeedAddPassphraseView_symbols_2.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
 </div>
 
 3. **Review Your Entry**: Double-check your passphrase for accuracy
 
-<div align="center">
-     <img src="images/seed_views/SeedPassphraseReviewView.png" alt="Passphrase review screen" width="300"/>
-</div>
-
 4. **Confirm or Edit**: Select **"Done"** to confirm, or make corrections if needed
 
 <div align="center">
-     <img src="images/seed_views/SeedWithPassphraseFinalizeView.png" alt="Final seed with passphrase confirmation" width="300"/>
+     <img src="images/loading_existing_seeds/SeedPassphraseReviewView.png" alt="Passphrase review screen" width="250"/>
 </div>
 
 > **🔐 Critical Security Note**: A BIP-39 passphrase creates an entirely different wallet from the same seed words. You must store your passphrase separately from your seed words. Losing the passphrase means losing access to that wallet forever.
