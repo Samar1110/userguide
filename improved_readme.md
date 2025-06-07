@@ -127,7 +127,7 @@ The WaveShare LCD Hat provides the following controls:
 3. **Dismiss Initial Notification**: Press any key (A, B, or C) to dismiss the "You can remove the SD card now" message
 
 <div align="center">
-     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu after successful boot" width="300"/>
+     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu after successful boot" width="250"/>
 </div>
 
 > **💡 Pro Tip**: Once the operating system loads into RAM, you can safely remove the SD card. This ensures that seed phrases cannot be accidentally stored on the device, maintaining air-gapped security.
@@ -539,7 +539,7 @@ Create watch-only wallets in your favorite Bitcoin software by exporting your pu
 1. **Access Export**: From the seed's main screen, select **"Export Xpub"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed main menu with Export Xpub option" width="300"/>
+     <img src="images/working_with_load_seeds/SeedMenuView.png" alt="Seed main menu with Export Xpub option" width="250"/>
 </div>
 
 2. **Choose Signature Type**: 
@@ -547,7 +547,7 @@ Create watch-only wallets in your favorite Bitcoin software by exporting your pu
    - **"Multisig"** - For multi-signature wallets requiring multiple devices
 
 <div align="center">
-     <img src="images/seed_views/SeedExportXpubSigTypeView.png" alt="Xpub signature type selection" width="300"/>
+     <img src="images/working_with_load_seeds/SeedExportXpubSigTypeView.png" alt="Xpub signature type selection" width="250"/>
 </div>
 
 3. **Select Script Type**:
@@ -556,28 +556,29 @@ Create watch-only wallets in your favorite Bitcoin software by exporting your pu
    - **Taproot** - For advanced privacy and smart contract features
 
 <div align="center">
-     <img src="images/seed_views/SeedExportXpubScriptTypeView.png" alt="Script type selection for Xpub" width="300"/>
+     <img src="images/working_with_load_seeds/SeedExportXpubScriptTypeView.png" alt="Script type selection for Xpub" width="250"/>
 </div>
 
 4. **Choose Wallet Software**: Select your preferred wallet from supported options
 
 <div align="center">
-     <img src="images/seed_views/SeedExportXpubCoordinatorView.png" alt="Wallet software selection" width="300"/>
+     <img src="images/working_with_load_seeds/SeedExportXpubCoordinatorView.png" alt="Wallet software selection" width="250"/>
 </div>
 
 5. **Acknowledge Privacy Warning**: Press **"I Understand"** after reading the xpub privacy implications
-
 <div align="center">
-     <img src="images/seed_views/SeedExportXpubWarningView.png" alt="Xpub privacy warning screen" width="300"/>
+     <img src="images/working_with_load_seeds/SeedExportXpubWarningView.png" alt="Xpub privacy warning screen" width="250"/>
 </div>
 
 6. **Generate QR Code**: Select **"Export XPub"** to display the shareable QR code
-
 <div align="center">
-     <img src="images/seed_views/SeedExportXpubDetailsView.png" alt="Generated Xpub QR code" width="300"/>
+     <img src="images/working_with_load_seeds/SeedExportXpubDetailsView.png" alt="Generated Xpub QR code" width="250"/>
 </div>
 
 7. **Import to Wallet**: Scan the QR code with your chosen wallet software
+<div align="center">
+     <img src="images/working_with_load_seeds/SeedExportXpubQRView.png" alt="Generated Xpub QR code" width="250"/>
+</div>
 
 > **🔒 Privacy Warning**: Your xpub (extended public key) reveals all your Bitcoin addresses and transaction history. Only share it with wallet software you trust, and never post it publicly online.
 
@@ -590,25 +591,25 @@ View and share your Bitcoin receiving addresses for accepting payments.
 1. **Navigate**: From seed main screen → **"Address Explorer"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Address Explorer option" width="300"/>
+     <img src="images/working_with_load_seeds/SeedMenuAddressExplorerSelectView.png" alt="Seed menu with Address Explorer option" width="250"/>
 </div>
 
 2. **Select Script Type**: Choose from available address types
 
 <div align="center">
-     <img src="images/tools_views/ToolsAddressExplorerSelectSourceView.png" alt="Address explorer script type selection" width="300"/>
+     <img src="images/working_with_load_seeds/AddressExplorerSelectSourceView.png" alt="Address explorer script type selection" width="250"/>
 </div>
 
 3. **View Address List**: Select **"Receive addresses"** to see your addresses (displays 10 at a time)
 
 <div align="center">
-     <img src="images/tools_views/ToolsAddressExplorerReceiveAddressesView.png" alt="Receive addresses list view" width="300"/>
+     <img src="images/working_with_load_seeds/AddressExplorerReceiveAddressesView.png" alt="Receive addresses list view" width="250"/>
 </div>
 
 4. **Share Specific Address**: Select any address to display its individual QR code for sharing
 
 <div align="center">
-     <img src="images/tools_views/ToolsAddressExplorerAddressListView.png" alt="Individual address QR code display" width="300"/>
+     <img src="images/working_with_load_seeds/AddressExplorerAddressListView.png" alt="Individual address QR code display" width="250"/>
 </div>
 
 5. **Navigate Pages**: Use navigation controls to view additional addresses if needed
@@ -624,29 +625,29 @@ Access your seed words for backup verification or recovery purposes.
 1. **Navigate**: From seed main screen → **"Backup Seed"** → **"View Seed Words"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Backup Seed option" width="300"/>
+     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Backup Seed option" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/seed_views/SeedBackupMenuView.png" alt="Backup seed submenu" width="300"/>
+     <img src="images/seed_views/SeedBackupMenuView.png" alt="Backup seed submenu" width="250"/>
 </div>
 
 2. **Acknowledge Security Warning**: Press **"I Understand"** for the classified information warning
 
 <div align="center">
-     <img src="images/seed_views/SeedWarningView.png" alt="Security warning before viewing seed words" width="300"/>
+     <img src="images/seed_views/SeedWarningView.png" alt="Security warning before viewing seed words" width="250"/>
 </div>
 
 3. **Review All Words**: View your complete seed phrase (displayed 4 words at a time)
 
 <div align="center">
-     <img src="images/seed_views/SeedWordsView.png" alt="Seed words display screen" width="300"/>
+     <img src="images/seed_views/SeedWordsView.png" alt="Seed words display screen" width="250"/>
 </div>
 
 4. **Optional Verification**: Complete backup verification process if prompted
 
 <div align="center">
-     <img src="images/seed_views/SeedBackupTestView.png" alt="Optional seed backup verification" width="300"/>
+     <img src="images/seed_views/SeedBackupTestView.png" alt="Optional seed backup verification" width="250"/>
 </div>
 
 5. **Exit Securely**: Ensure you're in a private location before viewing
@@ -662,7 +663,7 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 1. **Navigate**: From seed main screen → **"Backup Seed"** → **"Export as SeedQR"**
 
 <div align="center">
-     <img src="images/seed_views/SeedBackupMenuView.png" alt="Backup menu with SeedQR export option" width="300"/>
+     <img src="images/seed_views/SeedBackupMenuView.png" alt="Backup menu with SeedQR export option" width="250"/>
 </div>
 
 2. **Choose Format**: 
@@ -670,31 +671,31 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
    - **"Compact: 21x21"** - Smaller, requires more precise scanning
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRFormatView.png" alt="SeedQR format selection" width="300"/>
+     <img src="images/seed_views/SeedTranscribeSeedQRFormatView.png" alt="SeedQR format selection" width="250"/>
 </div>
 
 3. **Acknowledge Warning**: Confirm that you understand SeedQR contains your complete private key
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRWarningView.png" alt="SeedQR security warning" width="300"/>
+     <img src="images/seed_views/SeedTranscribeSeedQRWarningView.png" alt="SeedQR security warning" width="250"/>
 </div>
 
 4. **Review Complete QR**: View the full QR code, then select **"Begin"** to examine zoomed sections
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRWholeQRView_12_Compact.png" alt="Complete SeedQR code display" width="300"/>
+     <img src="images/seed_views/SeedTranscribeSeedQRWholeQRView_12_Compact.png" alt="Complete SeedQR code display" width="250"/>
 </div>
 
 5. **Navigate All Sections**: Use the joystick to review every part of the QR code for accuracy
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRZoomedView.png" alt="Zoomed SeedQR transcription interface" width="300"/>
+     <img src="images/seed_views/SeedTranscribeSeedQRZoomedView.png" alt="Zoomed SeedQR transcription interface" width="250"/>
 </div>
 
 6. **Complete Process**: Press any key when you've finished reviewing
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRCompleteView.png" alt="SeedQR transcription completion" width="300"/>
+     <img src="images/seed_views/SeedTranscribeSeedQRCompleteView.png" alt="SeedQR transcription completion" width="250"/>
 </div>
 
 > **⚠️ Security Equivalent**: SeedQR codes are functionally equivalent to your written seed backup. Store them with the same security measures - in fireproof safes, safety deposit boxes, or other secure locations.
@@ -710,19 +711,19 @@ Securely approve and sign Bitcoin transactions created by your wallet software. 
 1. **Access Signing**: From your seed's main screen, select **"Scan PSBT"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Scan PSBT option" width="300"/>
+     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Scan PSBT option" width="250"/>
 </div>
 
 2. **Scan Transaction QR**: Point the camera at the transaction QR code generated by your wallet software
 
 <div align="center">
-     <img src="images/PSBTViews/psbt_scan.png" alt="PSBT scanning interface" width="300"/>
+     <img src="images/PSBTViews/psbt_scan.png" alt="PSBT scanning interface" width="250"/>
 </div>
 
 3. **Review Transaction Details**: Carefully verify ALL information displayed
 
 <div align="center">
-     <img src="images/psbt_views/PSBTOverviewView.png" alt="Transaction details review screen" width="300"/>
+     <img src="images/psbt_views/PSBTOverviewView.png" alt="Transaction details review screen" width="250"/>
 </div>
 
    **Critical Items to Verify:**
@@ -734,31 +735,31 @@ Securely approve and sign Bitcoin transactions created by your wallet software. 
 4. **Review Fee Details**: Check the transaction fee breakdown
 
 <div align="center">
-     <img src="images/psbt_views/PSBTFeeView.png" alt="PSBT fee details screen" width="300"/>
+     <img src="images/psbt_views/PSBTFeeView.png" alt="PSBT fee details screen" width="250"/>
 </div>
 
 5. **Select Signing Seed**: Choose the appropriate seed if multiple are loaded
 
 <div align="center">
-     <img src="images/psbt_views/PSBTSelectSeedView.png" alt="Seed selection for PSBT signing" width="300"/>
+     <img src="images/psbt_views/PSBTSelectSeedView.png" alt="Seed selection for PSBT signing" width="250"/>
 </div>
 
 6. **Authorize Signing**: Confirm you want to sign this transaction
 
 <div align="center">
-     <img src="images/psbt_views/PSBTSigningView.png" alt="PSBT signing authorization" width="300"/>
+     <img src="images/psbt_views/PSBTSigningView.png" alt="PSBT signing authorization" width="250"/>
 </div>
 
 7. **Wait for Completion**: Allow time for the "Signing Complete" message
 
 <div align="center">
-     <img src="images/psbt_views/PSBTSigningCompleteView.png" alt="PSBT signing in progress" width="300"/>
+     <img src="images/psbt_views/PSBTSigningCompleteView.png" alt="PSBT signing in progress" width="250"/>
 </div>
 
 8. **Get Signed Transaction**: View the signed PSBT QR code
 
 <div align="center">
-     <img src="images/psbt_views/PSBTFinalizeView.png" alt="Completed signed PSBT QR code" width="300"/>
+     <img src="images/psbt_views/PSBTFinalizeView.png" alt="Completed signed PSBT QR code" width="250"/>
 </div>
 
 9. **Broadcast Transaction**: Scan the resulting signed QR code back into your wallet software
@@ -779,19 +780,19 @@ Confirm that a specific Bitcoin address was actually generated by your loaded se
 1. **Navigate**: From seed main screen → **"Address Explorer"** → **"Verify Address"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with address verification option" width="300"/>
+     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with address verification option" width="250"/>
 </div>
 
 2. **Enter Address**: Use the on-screen keyboard to input the Bitcoin address you want to verify
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationEntryView.png" alt="Address verification entry screen" width="300"/>
+     <img src="images/verification_views/AddressVerificationEntryView.png" alt="Address verification entry screen" width="250"/>
 </div>
 
 3. **Select Script Type**: Choose the address format type (Native Segwit, Nested Segwit, etc.)
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationScriptTypeView.png" alt="Script type selection for verification" width="300"/>
+     <img src="images/verification_views/AddressVerificationScriptTypeView.png" alt="Script type selection for verification" width="250"/>
 </div>
 
 4. **Review Results**: 
@@ -799,13 +800,13 @@ Confirm that a specific Bitcoin address was actually generated by your loaded se
    - ❌ **Address Not Found** - The address was NOT generated by your seed
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationResultView.png" alt="Address verification results screen" width="300"/>
+     <img src="images/verification_views/AddressVerificationResultView.png" alt="Address verification results screen" width="250"/>
 </div>
 
 5. **Check Derivation Path**: If found, review the derivation path details
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationDetailsView.png" alt="Address derivation path details" width="300"/>
+     <img src="images/verification_views/AddressVerificationDetailsView.png" alt="Address derivation path details" width="250"/>
 </div>
 
 > **🚨 Security Use Case**: Use this feature to verify that addresses provided by exchanges, merchants, or other parties were actually generated by your seed before sending funds. Never send Bitcoin to unverified addresses.
@@ -819,19 +820,19 @@ Safely remove the current seed from memory when you're finished with your operat
 1. **Navigate**: From seed main screen → **"Discard Seed"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Discard Seed option" width="300"/>
+     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Discard Seed option" width="250"/>
 </div>
 
 2. **Confirm Discard**: Select **"Yes, Discard Seed"** to remove the seed from memory
 
 <div align="center">
-     <img src="images/seed_views/SeedDiscardView.png" alt="Seed discard confirmation screen" width="300"/>
+     <img src="images/seed_views/SeedDiscardView.png" alt="Seed discard confirmation screen" width="250"/>
 </div>
 
 3. **Return to Main Menu**: You'll be returned to the main menu with no seed loaded
 
 <div align="center">
-     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu after seed discard" width="300"/>
+     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu after seed discard" width="250"/>
 </div>
 
 > **🧹 Memory Clearing**: Discarding a seed completely removes it from device memory. This is a security best practice when switching between different seeds or when finished with operations.
@@ -851,7 +852,7 @@ Set your preferred language for the SeedSigner interface.
 3. **Confirm Selection**: The interface will update to use your chosen language
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_locale.png" alt="Language selection menu" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_locale.png" alt="Language selection menu" width="250"/>
 </div>
 
 ### Persistent Settings
@@ -866,7 +867,7 @@ Configure whether your settings are saved permanently or reset on each boot.
    - **"Disabled"** - Temporary settings only (resets on power cycle)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_persistent_settings.png" alt="Persistent settings toggle" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_persistent_settings.png" alt="Persistent settings toggle" width="250"/>
 </div>
 
 > **🔒 Security Consideration**: Enabled persistent settings provide convenience but store configuration data on the SD card. Disabled persistent settings provide maximum security but require reconfiguring preferences after each boot.
@@ -886,7 +887,7 @@ Enable or disable support for specific wallet applications. This customizes QR c
    - ✅ **Keeper** - Inheritance planning wallet
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_coordinators.png" alt="Wallet software compatibility settings" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_coordinators.png" alt="Wallet software compatibility settings" width="250"/>
 </div>
 
 ### Denomination Display
@@ -900,7 +901,7 @@ Configure how Bitcoin amounts are displayed on the device.
 3. **Default Setting**: Threshold at 0.01 is selected by default
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_denomination.png" alt="Denomination display options" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_denomination.png" alt="Denomination display options" width="250"/>
 </div>
 
 ### Hardware I/O Testing
@@ -914,7 +915,7 @@ Verify that all device components are functioning correctly.
 3. **Verify Components**: Ensure all buttons, display, and camera are working properly
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_io_test.png" alt="I/O testing interface" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_io_test.png" alt="I/O testing interface" width="250"/>
 </div>
 
 ### Donation Information
@@ -928,7 +929,7 @@ Access donation details to support SeedSigner development.
 3. **Support Development**: Consider contributing to the project
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_donate.png" alt="Donation information screen" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_donate.png" alt="Donation information screen" width="250"/>
 </div>
 
 ## 🔧 Advanced Settings
@@ -944,7 +945,7 @@ Choose which Bitcoin network to use for addresses and transactions.
    - **Regtest** - Local regression testing network
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_network.png" alt="Bitcoin network selection" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_network.png" alt="Bitcoin network selection" width="250"/>
 </div>
 
 > **⚠️ Network Warning**: Always ensure you're using Mainnet for real Bitcoin transactions. Testnet and Regtest are for development purposes only.
@@ -960,7 +961,7 @@ Adjust the density of generated QR codes to balance size and scannability.
    - **High** - Smaller, more data-dense QR codes
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_qr_density.png" alt="QR code density options" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_qr_density.png" alt="QR code density options" width="250"/>
 </div>
 
 ### Xpub Export Configuration
@@ -975,7 +976,7 @@ Control extended public key export functionality.
    - **Disabled** - Disable xpub export functionality
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_xpub_export.png" alt="Xpub export configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_xpub_export.png" alt="Xpub export configuration" width="250"/>
 </div>
 
 ### Signature Types Configuration
@@ -991,7 +992,7 @@ Configure which signature types are supported by the device.
 3. **Default Setting**: Both Single Sig and Multisig are selected by default
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_sig_types.png" alt="Signature types configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_sig_types.png" alt="Signature types configuration" width="250"/>
 </div>
 
 ### Script Types Configuration
@@ -1009,7 +1010,7 @@ Define which Bitcoin script types are supported on the device.
    - **Custom Derivation** - Custom derivation paths
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_script_types.png" alt="Script types configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_script_types.png" alt="Script types configuration" width="250"/>
 </div>
 
 ### Show Xpub Details
@@ -1024,7 +1025,7 @@ Control whether extended public key details are displayed.
    - **Disabled** - Hide xpub details
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_show_xpub.png" alt="Xpub details display setting" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_show_xpub.png" alt="Xpub details display setting" width="250"/>
 </div>
 
 ### BIP-39 Passphrase Configuration
@@ -1038,7 +1039,7 @@ Control how the device handles BIP-39 passphrases.
    - **Required** - Every seed must have a passphrase
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_passphrase.png" alt="Passphrase configuration options" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_passphrase.png" alt="Passphrase configuration options" width="250"/>
 </div>
 
 ### Camera Rotation
@@ -1053,7 +1054,7 @@ Adjust camera orientation to match your device setup.
    - **270 degrees** - Quarter turn counter-clockwise
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_camera_rotation.png" alt="Camera rotation settings" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_camera_rotation.png" alt="Camera rotation settings" width="250"/>
 </div>
 
 ### Compact SeedQR
@@ -1068,7 +1069,7 @@ Configure SeedQR compression settings for more efficient QR codes.
    - **Disabled** - Use standard SeedQR format
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_compact_seedqr.png" alt="Compact SeedQR configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_compact_seedqr.png" alt="Compact SeedQR configuration" width="250"/>
 </div>
 
 ### BIP-85 Child Seeds
@@ -1083,7 +1084,7 @@ Enable support for BIP-85 deterministic child seed generation.
    - **Disabled** - Disable BIP-85 functionality (default)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_bip85.png" alt="BIP-85 child seeds configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_bip85.png" alt="BIP-85 child seeds configuration" width="250"/>
 </div>
 
 ### Electrum Seeds
@@ -1098,7 +1099,7 @@ Configure support for Electrum-style seed phrases.
    - **Disabled** - Standard BIP-39 only (default)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_electrum_seeds.png" alt="Electrum seeds configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_electrum_seeds.png" alt="Electrum seeds configuration" width="250"/>
 </div>
 
 ### Message Signing
@@ -1113,7 +1114,7 @@ Enable cryptographic message signing functionality.
    - **Disabled** - Disable message signing (default)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_message_signing.png" alt="Message signing configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_message_signing.png" alt="Message signing configuration" width="250"/>
 </div>
 
 ### Privacy Warnings
@@ -1128,7 +1129,7 @@ Control display of privacy-related warnings and notifications.
    - **Disabled** - Hide privacy warnings
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_privacy_warnings.png" alt="Privacy warnings configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_privacy_warnings.png" alt="Privacy warnings configuration" width="250"/>
 </div>
 
 ### Dire Warnings
@@ -1143,7 +1144,7 @@ Configure display of critical security warnings.
    - **Disabled** - Hide dire warnings
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_dire_warnings.png" alt="Dire warnings configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_dire_warnings.png" alt="Dire warnings configuration" width="250"/>
 </div>
 
 ### Partner Logos
@@ -1158,7 +1159,7 @@ Control display of partner and wallet provider logos.
    - **Disabled** - Hide partner logos
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_partner_logos.png" alt="Partner logos configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_partner_logos.png" alt="Partner logos configuration" width="250"/>
 </div>
 
 ## 🖥️ Hardware Settings
@@ -1176,7 +1177,7 @@ Configure the display driver for your specific hardware setup.
    - **ili9341 320x240 (beta)** - Alternative display driver (beta)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_display_type.png" alt="Display type configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_display_type.png" alt="Display type configuration" width="250"/>
 </div>
 
 ### Color Inversion
@@ -1191,7 +1192,7 @@ Invert display colors for different viewing preferences or hardware configuratio
    - **Disabled** - Standard color display
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_invert_colors.png" alt="Color inversion configuration" width="300"/>
+     <img src="images/settings_views/SettingsEntryUpdateSelectionView_invert_colors.png" alt="Color inversion configuration" width="250"/>
 </div>
 
 Test your SeedSigner's hardware components to ensure everything is functioning properly.
@@ -1201,7 +1202,7 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 1. **Navigate**: Main Menu → **Settings** → **"Hardware I/O Test"**
 
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestView.png" alt="Hardware I/O test menu" width="300"/>
+     <img src="images/settings_views/SettingsIOTestView.png" alt="Hardware I/O test menu" width="250"/>
 </div>
 
 2. **Test All Components**: The system will test each hardware element:
@@ -1210,27 +1211,27 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 - Press each button (A, B, C) and joystick directions when prompted
 
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestButtonsView.png" alt="Button testing interface" width="300"/>
+     <img src="images/settings_views/SettingsIOTestButtonsView.png" alt="Button testing interface" width="250"/>
 </div>
 
 **Display Test**
 - Visual patterns will display to verify screen functionality
 
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestDisplayView.png" alt="Display testing patterns" width="300"/>
+     <img src="images/settings_views/SettingsIOTestDisplayView.png" alt="Display testing patterns" width="250"/>
 </div>
 
 **Camera Test**
 - Live camera feed will display to verify camera operation
 
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestCameraView.png" alt="Camera testing interface" width="300"/>
+     <img src="images/settings_views/SettingsIOTestCameraView.png" alt="Camera testing interface" width="250"/>
 </div>
 
 3. **Review Results**: Check that all components passed their tests
 
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestResultsView.png" alt="Hardware test results" width="300"/>
+     <img src="images/settings_views/SettingsIOTestResultsView.png" alt="Hardware test results" width="250"/>
 </div>
 
 > **🔧 Troubleshooting Use**: Run hardware tests if you're experiencing issues with button responses, display problems, or camera malfunctions. This helps isolate hardware vs. software issues.
