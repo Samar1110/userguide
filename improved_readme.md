@@ -588,33 +588,100 @@ View and share your Bitcoin receiving addresses for accepting payments.
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: From seed main screen → **"Address Explorer"**
+**Navigation Path**: `Home → Seeds → [Select Seed] → Address Explorer`
 
 <div align="center">
-     <img src="images/working_with_load_seeds/SeedMenuAddressExplorerSelectView.png" alt="Seed menu with Address Explorer option" width="250"/>
+     <img src="images/working_with_load_seeds/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/SavedSeedSelectView.png" alt="Address format selection" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/AddressExplorerSelectView.png" alt="Address format selection" width="250"/>
 </div>
 
-2. **Select Script Type**: Choose from available address types
+
+**Process Flow**:
+1. **Script Type Selection** → Choose your preferred address format
+   
+<div align="center">
+     <img src="images/working_with_load_seeds/ScriptTypeOptions.png" alt="Address format selection" width="250"/>
+</div>
+
+2. **Address Generation** → Select "Receive addresses" 
 
 <div align="center">
-     <img src="images/working_with_load_seeds/AddressExplorerSelectSourceView.png" alt="Address explorer script type selection" width="250"/>
+     <img src="images/working_with_load_seeds/ReceiveAddressOptionSelectView.png" alt="Receive addresses option" width="250"/>
 </div>
 
-3. **View Address List**: Select **"Receive addresses"** to see your addresses (displays 10 at a time)
+3. **Address List** → Browse available addresses (paginated: 10 per view)
 
 <div align="center">
-     <img src="images/working_with_load_seeds/AddressExplorerReceiveAddressesView.png" alt="Receive addresses list view" width="250"/>
+     <img src="images/working_with_load_seeds/AddressExplorerReceiverAddressListView.png" alt="Paginated address list" width="250"/>
 </div>
 
-4. **Share Specific Address**: Select any address to display its individual QR code for sharing
+4. **QR Code Generation** → Tap any address for shareable QR code
 
 <div align="center">
-     <img src="images/working_with_load_seeds/AddressExplorerAddressListView.png" alt="Individual address QR code display" width="250"/>
+     <img src="images/working_with_load_seeds/AddressExplorerQRView.png" alt="Address QR code for sharing" width="250"/>
 </div>
-
-5. **Navigate Pages**: Use navigation controls to view additional addresses if needed
 
 > **💡 Best Practice**: Generate a new receiving address for each transaction to maintain privacy. Bitcoin addresses can be reused but it's not recommended for privacy reasons.
+
+### Generate Change Addresses
+
+View addresses used for transaction change return
+
+#### Complete Step-by-Step Process with All Screenshots
+
+**Navigation Path**: `Home → Seeds → [Select Seed] → Address Explorer`
+<div align="center">
+     <img src="images/working_with_load_seeds/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/SavedSeedSelectView.png" alt="Address format selection" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/AddressExplorerSelectView.png" alt="Address format selection" width="250"/>
+</div>
+
+**Process Flow**:
+1. **Script Type Selection** → Choose your preferred address format
+
+<div align="center">
+     <img src="images/working_with_load_seeds/ScriptTypeOptions.png" alt="Address format selection" width="250"/>
+</div>
+
+2. **Change Access** → Select "Change Address" instead of receive
+
+<div align="center">
+     <img src="images/working_with_load_seeds/ChangeAddressOptionSelectView.png" alt="Change address option" width="250"/>
+</div>
+
+3. **Address Management** → Browse change addresses (paginated: 10 per view)
+
+<div align="center">
+     <img src="images/working_with_load_seeds/AddressExplorerChangeAddressListView.png" alt="Change addresses list" width="250"/>
+</div>
+
+4. **QR Code Access** → Tap any address for QR code display
+
+<div align="center">
+     <img src="images/working_with_load_seeds/AddressExplorerQRView.png" alt="Address QR code for sharing" width="250"/>
+</div>
+
+#### Key Information
+
+**Address Types Available**:
+- Native Segwit (recommended)
+- Nested Segwit (compatibility)  
+- Taproot (advanced features)
+
+**Privacy Best Practice**: Use a fresh receiving address for each transaction
+
+**Technical Note**: Change addresses automatically handle transaction remainder funds
+
+>**💡 Best Practice**: Change addresses are automatically managed by your wallet - you typically don't need to manually generate or share them.
 
 ### View Seed Words
 
@@ -622,32 +689,38 @@ Access your seed words for backup verification or recovery purposes.
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: From seed main screen → **"Backup Seed"** → **"View Seed Words"**
+1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words `
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Backup Seed option" width="250"/>
+     <img src="images/working_with_load_seeds/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/SavedSeedSelectView.png" alt="Address format selection" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/seed_views/SeedBackupMenuView.png" alt="Backup seed submenu" width="250"/>
+     <img src="images/working_with_load_seeds/BackupSeedSelectView.png" alt="Backup seed submenu" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/ViewSeedWordsSelectView.png" alt="Backup seed submenu" width="250"/>
 </div>
 
 2. **Acknowledge Security Warning**: Press **"I Understand"** for the classified information warning
 
 <div align="center">
-     <img src="images/seed_views/SeedWarningView.png" alt="Security warning before viewing seed words" width="250"/>
+     <img src="images/working_with_load_seeds/ViewSeedWordsWarningView.png" alt="Security warning before viewing seed words" width="250"/>
 </div>
 
 3. **Review All Words**: View your complete seed phrase (displayed 4 words at a time)
 
 <div align="center">
-     <img src="images/seed_views/SeedWordsView.png" alt="Seed words display screen" width="250"/>
+     <img src="images/working_with_load_seeds/SeedWordsView.png" alt="Seed words display screen" width="250"/>
 </div>
 
-4. **Optional Verification**: Complete backup verification process if prompted
+4. **Optional Verification**: Complete backup verification process by selecting verify or else select skip to proceed
 
 <div align="center">
-     <img src="images/seed_views/SeedBackupTestView.png" alt="Optional seed backup verification" width="250"/>
+     <img src="images/working_with_load_seeds/SeedBackupTestView.png" alt="Optional seed backup verification" width="250"/>
 </div>
 
 5. **Exit Securely**: Ensure you're in a private location before viewing
@@ -660,10 +733,20 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: From seed main screen → **"Backup Seed"** → **"Export as SeedQR"**
+1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words `
 
 <div align="center">
-     <img src="images/seed_views/SeedBackupMenuView.png" alt="Backup menu with SeedQR export option" width="250"/>
+     <img src="images/working_with_load_seeds/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/SavedSeedSelectView.png" alt="Address format selection" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/working_with_load_seeds/BackupSeedSelectView.png" alt="Backup seed submenu" width="250"/>
+</div>
+<div align="center">
+     <img src="images/working_with_load_seeds/ExportAsSeedQRSelectView.png" alt="Backup seed submenu" width="250"/>
 </div>
 
 2. **Choose Format**: 
@@ -671,31 +754,58 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
    - **"Compact: 21x21"** - Smaller, requires more precise scanning
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRFormatView.png" alt="SeedQR format selection" width="250"/>
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRFormatView.png" alt="SeedQR format selection" width="250"/>
 </div>
 
 3. **Acknowledge Warning**: Confirm that you understand SeedQR contains your complete private key
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRWarningView.png" alt="SeedQR security warning" width="250"/>
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRWarningView.png" alt="SeedQR security warning" width="250"/>
 </div>
 
 4. **Review Complete QR**: View the full QR code, then select **"Begin"** to examine zoomed sections
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRWholeQRView_12_Compact.png" alt="Complete SeedQR code display" width="250"/>
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRWholeQRView_12_Standard.png" alt="Complete SeedQR code display" width="250"/>
 </div>
 
 5. **Navigate All Sections**: Use the joystick to review every part of the QR code for accuracy
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRZoomedView.png" alt="Zoomed SeedQR transcription interface" width="250"/>
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRZoomedView.png" alt="Zoomed SeedQR transcription interface" width="250"/>
 </div>
 
-6. **Complete Process**: Press any key when you've finished reviewing
+6. **Complete Review**: Press any key to proceed. You'll see two options:
+   - **"Confirm SeedQR"** - Verify the generated QR code is correct
+   - **"Done"** - Return to Seeds main screen
 
 <div align="center">
-     <img src="images/seed_views/SeedTranscribeSeedQRCompleteView.png" alt="SeedQR transcription completion" width="250"/>
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRConfirmQRPromptView.png" alt="SeedQR completion options" width="250"/>
+</div>
+
+   **If you select "Confirm SeedQR":**
+   - The device camera will open to scan the transcribed QR code
+   - Show the transcribed QR image to the camera for verification
+   - The system will confirm whether the correct image was captured
+
+<div align="center">
+     <img src="images/working_with_load_seeds/SeedQRCameraView.png" alt="Camera scanning transcribed QR code" width="250"/>
+</div>
+
+   **Success Message:**
+<div align="center">
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRConfirmSuccessView.png" alt="SeedQR verification success" width="250"/>
+</div>
+
+   **Failure Message:**
+<div align="center">
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRConfirmWrongSeedView.png" alt="SeedQR verification failure" width="250"/>
+</div>
+
+   **If you select "Done":**
+   - You'll be redirected back to the Seeds main screen
+<div align="center">
+     <img src="images/working_with_load_seeds/SeedTranscribeSeedQRDoneSelectView.png" alt="SeedQR verification failure" width="250"/>
 </div>
 
 > **⚠️ Security Equivalent**: SeedQR codes are functionally equivalent to your written seed backup. Store them with the same security measures - in fireproof safes, safety deposit boxes, or other secure locations.
