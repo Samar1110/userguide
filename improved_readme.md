@@ -9,6 +9,7 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 ## 📋 Table of Contents
 
 ### 🚀 Getting Started
+
 - [Hardware Components](#hardware-components)
 - [Initial Setup and Power On](#initial-setup-and-power-on)
 - [Navigation Basics](#navigation-basics)
@@ -16,6 +17,7 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 - [Restarting Your Device](#restarting-your-device)
 
 ### 🌱 Seed Management
+
 - **Creating New Seeds**
   - [Camera-Based Seed Generation](#camera-based-seed-generation)
   - [Dice-Based Seed Generation](#dice-based-seed-generation)
@@ -26,17 +28,20 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
   - [Adding BIP-39 Passphrase](#adding-bip-39-passphrase)
 
 ### 🔧 Working with Loaded Seeds
+
 - [Export Public Key (Xpub)](#export-public-key-xpub)
 - [Generate Receiving Addresses](#generate-receiving-addresses)
 - [View Seed Words](#view-seed-words)
 - [Create SeedQR Backup](#create-seedqr-backup)
 
 ### ✍️ Transactions & Verification
+
 - [Sign Bitcoin Transaction (PSBT)](#sign-bitcoin-transaction-psbt)
 - [Verify Address Ownership](#verify-address-ownership)
 - [Discard Loaded Seed](#discard-loaded-seed)
 
 ### ⚙️ Device Configuration
+
 - **Basic Settings**
   - [Language Configuration](#language-configuration)
   - [Persistent Settings](#persistent-settings)
@@ -67,6 +72,7 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
   - [Color Inversion](#color-inversion)
 
 ### 🔧 Support & Resources
+
 - [Troubleshooting](#-troubleshooting)
 - [Additional Resources](#-additional-resources)
 - [Security Considerations](#-security-considerations)
@@ -109,7 +115,8 @@ The WaveShare LCD Hat provides the following controls:
 | Key2 (B)       | Select highlighted option or confirm action |
 | Key3 (C)       | Select highlighted option or confirm action |
 
-**Important Navigation Notes**: 
+**Important Navigation Notes**:
+
 - All three keys (A, B, C) function identically for selection and confirmation
 - To go back to a previous screen, navigate to the back arrow/button using the joystick first, then press any key to activate it
 - The joystick center press may have different functions depending on the current screen context
@@ -142,12 +149,15 @@ The WaveShare LCD Hat provides the following controls:
 ### Powering Off Safely
 
 **Method 1: Proper Shutdown**
+
 1. Navigate to the **power icon** (top right of main menu)
+
 <div align="center">
      <img src="images/getting_started/PowerIconSelectedScreen.png" alt="Power icon select menu screen" width="250"/>
 </div>
 
 2. Press any key to open the power menu
+
 <div align="center">
      <img src="images/getting_started/PowerOptionsView.png" alt="Power option menu screen" width="250"/>
 </div>
@@ -164,12 +174,14 @@ You can safely unplug the device at any time. SeedSigner stores nothing permanen
 ### Restarting Your Device
 
 1. **Navigate to Power Menu**: Use the joystick to navigate to the **power icon** in the top-right corner of the home screen
+
 <div align="center">
      <img src="images/getting_started/PowerIconSelectedScreen.png" alt="Power icon select menu screen" width="250"/>
 </div>
 
 2. **Open Power Options**: Press any key (A, B, or C) to access the power menu
 3. **Select Restart**: Choose **"Restart"** from the available options
+
 <div align="center">
      <img src="images/getting_started/PowerOptionsView.png" alt="Power option menu screen" width="250"/>
 </div>
@@ -204,7 +216,7 @@ Create truly random seeds using environmental entropy captured by the camera. Th
      <img src="images/creating_new_seeds/ToolsMenuView.png" alt="New seed method selection" width="250"/>
 </div>
 
-3. **Capture Entropy**: 
+3. **Capture Entropy**:
    - Point the camera at a random, changing scene (moving trees, clouds, etc.)
    - Press any key to capture the entropy
 
@@ -212,7 +224,7 @@ Create truly random seeds using environmental entropy captured by the camera. Th
      <img src="images/creating_new_seeds/SeedCameraEntropyView.png" alt="Camera entropy capture interface" width="250"/>
 </div>
 
-4. **Review Capture**: 
+4. **Review Capture**:
    - Move joystick **left** to retake the photo
    - Move joystick **right** to continue with current capture
 
@@ -232,15 +244,17 @@ Create truly random seeds using environmental entropy captured by the camera. Th
      <img src="images/creating_new_seeds/SeedWarningView.png" alt="Security warning screen" width="250"/>
 </div>
 
-7. **Record Your Seed Words**: 
+7. **Record Your Seed Words**:
    - Words are displayed 4 at a time
    - **Write down every word carefully** in the exact order shown
    - Double-check each word as you write it
+
 <div align="center">
      <img src="images/creating_new_seeds/SeedMnemonicEntryView.png" alt="Seed words display screen" width="250"/>
 </div>
 
 8. **Verify Your Backup**: Complete the verification process to confirm you've recorded everything correctly
+
 <div align="center">
      <img src="images/creating_new_seeds/SeedBackupTestView.png" alt="Seed backup verification screen" width="250"/>
 </div>
@@ -254,16 +268,18 @@ Generate seeds using physical dice for maximum security and provable randomness.
 #### Complete Step-by-Step Process with All Screenshots
 
 1. **Navigate**: Main Menu → **Tools**
+
 <div align="center">
      <img src="images/creating_new_seeds/ToolsOptionSelectView.png" alt="Tools menu selection" width="250"/>
 </div>
 
 2. **Select Method**: Choose **"New Seed"** with the dice icon
+
 <div align="center">
      <img src="images/creating_new_seeds/SeedGenerateDiceMethodView.png" alt="Dice method selection" width="250"/>
 </div>
 
-3. **Choose Length**: 
+3. **Choose Length**:
    - **12 words** requires 50 dice rolls
    - **24 words** requires 99 dice rolls (recommended)
 
@@ -273,30 +289,35 @@ Generate seeds using physical dice for maximum security and provable randomness.
 
 4. **Prepare Physical Dice**: Use a standard 6-sided die
 
-5. **Roll and Enter**: 
+5. **Roll and Enter**:
    - Roll your physical die
    - Select the corresponding number (1-6) on the screen by pressing the **Joystick**
    - Repeat for all required rolls
+
 <div align="center">
      <img src="images/creating_new_seeds/ToolsDiceEntropyEntryView.png" alt="Dice rolling instructions" width="250"/>
 </div>
 
 6. **Complete All Rolls**: The progress indicator shows your completion status
+
 <div align="center">
      <img src="images/creating_new_seeds/ToolsDiceEntropyProgressView.png" alt="Dice roll progress indicator" width="250"/>
 </div>
 
 7. **Acknowledge Security Warning**: Press **"I Understand"** after reading the classified information warning
+
 <div align="center">
      <img src="images/creating_new_seeds/SeedWarningView.png" alt="Security warning for dice-generated seed" width="250"/>
 </div>
 
 8. **Record Generated Words**: Write down all seed words in order
+
 <div align="center">
      <img src="images/creating_new_seeds/SeedMnemonicEntryView.png" alt="Seed words display screen" width="250"/>
 </div>
 
 9. **Verify Your Backup**: Complete the verification process
+
 <div align="center">
      <img src="images/creating_new_seeds/SeedBackupTestView.png" alt="Seed backup verification screen" width="250"/>
 </div>
@@ -345,6 +366,7 @@ The system provides three different entropy sources to calculate the final word,
 </div>
 
 **🪙 Coin Flip Entropy Method**
+
 - Flip a physical coin exactly 7 times
 - For each flip, select **1 for Heads** or **0 for Tails** by pressing the **Joystick**
 - This method provides 7 bits of entropy for the final word calculation
@@ -360,6 +382,7 @@ The system provides three different entropy sources to calculate the final word,
 </div>
 
 **📝 Word Selection Entropy Method**
+
 - Choose any word from the BIP39 wordlist as your entropy source
 - The selected word provides the entropy bits needed for final word calculation
 
@@ -368,6 +391,7 @@ The system provides three different entropy sources to calculate the final word,
 </div>
 
 **🔢 Finalize with Zeros Method**
+
 - Uses a simple 7-bit string of zeros plus the calculated 4-bit checksum
 - This is the simplest method but still produces a valid final word
 
@@ -378,6 +402,7 @@ The system provides three different entropy sources to calculate the final word,
 #### Final Word Display and Completion
 
 **Final Word Display**
+
 - Shows the calculated final word with full derivation details
 - Displays the entropy source used and checksum calculation
 
@@ -386,6 +411,7 @@ The system provides three different entropy sources to calculate the final word,
 </div>
 
 **Completion Screen**
+
 - Review the complete seed phrase with the calculated final word
 - Your seed is now ready for backup and use
 
@@ -406,6 +432,7 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
 #### Complete Step-by-Step Process with All Screenshots
 
 1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"**
+
 <div align="center">
      <img src="images/loading_existing_seeds/SeedsOptionSelectView.png" alt="Tools menu selection" width="250"/>
 </div>
@@ -414,6 +441,7 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
 </div>
 
 2. **Choose Length**: Select **"Enter 12-word seed"** or **"Enter 24-word seed"**
+
 <div align="center">
      <img src="images/loading_existing_seeds/LoadASeedMainMenuView.png" alt="Manual entry seed length selection" width="250"/>
 </div>
@@ -421,7 +449,7 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
      <img src="images/loading_existing_seeds/SeedMnemonicLengthView.png" alt="Manual entry seed length selection" width="250"/>
 </div>
 
-3. **Enter Each Word**: 
+3. **Enter Each Word**:
    - Use the on-screen keyboard with intelligent word suggestions
    - Type the first few letters and select from suggestions for faster entry
    - **Key A**: Move up in the suggestions list
@@ -433,11 +461,12 @@ Enter your existing mnemonic phrase using the on-screen keyboard system.
 </div>
 
 4. **Review Seed Fingerprint**: Check the unique identifier on the "Finalize Seed" screen
+
 <div align="center">
      <img src="images/loading_existing_seeds/SeedFinalizeView.png" alt="Seed finalization screen with fingerprint" width="250"/>
 </div>
 
-5. **Complete Loading**: 
+5. **Complete Loading**:
    - Select **"Done"** to load the seed as-is
    - Or select **"BIP-39 Passphrase"** to add an additional security layer
 
@@ -498,13 +527,13 @@ Enhance your seed security with an optional passphrase. This creates an entirely
      <img src="images/loading_existing_seeds/SeedAddPassphraseView_lowercase.png" alt="Passphrase entry screen - lowercase" width="250"/>
 </div>
 
-   - **Key A**: Switch to uppercase letters (A-Z)
+- **Key A**: Switch to uppercase letters (A-Z)
 
 <div align="center">
      <img src="images/loading_existing_seeds/SeedAddPassphraseView_uppercase.png" alt="Passphrase entry screen - uppercase" width="250"/>
 </div>
 
-   - **Key B**: Access numbers (0-9) and symbols
+- **Key B**: Access numbers (0-9) and symbols
 
 <div align="center">
      <img src="images/loading_existing_seeds/SeedAddPassphraseView_digits.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
@@ -542,7 +571,7 @@ Create watch-only wallets in your favorite Bitcoin software by exporting your pu
      <img src="images/working_with_load_seeds/SeedMenuView.png" alt="Seed main menu with Export Xpub option" width="250"/>
 </div>
 
-2. **Choose Signature Type**: 
+2. **Choose Signature Type**:
    - **"Single Sig"** - For standard personal wallets
    - **"Multisig"** - For multi-signature wallets requiring multiple devices
 
@@ -566,16 +595,19 @@ Create watch-only wallets in your favorite Bitcoin software by exporting your pu
 </div>
 
 5. **Acknowledge Privacy Warning**: Press **"I Understand"** after reading the xpub privacy implications
+
 <div align="center">
      <img src="images/working_with_load_seeds/SeedExportXpubWarningView.png" alt="Xpub privacy warning screen" width="250"/>
 </div>
 
 6. **Generate QR Code**: Select **"Export XPub"** to display the shareable QR code
+
 <div align="center">
      <img src="images/working_with_load_seeds/SeedExportXpubDetailsView.png" alt="Generated Xpub QR code" width="250"/>
 </div>
 
 7. **Import to Wallet**: Scan the QR code with your chosen wallet software
+
 <div align="center">
      <img src="images/working_with_load_seeds/SeedExportXpubQRView.png" alt="Generated Xpub QR code" width="250"/>
 </div>
@@ -600,15 +632,15 @@ View and share your Bitcoin receiving addresses for accepting payments.
      <img src="images/working_with_load_seeds/AddressExplorerSelectView.png" alt="Address format selection" width="250"/>
 </div>
 
-
 **Process Flow**:
+
 1. **Script Type Selection** → Choose your preferred address format
-   
+
 <div align="center">
      <img src="images/working_with_load_seeds/ScriptTypeOptions.png" alt="Address format selection" width="250"/>
 </div>
 
-2. **Address Generation** → Select "Receive addresses" 
+2. **Address Generation** → Select "Receive addresses"
 
 <div align="center">
      <img src="images/working_with_load_seeds/ReceiveAddressOptionSelectView.png" alt="Receive addresses option" width="250"/>
@@ -646,6 +678,7 @@ View addresses used for transaction change return
 </div>
 
 **Process Flow**:
+
 1. **Script Type Selection** → Choose your preferred address format
 
 <div align="center">
@@ -673,6 +706,7 @@ View addresses used for transaction change return
 #### Key Information
 
 **Address Types Available**:
+
 - Native Segwit (recommended)
 - Nested Segwit (compatibility)  
 - Taproot (advanced features)
@@ -689,7 +723,7 @@ Access your seed words for backup verification or recovery purposes.
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words `
+1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words`
 
 <div align="center">
      <img src="images/working_with_load_seeds/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
@@ -733,7 +767,7 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words `
+1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words`
 
 <div align="center">
      <img src="images/working_with_load_seeds/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
@@ -749,7 +783,7 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
      <img src="images/working_with_load_seeds/ExportAsSeedQRSelectView.png" alt="Backup seed submenu" width="250"/>
 </div>
 
-2. **Choose Format**: 
+2. **Choose Format**:
    - **"Standard: 25x25"** - Larger, easier to scan
    - **"Compact: 21x21"** - Smaller, requires more precise scanning
 
@@ -784,9 +818,10 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 </div>
 
    **If you select "Confirm SeedQR":**
-   - The device camera will open to scan the transcribed QR code
-   - Show the transcribed QR image to the camera for verification
-   - The system will confirm whether the correct image was captured
+
+- The device camera will open to scan the transcribed QR code
+- Show the transcribed QR image to the camera for verification
+- The system will confirm whether the correct image was captured
 
 <div align="center">
      <img src="images/working_with_load_seeds/SeedQRCameraView.png" alt="Camera scanning transcribed QR code" width="250"/>
@@ -803,7 +838,9 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 </div>
 
    **If you select "Done":**
-   - You'll be redirected back to the Seeds main screen
+
+- You'll be redirected back to the Seeds main screen
+
 <div align="center">
      <img src="images/working_with_load_seeds/SeedTranscribeSeedQRDoneSelectView.png" alt="SeedQR verification failure" width="250"/>
 </div>
@@ -821,59 +858,42 @@ Securely approve and sign Bitcoin transactions created by your wallet software. 
 1. **Access Signing**: From your seed's main screen, select **"Scan PSBT"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Scan PSBT option" width="250"/>
+     <img src="images/sign_bitcoin_transaction/SeedMainMenuPSBTSelectView.png" alt="Seed menu with Scan PSBT option" width="250"/>
 </div>
 
 2. **Scan Transaction QR**: Point the camera at the transaction QR code generated by your wallet software
 
 <div align="center">
-     <img src="images/PSBTViews/psbt_scan.png" alt="PSBT scanning interface" width="250"/>
+     <img src="images/sign_bitcoin_transaction/SeedPSBTCameraView.png" alt="PSBT scanning interface" width="250"/>
 </div>
 
 3. **Review Transaction Details**: Carefully verify ALL information displayed
 
 <div align="center">
-     <img src="images/psbt_views/PSBTOverviewView.png" alt="Transaction details review screen" width="250"/>
+     <img src="images/sign_bitcoin_transaction/PSBTOverviewView.png" alt="Transaction details review screen" width="250"/>
 </div>
 
    **Critical Items to Verify:**
-   - ✅ **Recipient address** - Confirm this matches your intended destination
-   - ✅ **Amount being sent** - Verify the exact Bitcoin amount
-   - ✅ **Transaction fee** - Check that the fee is reasonable
-   - ✅ **Change address** - Ensure change returns to your wallet
 
-4. **Review Fee Details**: Check the transaction fee breakdown
+- ✅ **Recipient address** - Confirm this matches your intended destination
+- ✅ **Amount being sent** - Verify the exact Bitcoin amount
+- ✅ **Transaction fee** - Check that the fee is reasonable
+- ✅ **Change address** - Ensure change returns to your wallet
 
-<div align="center">
-     <img src="images/psbt_views/PSBTFeeView.png" alt="PSBT fee details screen" width="250"/>
-</div>
-
-5. **Select Signing Seed**: Choose the appropriate seed if multiple are loaded
+4. **Select Signing Seed**: Choose the appropriate seed if multiple are loaded
 
 <div align="center">
-     <img src="images/psbt_views/PSBTSelectSeedView.png" alt="Seed selection for PSBT signing" width="250"/>
+     <img src="images/sign_bitcoin_transaction/PSBTSelectSeedView.png" alt="Seed selection for PSBT signing" width="250"/>
 </div>
 
-6. **Authorize Signing**: Confirm you want to sign this transaction
+5. **Authorize Signing**: Confirm you want to sign this transaction
 
 <div align="center">
-     <img src="images/psbt_views/PSBTSigningView.png" alt="PSBT signing authorization" width="250"/>
+     <img src="images/sign_bitcoin_transaction/PSBTFinalizeView.png" alt="PSBT signing authorization" width="250"/>
 </div>
 
-7. **Wait for Completion**: Allow time for the "Signing Complete" message
-
-<div align="center">
-     <img src="images/psbt_views/PSBTSigningCompleteView.png" alt="PSBT signing in progress" width="250"/>
-</div>
-
-8. **Get Signed Transaction**: View the signed PSBT QR code
-
-<div align="center">
-     <img src="images/psbt_views/PSBTFinalizeView.png" alt="Completed signed PSBT QR code" width="250"/>
-</div>
-
-9. **Broadcast Transaction**: Scan the resulting signed QR code back into your wallet software
-10. **Confirm Broadcast**: Your wallet will broadcast the transaction to the Bitcoin network
+6. **Broadcast Transaction**: Scan the resulting signed QR code back into your wallet software
+7. **Confirm Broadcast**: Your wallet will broadcast the transaction to the Bitcoin network
 
 > **🚨 Critical Security Check**: Bitcoin transactions are irreversible once broadcast to the network. ALWAYS verify the recipient address and amount before signing. Double-check that the recipient address matches your intended destination exactly.
 
@@ -887,37 +907,38 @@ Confirm that a specific Bitcoin address was actually generated by your loaded se
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: From seed main screen → **"Address Explorer"** → **"Verify Address"**
+1. **Navigate**: From Home screen → **"Tools"** → **"Verify Address"**
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with address verification option" width="250"/>
+     <img src="images/verification_and_security/HomeScreenToolsSelectView.png" alt="Seed menu with address verification option" width="250"/>
 </div>
-
-2. **Enter Address**: Use the on-screen keyboard to input the Bitcoin address you want to verify
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationEntryView.png" alt="Address verification entry screen" width="250"/>
+     <img src="images/verification_and_security/VerifyAddressSelectView.png" alt="Seed menu with address verification option" width="250"/>
 </div>
-
-3. **Select Script Type**: Choose the address format type (Native Segwit, Nested Segwit, etc.)
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationScriptTypeView.png" alt="Script type selection for verification" width="250"/>
+     <img src="images/verification_and_security/AddressVerificationsCameraView.png" alt="Seed menu with address verification option" width="250"/>
 </div>
 
-4. **Review Results**: 
+2. **Enter Address**: Select the seed address you want to verify by choosing a saved seed, scanning a new seed, or manually entering a 12/24-word seed phrase.
+
+<div align="center">
+     <img src="images/verification_and_security/AddressVerificationsMainMenuScreen.png" alt="Address verification entry screen" width="250"/>
+</div>
+
+3. **Review Results**:
+   - 🔍 **Address Searching** - Deriving address from loaded seed — may take time.
    - ✅ **Address Found** - The address belongs to your loaded seed
-   - ❌ **Address Not Found** - The address was NOT generated by your seed
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationResultView.png" alt="Address verification results screen" width="250"/>
+     <img src="images/verification_and_security/SeedAddressVerificationView.png" alt="Address verification results screen" width="250"/>
 </div>
-
-5. **Check Derivation Path**: If found, review the derivation path details
 
 <div align="center">
-     <img src="images/verification_views/AddressVerificationDetailsView.png" alt="Address derivation path details" width="250"/>
+     <img src="images/verification_and_security/SeedAddressVerificationSuccessView.png" alt="Address verification results screen" width="250"/>
 </div>
+
 
 > **🚨 Security Use Case**: Use this feature to verify that addresses provided by exchanges, merchants, or other parties were actually generated by your seed before sending funds. Never send Bitcoin to unverified addresses.
 
@@ -927,22 +948,30 @@ Safely remove the current seed from memory when you're finished with your operat
 
 #### Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: From seed main screen → **"Discard Seed"**
+1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words`
 
 <div align="center">
-     <img src="images/seed_views/SeedMenuView.png" alt="Seed menu with Discard Seed option" width="250"/>
+     <img src="images/verification_and_security/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
 </div>
 
-2. **Confirm Discard**: Select **"Yes, Discard Seed"** to remove the seed from memory
+<div align="center">
+     <img src="images/verification_and_security/SavedSeedSelectView.png" alt="Address format selection" width="250"/>
+</div>
 
 <div align="center">
-     <img src="images/seed_views/SeedDiscardView.png" alt="Seed discard confirmation screen" width="250"/>
+     <img src="images/verification_and_security/DiscardSeedSelectView.png" alt="Seed menu with Discard Seed option" width="250"/>
+</div>
+
+2. **Confirm Discard**: Select **"Discard"** to remove the seed from memory
+
+<div align="center">
+     <img src="images/verification_and_security/DiscardSeedMainMenuView.png" alt="Seed discard screen" width="250"/>
 </div>
 
 3. **Return to Main Menu**: You'll be returned to the main menu with no seed loaded
 
 <div align="center">
-     <img src="images/main_menu_views/MainMenuView.png" alt="Main menu after seed discard" width="250"/>
+     <img src="images/verification_and_security/MainMenuView.png" alt="Main menu after seed discard" width="250"/>
 </div>
 
 > **🧹 Memory Clearing**: Discarding a seed completely removes it from device memory. This is a security best practice when switching between different seeds or when finished with operations.
@@ -962,7 +991,15 @@ Set your preferred language for the SeedSigner interface.
 3. **Confirm Selection**: The interface will update to use your chosen language
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_locale.png" alt="Language selection menu" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Language selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuLanguageSelectView.png" alt="Language selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_locale.png" alt="Language selection menu" width="250"/>
 </div>
 
 ### Persistent Settings
@@ -972,9 +1009,17 @@ Configure whether your settings are saved permanently or reset on each boot.
 #### Step-by-Step Process
 
 1. **Navigate**: Main Menu → **Settings** → **Persistent Settings**  
-2. **Choose Mode**: 
+2. **Choose Mode**:
    - **"Enabled"** - Saves settings to SD card (survives reboots)
    - **"Disabled"** - Temporary settings only (resets on power cycle)
+
+<div align="center">
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Language selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuPersistentSelectView.png" alt="Language selection menu" width="250"/>
+</div>
 
 <div align="center">
      <img src="images/settings_views/SettingsEntryUpdateSelectionView_persistent_settings.png" alt="Persistent settings toggle" width="250"/>
@@ -1318,6 +1363,7 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 2. **Test All Components**: The system will test each hardware element:
 
 **Button Test**
+
 - Press each button (A, B, C) and joystick directions when prompted
 
 <div align="center">
@@ -1325,6 +1371,7 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 </div>
 
 **Display Test**
+
 - Visual patterns will display to verify screen functionality
 
 <div align="center">
@@ -1332,6 +1379,7 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 </div>
 
 **Camera Test**
+
 - Live camera feed will display to verify camera operation
 
 <div align="center">
@@ -1353,16 +1401,20 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 ### Common Issues and Solutions
 
 #### Device Won't Boot
+
 **Symptoms**: Black screen, no response when powered on
 **Solutions**:
+
 - ✅ Verify power source provides sufficient current (2A recommended)
 - ✅ Check all hardware connections are secure
 - ✅ Try a different SD card with fresh SeedSigner image
 - ✅ Test with a different power cable
 
 #### QR Code Scanning Problems
+
 **Symptoms**: QR codes not recognized, scanning timeouts
 **Solutions**:
+
 - ✅ Ensure adequate lighting on the QR code
 - ✅ Hold the device steady at proper distance (6-12 inches)
 - ✅ Clean the camera lens with a soft cloth
@@ -1371,8 +1423,10 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 - ✅ Test camera functionality in Hardware I/O Test
 
 #### Incorrect Seed Generation
+
 **Symptoms**: Generated seed doesn't match expected results
 **Solutions**:
+
 - ✅ Verify you're using proper entropy sources (good randomness)
 - ✅ Ensure proper lighting during camera entropy capture
 - ✅ For dice rolls, use proper physical dice (not digital)
@@ -1380,16 +1434,20 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 - ✅ Run the backup verification process
 
 #### Button Response Issues
+
 **Symptoms**: Buttons not responding, inconsistent input
 **Solutions**:
+
 - ✅ Run Hardware I/O Test to isolate the problem
 - ✅ Clean around buttons to remove debris
 - ✅ Check for physical damage to the WaveShare hat
 - ✅ Try different button combinations (A, B, C all function identically)
 
 #### Display Problems
+
 **Symptoms**: Screen flickering, partial display, wrong colors
 **Solutions**:
+
 - ✅ Check WaveShare hat connections
 - ✅ Run Hardware I/O Test display test
 - ✅ Try different power source
@@ -1398,23 +1456,29 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 ### Error Messages
 
 #### "Unknown QR Type"
+
 **Meaning**: The scanned QR code format isn't recognized by SeedSigner
 **Solutions**:
+
 - ✅ Verify you're scanning a supported QR type (PSBT, SeedQR, etc.)
 - ✅ Check QR code quality and clarity
 - ✅ Ensure proper lighting and camera positioning
 
 #### "Invalid Seed"
+
 **Meaning**: The entered seed phrase doesn't pass BIP-39 validation
 **Solutions**:
+
 - ✅ Double-check every word in your seed phrase
 - ✅ Verify word order is correct
 - ✅ Ensure all words are from the BIP-39 wordlist
 - ✅ Check for typos in manual entry
 
 #### "Checksum Error"
+
 **Meaning**: The final word doesn't match the required checksum
 **Solutions**:
+
 - ✅ Use the "Calc 12th/24th word" tool to find the correct final word
 - ✅ Verify all previous words are correct
 - ✅ Check for transcription errors
@@ -1424,17 +1488,21 @@ Test your SeedSigner's hardware components to ensure everything is functioning p
 ## 📚 Additional Resources
 
 ### Official Documentation
-- **SeedSigner GitHub**: https://github.com/SeedSigner/seedsigner
+
+- **SeedSigner GitHub**: <https://github.com/SeedSigner/seedsigner>
 - **Hardware Assembly Guide**: Detailed build instructions and component sourcing
 - **Software Installation**: SD card image download and installation instructions
 
 ### Community Resources
+
 - **SeedSigner Telegram**: Community support and discussions
 - **Bitcoin Talk Forum**: Technical discussions and troubleshooting
 - **YouTube Tutorials**: Video guides for setup and usage
 
 ### Compatible Wallet Software
+
 SeedSigner works with many popular Bitcoin wallets:
+
 - **Sparrow Wallet** - Full-featured desktop wallet
 - **Specter Desktop** - Privacy-focused wallet
 - **Blue Wallet** - Mobile wallet with watch-only support
@@ -1442,6 +1510,7 @@ SeedSigner works with many popular Bitcoin wallets:
 - **BTCPay Server** - Self-hosted payment processor
 
 ### Hardware Suppliers
+
 - **Raspberry Pi Zero**: Official distributors worldwide
 - **WaveShare LCD Hat**: Available from WaveShare and electronics distributors
 - **Raspberry Pi Camera**: Official camera modules recommended
@@ -1451,24 +1520,28 @@ SeedSigner works with many popular Bitcoin wallets:
 ## 🔒 Security Considerations
 
 ### Physical Security
+
 - **Private Environment**: Always use SeedSigner in a completely private location
 - **Camera Awareness**: Be mindful of security cameras, smartphones, and other recording devices
 - **Screen Privacy**: Shield the screen when viewing sensitive information
 - **Secure Storage**: Store written seed backups in fireproof safes or safety deposit boxes
 
 ### Digital Security
+
 - **Air-Gap Maintenance**: Never connect SeedSigner to networks or other devices
 - **SD Card Removal**: Remove SD card after boot to prevent any persistent storage
 - **Memory Clearing**: Always discard seeds from memory when finished
 - **QR Code Privacy**: Treat all QR codes containing seed information as highly sensitive
 
 ### Operational Security
+
 - **Backup Verification**: Always verify seed backups before relying on them
 - **Multiple Backups**: Create multiple copies of seed backups stored in different locations
 - **Regular Testing**: Periodically test your ability to recover from backups
 - **Update Awareness**: Stay informed about SeedSigner software updates and security advisories
 
 ### Best Practices
+
 - **Start Small**: Practice with small amounts before storing significant funds
 - **Test Recovery**: Test the complete recovery process with test funds
 - **Educate Yourself**: Understand Bitcoin security principles beyond just using SeedSigner
@@ -1488,6 +1561,7 @@ SeedSigner provides a secure, open-source solution for Bitcoin key management an
 - ✅ Maintain complete air-gap security throughout all operations
 
 ### Remember the Golden Rules
+
 1. **Never skip seed backup verification** - One wrong word means lost Bitcoin
 2. **Always verify transaction details** - Bitcoin transactions are irreversible
 3. **Maintain air-gap security** - Never connect SeedSigner to networks
@@ -1495,7 +1569,9 @@ SeedSigner provides a secure, open-source solution for Bitcoin key management an
 5. **Store backups securely** - Treat seed phrases like the valuable assets they protect
 
 ### Getting Help
+
 If you encounter issues not covered in this guide:
+
 - Check the official SeedSigner GitHub repository for updates
 - Visit community forums and chat groups for peer support
 - Review the troubleshooting section for common solutions
