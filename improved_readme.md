@@ -65,6 +65,7 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
   - [Message Signing](#message-signing)
   - [Privacy Warnings](#privacy-warnings)
   - [Dire Warnings](#dire-warnings)
+  - [QR Brightness Tips](#qr-brightness-tips)
   - [Partner Logos](#partner-logos)
 
 - **Hardware Settings**
@@ -991,7 +992,7 @@ Set your preferred language for the SeedSigner interface.
 3. **Confirm Selection**: The interface will update to use your chosen language
 
 <div align="center">
-     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Language selection menu" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
 </div>
 
 <div align="center">
@@ -999,7 +1000,7 @@ Set your preferred language for the SeedSigner interface.
 </div>
 
 <div align="center">
-     <img src="images/device_settings/SettingsEntryUpdateSelectionView_locale.png" alt="Language selection menu" width="250"/>
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_locale.png" alt="Specific Language selection menu" width="250"/>
 </div>
 
 ### Persistent Settings
@@ -1014,15 +1015,15 @@ Configure whether your settings are saved permanently or reset on each boot.
    - **"Disabled"** - Temporary settings only (resets on power cycle)
 
 <div align="center">
-     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Language selection menu" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/device_settings/SettingsMainMenuPersistentSelectView.png" alt="Language selection menu" width="250"/>
+     <img src="images/device_settings/SettingsMainMenuPersistentSelectView.png" alt="Persistent selection menu" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_persistent_settings.png" alt="Persistent settings toggle" width="250"/>
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_persistent_settings.png" alt="Persistent settings toggle" width="250"/>
 </div>
 
 > **🔒 Security Consideration**: Enabled persistent settings provide convenience but store configuration data on the SD card. Disabled persistent settings provide maximum security but require reconfiguring preferences after each boot.
@@ -1042,7 +1043,15 @@ Enable or disable support for specific wallet applications. This customizes QR c
    - ✅ **Keeper** - Inheritance planning wallet
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_coordinators.png" alt="Wallet software compatibility settings" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuCoordinatorSoftwareSelectView.png" alt="Coordinate selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_coordinators.png" alt="Wallet software compatibility settings" width="250"/>
 </div>
 
 ### Denomination Display
@@ -1056,7 +1065,15 @@ Configure how Bitcoin amounts are displayed on the device.
 3. **Default Setting**: Threshold at 0.01 is selected by default
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_denomination.png" alt="Denomination display options" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuDenominationDisplaySelectView.png" alt="Denomination display selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_denomination.png" alt="Denomination display options" width="250"/>
 </div>
 
 ### Hardware I/O Testing
@@ -1070,7 +1087,15 @@ Verify that all device components are functioning correctly.
 3. **Verify Components**: Ensure all buttons, display, and camera are working properly
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_io_test.png" alt="I/O testing interface" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuInputOutputSelectView.png" alt="I/O selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_io_test.png" alt="I/O testing interface" width="250"/>
 </div>
 
 ### Donation Information
@@ -1084,7 +1109,15 @@ Access donation details to support SeedSigner development.
 3. **Support Development**: Consider contributing to the project
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_donate.png" alt="Donation information screen" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuDonateSelectView.png" alt="Donate selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_donate.png" alt="Donation information screen" width="250"/>
 </div>
 
 ## 🔧 Advanced Settings
@@ -1100,7 +1133,19 @@ Choose which Bitcoin network to use for addresses and transactions.
    - **Regtest** - Local regression testing network
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_network.png" alt="Bitcoin network selection" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/BitcoinNetworkSelectView.png" alt="Network selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_network.png" alt="Bitcoin network selection" width="250"/>
 </div>
 
 > **⚠️ Network Warning**: Always ensure you're using Mainnet for real Bitcoin transactions. Testnet and Regtest are for development purposes only.
@@ -1116,7 +1161,19 @@ Adjust the density of generated QR codes to balance size and scannability.
    - **High** - Smaller, more data-dense QR codes
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_qr_density.png" alt="QR code density options" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/QRCodeDensitySelectView.png" alt="QR code density selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_qr_density.png" alt="QR code density options" width="250"/>
 </div>
 
 ### Xpub Export Configuration
@@ -1131,7 +1188,19 @@ Control extended public key export functionality.
    - **Disabled** - Disable xpub export functionality
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_xpub_export.png" alt="Xpub export configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/XPubExportSelectView.png" alt="XPub export selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_xpub_export.png" alt="Xpub export configuration" width="250"/>
 </div>
 
 ### Signature Types Configuration
@@ -1147,7 +1216,19 @@ Configure which signature types are supported by the device.
 3. **Default Setting**: Both Single Sig and Multisig are selected by default
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_sig_types.png" alt="Signature types configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SigTypesSelectView.png" alt="Sig type selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_sig_types.png" alt="Signature types configuration" width="250"/>
 </div>
 
 ### Script Types Configuration
@@ -1165,7 +1246,19 @@ Define which Bitcoin script types are supported on the device.
    - **Custom Derivation** - Custom derivation paths
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_script_types.png" alt="Script types configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ScriptTypeSelectView.png" alt="Script type selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_script_types.png" alt="Script types configuration" width="250"/>
 </div>
 
 ### Show Xpub Details
@@ -1179,8 +1272,20 @@ Control whether extended public key details are displayed.
    - **Enabled** - Show detailed xpub information (default)
    - **Disabled** - Hide xpub details
 
+   <div align="center">
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_show_xpub.png" alt="Xpub details display setting" width="250"/>
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ShowXpubDetailsSelectView.png" alt="Show Xpub details selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_show_xpub.png" alt="Xpub details display setting" width="250"/>
 </div>
 
 ### BIP-39 Passphrase Configuration
@@ -1194,7 +1299,19 @@ Control how the device handles BIP-39 passphrases.
    - **Required** - Every seed must have a passphrase
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_passphrase.png" alt="Passphrase configuration options" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/BIP-39PassphraseSelectView.png" alt="BIP-39 passphrase selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_passphrase.png" alt="Passphrase configuration options" width="250"/>
 </div>
 
 ### Camera Rotation
@@ -1209,7 +1326,19 @@ Adjust camera orientation to match your device setup.
    - **270 degrees** - Quarter turn counter-clockwise
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_camera_rotation.png" alt="Camera rotation settings" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/CameraRotationSelectView.png" alt="Camera Rotation selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_camera_rotation.png" alt="Camera rotation settings" width="250"/>
 </div>
 
 ### Compact SeedQR
@@ -1224,7 +1353,19 @@ Configure SeedQR compression settings for more efficient QR codes.
    - **Disabled** - Use standard SeedQR format
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_compact_seedqr.png" alt="Compact SeedQR configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/CompactSeedQRSelectView.png" alt="Compact SeedQR selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_compact_seedqr.png" alt="Compact SeedQR configuration" width="250"/>
 </div>
 
 ### BIP-85 Child Seeds
@@ -1239,7 +1380,19 @@ Enable support for BIP-85 deterministic child seed generation.
    - **Disabled** - Disable BIP-85 functionality (default)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_bip85.png" alt="BIP-85 child seeds configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/BIP-85ChildSeedsSelectView.png" alt="BIP-85 child seeds selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_bip85.png" alt="BIP-85 child seeds configuration" width="250"/>
 </div>
 
 ### Electrum Seeds
@@ -1254,7 +1407,19 @@ Configure support for Electrum-style seed phrases.
    - **Disabled** - Standard BIP-39 only (default)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_electrum_seeds.png" alt="Electrum seeds configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ElectrumSeedsSelectView.png" alt="Electrum seeds selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_electrum_seeds.png" alt="Electrum seeds configuration" width="250"/>
 </div>
 
 ### Message Signing
@@ -1269,7 +1434,19 @@ Enable cryptographic message signing functionality.
    - **Disabled** - Disable message signing (default)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_message_signing.png" alt="Message signing configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/MessageSigningSelectView.png" alt="Message Signing selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_message_signing.png" alt="Message signing configuration" width="250"/>
 </div>
 
 ### Privacy Warnings
@@ -1284,7 +1461,19 @@ Control display of privacy-related warnings and notifications.
    - **Disabled** - Hide privacy warnings
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_privacy_warnings.png" alt="Privacy warnings configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ShowPrivacyWarningsSelectView.png" alt="Show privacy warnings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_privacy_warnings.png" alt="Privacy warnings configuration" width="250"/>
 </div>
 
 ### Dire Warnings
@@ -1299,7 +1488,46 @@ Configure display of critical security warnings.
    - **Disabled** - Hide dire warnings
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_dire_warnings.png" alt="Dire warnings configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ShowDireWarningsSelectView.png" alt="Show dire warnings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_dire_warnings.png" alt="Dire warnings configuration" width="250"/>
+</div>
+
+### QR Brightness Tips
+
+Manage QR code brightness tips directly from your settings menu.
+
+#### Step-by-Step Process
+
+1. **Navigate**: Settings → **Advanced** → **Show QR Brightness Tips**
+2. **Choose Display Mode**:
+   - **Enabled** - Show brightness tips (default)
+   - **Disabled** - Hide brightness tips
+
+<div align="center">
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ShowQrBrightnessTipsSelectVIew.png" alt="Show QR brightness tipsselection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_qr_brightness_tips.png" alt="QR brightness tips configuration" width="250"/>
 </div>
 
 ### Partner Logos
@@ -1314,7 +1542,19 @@ Control display of partner and wallet provider logos.
    - **Disabled** - Hide partner logos
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_partner_logos.png" alt="Partner logos configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/ShowPartnerLogosSelectVIew.png" alt="Show partner logos selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_partner_logos.png" alt="Partner logos configuration" width="250"/>
 </div>
 
 ## 🖥️ Hardware Settings
@@ -1332,7 +1572,23 @@ Configure the display driver for your specific hardware setup.
    - **ili9341 320x240 (beta)** - Alternative display driver (beta)
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_display_type.png" alt="Display type configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/HardwareSelectView.png" alt="Hardware selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/DisplayTypeSelectView.png" alt="Display type selection menu" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_display_type.png" alt="Display type configuration" width="250"/>
 </div>
 
 ### Color Inversion
@@ -1347,49 +1603,23 @@ Invert display colors for different viewing preferences or hardware configuratio
    - **Disabled** - Standard color display
 
 <div align="center">
-     <img src="images/settings_views/SettingsEntryUpdateSelectionView_invert_colors.png" alt="Color inversion configuration" width="250"/>
+     <img src="images/device_settings/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
 </div>
 
-Test your SeedSigner's hardware components to ensure everything is functioning properly.
-
-#### Complete Hardware Test Process
-
-1. **Navigate**: Main Menu → **Settings** → **"Hardware I/O Test"**
-
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestView.png" alt="Hardware I/O test menu" width="250"/>
+     <img src="images/device_settings/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
 </div>
 
-2. **Test All Components**: The system will test each hardware element:
-
-**Button Test**
-
-- Press each button (A, B, C) and joystick directions when prompted
-
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestButtonsView.png" alt="Button testing interface" width="250"/>
+     <img src="images/device_settings/HardwareSelectView.png" alt="Hardware selection menu" width="250"/>
 </div>
 
-**Display Test**
-
-- Visual patterns will display to verify screen functionality
-
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestDisplayView.png" alt="Display testing patterns" width="250"/>
+     <img src="images/device_settings/invertColorsSelectView.png" alt="Invert Colors selection menu" width="250"/>
 </div>
 
-**Camera Test**
-
-- Live camera feed will display to verify camera operation
-
 <div align="center">
-     <img src="images/settings_views/SettingsIOTestCameraView.png" alt="Camera testing interface" width="250"/>
-</div>
-
-3. **Review Results**: Check that all components passed their tests
-
-<div align="center">
-     <img src="images/settings_views/SettingsIOTestResultsView.png" alt="Hardware test results" width="250"/>
+     <img src="images/device_settings/SettingsEntryUpdateSelectionView_invert_colors.png" alt="Color inversion configuration" width="250"/>
 </div>
 
 > **🔧 Troubleshooting Use**: Run hardware tests if you're experiencing issues with button responses, display problems, or camera malfunctions. This helps isolate hardware vs. software issues.
