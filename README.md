@@ -18,13 +18,13 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 ### 🌱 Seed Management
 
 - **Creating New Seeds**
-  - [Camera-Based Seed Generation](#camera-based-seed-generation)
-  - [Dice-Based Seed Generation](#dice-based-seed-generation)
-  - [Calc 12th/24th Word Seed Generation](#calc-12th24th-word-seed-generation)
+  - [Camera-Based Seed Generation](/seed_management/creating_new_seeds/camera_based_seed_generation.md)
+  - [Dice-Based Seed Generation](/seed_management/creating_new_seeds/dice_based_seed_generation.md)
+  - [Calc 12th/24th Word Seed Generation](/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
 - **Loading Existing Seeds**
-  - [Manual Seed Entry](#manual-seed-entry)
-  - [SeedQR Scanning](#seedqr-scanning)
-  - [Adding BIP-39 Passphrase](#adding-bip-39-passphrase)
+  - [Manual Seed Entry](/seed_management/load_existing_seeds/manual_seed_entry.md)
+  - [SeedQR Scanning](/seed_management/load_existing_seeds/seedqr_scanning.md)
+  - [Adding BIP-39 Passphrase](/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
 
 ### 🔧 Working with Loaded Seeds
 
