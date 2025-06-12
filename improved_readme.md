@@ -10,7 +10,6 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 
 ### 🚀 Getting Started
 
-- [Hardware Components](#hardware-components)
 - [Initial Setup and Power On](#initial-setup-and-power-on)
 - [Navigation Basics](#navigation-basics)
 - [Powering Off Safely](#powering-off-safely)
