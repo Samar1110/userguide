@@ -28,54 +28,55 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 
 ### 🔧 Working with Loaded Seeds
 
-- [Export Public Key (Xpub)](#export-public-key-xpub)
-- [Generate Receiving Addresses](#generate-receiving-addresses)
-- [View Seed Words](#view-seed-words)
-- [Create SeedQR Backup](#create-seedqr-backup)
+- [Export Public Key (Xpub)](/working_with_loaded_seeds/export_public_key_xpub.md)
+- [Generate Receiving Addresses](/working_with_loaded_seeds/generate_receiving_addresses.md)
+- [Generate Change Addresses](/working_with_loaded_seeds/generate_change_addresses.md)
+- [View Seed Words](/working_with_loaded_seeds/view_seed_words.md)
+- [Create SeedQR Backup](/working_with_loaded_seeds/create_seedqr_backup.md)
 
 ### ✍️ Transactions & Verification
 
-- [Sign Bitcoin Transaction (PSBT)](#sign-bitcoin-transaction-psbt)
-- [Verify Address Ownership](#verify-address-ownership)
-- [Discard Loaded Seed](#discard-loaded-seed)
+- [Sign Bitcoin Transaction (PSBT)](/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
+- [Verify Address Ownership](/transactions_and_verification/verify_address_ownership.md)
+- [Discard Loaded Seed](/transactions_and_verification/discard_loaded_seed.md)
 
 ### ⚙️ Device Configuration
 
 - **Basic Settings**
-  - [Language Configuration](#language-configuration)
-  - [Persistent Settings](#persistent-settings)
-  - [Coordinator Software Support](#coordinator-software-support)
-  - [Denomination Display](#denomination-display)
-  - [Hardware I/O Testing](#hardware-io-testing)
-  - [Donation Information](#donation-information)
+  - [Language Configuration](/device_configuration/basic_settings/language_configuration.md)
+  - [Persistent Settings](/device_configuration/basic_settings/persistent_settings.md)
+  - [Coordinator Software Support](/device_configuration/basic_settings/coordinator_software_support.md)
+  - [Denomination Display](/device_configuration/basic_settings/denomination_display.md)
+  - [Hardware I/O Testing](/device_configuration/basic_settings/hardware_io_testing.md)
+  - [Donation Information](/device_configuration/basic_settings/donation_information.md)
 
 - **Advanced Settings**
-  - [Bitcoin Network Selection](#bitcoin-network-selection)
-  - [QR Code Density](#qr-code-density)
-  - [Xpub Export Configuration](#xpub-export-configuration)
-  - [Signature Types Configuration](#signature-types-configuration)
-  - [Script Types Configuration](#script-types-configuration)
-  - [Show Xpub Details](#show-xpub-details)
-  - [BIP-39 Passphrase Configuration](#bip-39-passphrase-configuration)
-  - [Camera Rotation](#camera-rotation)
-  - [Compact SeedQR](#compact-seedqr)
-  - [BIP-85 Child Seeds](#bip-85-child-seeds)
-  - [Electrum Seeds](#electrum-seeds)
-  - [Message Signing](#message-signing)
-  - [Privacy Warnings](#privacy-warnings)
-  - [Dire Warnings](#dire-warnings)
-  - [QR Brightness Tips](#qr-brightness-tips)
-  - [Partner Logos](#partner-logos)
+  - [Bitcoin Network Selection](/device_configuration/advanced_settings/bitcoin_network_selection.md)
+  - [QR Code Density](/device_configuration/advanced_settings/qr_code_density.md)
+  - [Xpub Export Configuration](/device_configuration/advanced_settings/xpub_export_configuration.md)
+  - [Signature Types Configuration](/device_configuration/advanced_settings/signature_types_configuration.md)
+  - [Script Types Configuration](/device_configuration/advanced_settings/script_types_configuration.md)
+  - [Show Xpub Details](/device_configuration/advanced_settings/show_xpub_details.md)
+  - [BIP-39 Passphrase Configuration](/device_configuration/advanced_settings/bip-39_passphrase_configuration.md)
+  - [Camera Rotation](/device_configuration/advanced_settings/camera_rotation.md)
+  - [Compact SeedQR](/device_configuration/advanced_settings/compact_seedqr.md)
+  - [BIP-85 Child Seeds](/device_configuration/advanced_settings/bip-85_child_seeds.md)
+  - [Electrum Seeds](/device_configuration/advanced_settings/electrum_seeds.md)
+  - [Message Signing](/device_configuration/advanced_settings/message_signing.md)
+  - [Privacy Warnings](/device_configuration/advanced_settings/privacy_warnings.md)
+  - [Dire Warnings](/device_configuration/advanced_settings/dire_warnings.md)
+  - [QR Brightness Tips](/device_configuration/advanced_settings/qr_brightness_tips.md)
+  - [Partner Logos](/device_configuration/advanced_settings/partner_logos.md)
 
 - **Hardware Settings**
-  - [Display Type Configuration](#display-type-configuration)
-  - [Color Inversion](#color-inversion)
+  - [Display Type Configuration](/device_configuration/hardware_settings/display_type_configuration.md)
+  - [Color Inversion](/device_configuration/hardware_settings/color_inversion.md)
 
 ### 🔧 Support & Resources
 
-- [Troubleshooting](#-troubleshooting)
-- [Additional Resources](#-additional-resources)
-- [Security Considerations](#-security-considerations)
+- [Troubleshooting](/support_and_resources/troubleshooting.md)
+- [Additional Resources](/support_and_resources/additional_resources.md)
+- [Security Considerations](/support_and_resources/security_considerations.md)
 
 > 💡 **Quick Navigation Tip**: Use Ctrl+F (or Cmd+F on Mac) to search for specific topics within this guide.
 
