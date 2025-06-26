@@ -1,159 +1,129 @@
 # SeedSigner User Guide
 
 <div align="center">
-  <img src="images/SeedSigner_Logo.png" alt="SeedSigner Logo" width="400"/>
+  <img src="/en/images/SeedSigner_Logo.png" alt="SeedSigner Logo" width="400"/>
 </div>
 
-SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you manage seed phrases and sign transactions securely. This guide provides step-by-step instructions organized by common workflows.
+---
 
-## 📋 Table of Contents
+## What is SeedSigner?
 
-### 🚀 Getting Started
+SeedSigner is an open-source, air-gapped Bitcoin signing device that helps you manage seed phrases and sign transactions securely. Built using affordable, off-the-shelf hardware components (Raspberry Pi Zero, camera module, and LCD display), SeedSigner provides a stateless solution for Bitcoin key management without storing private keys on the device.
 
-- [Initial Setup and Power On](/getting_started/initial_setup_and_power_on.md)
-- [Navigation Basics](/getting_started/navigation_basics.md)
-- [Powering Off Safely](/getting_started/powering_off_safely.md)
-- [Restarting Your Device](/getting_started/restarting_your_device.md)
+### Key Features
 
-### 🌱 Seed Management
-
-- **Creating New Seeds**
-  - [Camera-Based Seed Generation](/seed_management/creating_new_seeds/camera_based_seed_generation.md)
-  - [Dice-Based Seed Generation](/seed_management/creating_new_seeds/dice_based_seed_generation.md)
-  - [Calc 12th/24th Word Seed Generation](/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
-- **Loading Existing Seeds**
-  - [Manual Seed Entry](/seed_management/load_existing_seeds/manual_seed_entry.md)
-  - [SeedQR Scanning](/seed_management/load_existing_seeds/seedqr_scanning.md)
-  - [Adding BIP-39 Passphrase](/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
-
-### 🔧 Working with Loaded Seeds
-
-- [Export Public Key (Xpub)](/working_with_loaded_seeds/export_public_key_xpub.md)
-- [Generate Receiving Addresses](/working_with_loaded_seeds/generate_receiving_addresses.md)
-- [Generate Change Addresses](/working_with_loaded_seeds/generate_change_addresses.md)
-- [View Seed Words](/working_with_loaded_seeds/view_seed_words.md)
-- [Create SeedQR Backup](/working_with_loaded_seeds/create_seedqr_backup.md)
-
-### ✍️ Transactions & Verification
-
-- [Sign Bitcoin Transaction (PSBT)](/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
-- [Verify Address Ownership](/transactions_and_verification/verify_address_ownership.md)
-- [Discard Loaded Seed](/transactions_and_verification/discard_loaded_seed.md)
-
-### ⚙️ Device Configuration
-
-- **Basic Settings**
-  - [Language Configuration](/device_configuration/basic_settings/language_configuration.md)
-  - [Persistent Settings](/device_configuration/basic_settings/persistent_settings.md)
-  - [Coordinator Software Support](/device_configuration/basic_settings/coordinator_software_support.md)
-  - [Denomination Display](/device_configuration/basic_settings/denomination_display.md)
-  - [Hardware I/O Testing](/device_configuration/basic_settings/hardware_io_testing.md)
-  - [Donation Information](/device_configuration/basic_settings/donation_information.md)
-
-- **Advanced Settings**
-  - [Bitcoin Network Selection](/device_configuration/advanced_settings/bitcoin_network_selection.md)
-  - [QR Code Density](/device_configuration/advanced_settings/qr_code_density.md)
-  - [Xpub Export Configuration](/device_configuration/advanced_settings/xpub_export_configuration.md)
-  - [Signature Types Configuration](/device_configuration/advanced_settings/signature_types_configuration.md)
-  - [Script Types Configuration](/device_configuration/advanced_settings/script_types_configuration.md)
-  - [Show Xpub Details](/device_configuration/advanced_settings/show_xpub_details.md)
-  - [BIP-39 Passphrase Configuration](/device_configuration/advanced_settings/bip-39_passphrase_configuration.md)
-  - [Camera Rotation](/device_configuration/advanced_settings/camera_rotation.md)
-  - [Compact SeedQR](/device_configuration/advanced_settings/compact_seedqr.md)
-  - [BIP-85 Child Seeds](/device_configuration/advanced_settings/bip-85_child_seeds.md)
-  - [Electrum Seeds](/device_configuration/advanced_settings/electrum_seeds.md)
-  - [Message Signing](/device_configuration/advanced_settings/message_signing.md)
-  - [Privacy Warnings](/device_configuration/advanced_settings/privacy_warnings.md)
-  - [Dire Warnings](/device_configuration/advanced_settings/dire_warnings.md)
-  - [QR Brightness Tips](/device_configuration/advanced_settings/qr_brightness_tips.md)
-  - [Partner Logos](/device_configuration/advanced_settings/partner_logos.md)
-
-- **Hardware Settings**
-  - [Display Type Configuration](/device_configuration/hardware_settings/display_type_configuration.md)
-  - [Color Inversion](/device_configuration/hardware_settings/color_inversion.md)
-
-### 🔧 Support & Resources
-
-- [Troubleshooting](/support_and_resources/troubleshooting.md)
-- [Additional Resources](/support_and_resources/additional_resources.md)
-- [Security Considerations](/support_and_resources/security_considerations.md)
-
-> 💡 **Quick Navigation Tip**: Use Ctrl+F (or Cmd+F on Mac) to search for specific topics within this guide.
+- **🔒 Air-gapped Security**: Complete network isolation for maximum security
+- **📱 QR Code Communication**: Interact with wallets via QR codes only
+- **🎲 Multiple Entropy Sources**: Generate seeds using camera, dice, or calculation methods
+- **🔧 Open Source**: Fully auditable code and hardware design
+- **💰 Cost-effective**: Build your own device for under $50
+- **🛡️ Stateless Design**: No private key storage on device
 
 ---
 
-## Hardware Components
+## 🌍 User Guides by Language
 
-A SeedSigner device consists of:
+Choose your preferred language to access the complete SeedSigner user guide:
 
-1. **Raspberry Pi Zero** - The main computing unit
-2. **Raspberry Pi Camera** - For QR code scanning and entropy capture
-3. **WaveShare 1.3inch LCD Hat** - Display and control interface
+### 🇺🇸 English
+**[📖 English User Guide](/en/README_en.md)**
+*Complete documentation in English*
 
-### WaveShare LCD Hat Controls
+### 🇪🇸 Español
+**[📖 Guía del Usuario en Español](./guides/es/README.md)**
+*Documentación completa en español*
 
-<div align="center">
-  <img src="images/WaveShare_LCD_Hat.png" alt="WaveShare LCD Hat" width="350"/>
-</div>
+### 🇫🇷 Français
+**[📖 Guide d'Utilisation en Français](./guides/fr/README.md)**
+*Documentation complète en français*
 
-The WaveShare LCD Hat provides the following controls:
+### 🇩🇪 Deutsch
+**[📖 Benutzerhandbuch auf Deutsch](./guides/de/README.md)**
+*Vollständige Dokumentation auf Deutsch*
 
-- **Joystick**: Four-directional navigation (Up, Down, Left, Right) plus center press
-- **Key1 (A)**: Primary action button
-- **Key2 (B)**: Secondary action button  
-- **Key3 (C)**: Tertiary action button
+### 🇮🇹 Italiano
+**[📖 Guida Utente in Italiano](./guides/it/README.md)**
+*Documentazione completa in italiano*
 
-### Button Functions Reference
+### 🇳🇱 Nederlands
+**[📖 Gebruikershandleiding in het Nederlands](./guides/nl/README.md)**
+*Volledige documentatie in het Nederlands*
 
-| Control        | Function                                    |
-| -------------- | ------------------------------------------- |
-| Joystick Up    | Move selection up                           |
-| Joystick Down  | Move selection down                         |
-| Joystick Left  | Move selection left                         |
-| Joystick Right | Move selection right                        |
-| Joystick Press | Alternative selection/confirm (context-dependent) |
-| Key1 (A)       | Select highlighted option or confirm action |
-| Key2 (B)       | Select highlighted option or confirm action |
-| Key3 (C)       | Select highlighted option or confirm action |
+### Català
+**[📖 Guia d'Usuari en Català](./guides/ca/README.md)**
+*Documentació completa en català*
 
-**Important Navigation Notes**:
+### 🇯🇵 日本語 (Beta)
+**[📖 日本語ユーザーガイド](./guides/ja/README.md)**
+*日本語での完全なドキュメント*
 
-- All three keys (A, B, C) function identically for selection and confirmation
-- To go back to a previous screen, navigate to the back arrow/button using the joystick first, then press any key to activate it
-- The joystick center press may have different functions depending on the current screen context
-
----
-
-## 🏁 Conclusion
-
-SeedSigner provides a secure, open-source solution for Bitcoin key management and transaction signing. By following the workflows in this guide, you can:
-
-- ✅ Generate truly random seed phrases using multiple entropy sources
-- ✅ Securely load and manage existing seed phrases
-- ✅ Sign Bitcoin transactions without exposing private keys to networked devices
-- ✅ Export public keys for watch-only wallet setup
-- ✅ Verify address ownership and transaction details
-- ✅ Maintain complete air-gap security throughout all operations
-
-### Remember the Golden Rules
-
-1. **Never skip seed backup verification** - One wrong word means lost Bitcoin
-2. **Always verify transaction details** - Bitcoin transactions are irreversible
-3. **Maintain air-gap security** - Never connect SeedSigner to networks
-4. **Use private environments** - Protect against surveillance and recording
-5. **Store backups securely** - Treat seed phrases like the valuable assets they protect
-
-### Getting Help
-
-If you encounter issues not covered in this guide:
-
-- Check the official SeedSigner GitHub repository for updates
-- Visit community forums and chat groups for peer support
-- Review the troubleshooting section for common solutions
-- Consider reaching out to the development community for complex technical issues
-
-**Remember**: Your Bitcoin security is ultimately your responsibility. Take time to understand each step, practice with small amounts, and never rush through security-critical operations.
+### 🇨🇳 简体中文 (Beta)
+**[📖 简体中文用户指南](./guides/zh/README.md)**
+*简体中文完整文档*
 
 ---
 
-*This guide is maintained by the SeedSigner community and updated regularly. For the latest version and additional resources, visit the official SeedSigner GitHub repository.*
+## 🤝 Contributing
+
+We welcome contributions to improve and expand this user guide!
+
+### How to Contribute
+
+- **Translations**: Help us add new languages or improve existing translations
+- **Content**: Suggest improvements to existing documentation
+- **Screenshots**: Provide updated screenshots for your language
+- **Bug Reports**: Report any errors or unclear instructions
+
+### Adding a New Language
+
+1. Fork this repository
+2. Create a new directory under `guides/` using the appropriate language code
+3. Translate the content while maintaining the same structure
+4. Update this main README.md to include your language
+5. Submit a pull request
+
+### Language Codes
+
+We use ISO 639-1 language codes for directory naming:
+- `en` - English
+- `es` - Spanish
+- `fr` - French
+- `de` - German
+- `it` - Italy
+- `nl` - Nederlands
+- `ca` - Catalan
+- `ja` - Japanese
+- `zh` - Chinese
+
+---
+
+## 🔗 Official Resources
+
+- **SeedSigner Website**: [seedsigner.com](https://seedsigner.com/)
+- **Official GitHub**: [github.com/SeedSigner/seedsigner](https://github.com/SeedSigner/seedsigner)
+- **Hardware Guide**: [seedsigner.com/hardware](https://seedsigner.com/hardware/)
+- **Community Support**: Visit the SeedSigner community forums and chat groups
+
+---
+
+## ⚠️ Important Security Notice
+
+SeedSigner is designed for users who understand Bitcoin security principles. Always:
+
+- ✅ Verify your seed phrase backups
+- ✅ Practice with small amounts first
+- ✅ Maintain air-gap security
+- ✅ Use in private environments
+- ✅ Double-check all transaction details
+
+**Remember**: Bitcoin transactions are irreversible. Take time to understand each step before proceeding with real funds.
+
+---
+
+## 📄 License
+
+This user guide is released under the MIT License. The SeedSigner software and hardware designs are open source - see the official repository for licensing details.
+
+---
+
+*This community-maintained guide is updated regularly. For the latest official information, always refer to the SeedSigner project's official resources.*
