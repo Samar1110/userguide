@@ -30,7 +30,7 @@ Choose your preferred language to access the complete SeedSigner user guide:
 *Complete documentation in English*
 
 ### 🇪🇸 Español
-**[📖 Guía del Usuario en Español](./guides/es/README.md)**
+**[📖 Guía del Usuario en Español](/es/README_es.md)**
 *Documentación completa en español*
 
 ### 🇫🇷 Français
