@@ -49,7 +49,7 @@ Choose your preferred language to access the complete SeedSigner user guide:
 **[📖 Gebruikershandleiding in het Nederlands](./guides/nl/README.md)**
 *Volledige documentatie in het Nederlands*
 
-### Català
+### ​🇨​​🇦​ Català
 **[📖 Guia d'Usuari en Català](./guides/ca/README.md)**
 *Documentació completa en català*
 
