@@ -10,73 +10,73 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 
 ### 🚀 Getting Started
 
-- [Initial Setup and Power On](/getting_started/initial_setup_and_power_on.md)
-- [Navigation Basics](/getting_started/navigation_basics.md)
-- [Powering Off Safely](/getting_started/powering_off_safely.md)
-- [Restarting Your Device](/getting_started/restarting_your_device.md)
+- [Initial Setup and Power On](/en/getting_started/initial_setup_and_power_on.md)
+- [Navigation Basics](/en/getting_started/navigation_basics.md)
+- [Powering Off Safely](/en/getting_started/powering_off_safely.md)
+- [Restarting Your Device](/en/getting_started/restarting_your_device.md)
 
 ### 🌱 Seed Management
 
 - **Creating New Seeds**
-  - [Camera-Based Seed Generation](/seed_management/creating_new_seeds/camera_based_seed_generation.md)
-  - [Dice-Based Seed Generation](/seed_management/creating_new_seeds/dice_based_seed_generation.md)
-  - [Calc 12th/24th Word Seed Generation](/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
+  - [Camera-Based Seed Generation](/en/seed_management/creating_new_seeds/camera_based_seed_generation.md)
+  - [Dice-Based Seed Generation](/en/seed_management/creating_new_seeds/dice_based_seed_generation.md)
+  - [Calc 12th/24th Word Seed Generation](/en/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
 - **Loading Existing Seeds**
-  - [Manual Seed Entry](/seed_management/load_existing_seeds/manual_seed_entry.md)
-  - [SeedQR Scanning](/seed_management/load_existing_seeds/seedqr_scanning.md)
-  - [Adding BIP-39 Passphrase](/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
+  - [Manual Seed Entry](/en/seed_management/load_existing_seeds/manual_seed_entry.md)
+  - [SeedQR Scanning](/en/seed_management/load_existing_seeds/seedqr_scanning.md)
+  - [Adding BIP-39 Passphrase](/en/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
 
 ### 🔧 Working with Loaded Seeds
 
-- [Export Public Key (Xpub)](/working_with_loaded_seeds/export_public_key_xpub.md)
-- [Generate Receiving Addresses](/working_with_loaded_seeds/generate_receiving_addresses.md)
-- [Generate Change Addresses](/working_with_loaded_seeds/generate_change_addresses.md)
-- [View Seed Words](/working_with_loaded_seeds/view_seed_words.md)
-- [Create SeedQR Backup](/working_with_loaded_seeds/create_seedqr_backup.md)
+- [Export Public Key (Xpub)](/en/working_with_loaded_seeds/export_public_key_xpub.md)
+- [Generate Receiving Addresses](/en/working_with_loaded_seeds/generate_receiving_addresses.md)
+- [Generate Change Addresses](/en/working_with_loaded_seeds/generate_change_addresses.md)
+- [View Seed Words](/en/working_with_loaded_seeds/view_seed_words.md)
+- [Create SeedQR Backup](/en/working_with_loaded_seeds/create_seedqr_backup.md)
 
 ### ✍️ Transactions & Verification
 
-- [Sign Bitcoin Transaction (PSBT)](/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
-- [Verify Address Ownership](/transactions_and_verification/verify_address_ownership.md)
-- [Discard Loaded Seed](/transactions_and_verification/discard_loaded_seed.md)
+- [Sign Bitcoin Transaction (PSBT)](/en/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
+- [Verify Address Ownership](/en/transactions_and_verification/verify_address_ownership.md)
+- [Discard Loaded Seed](/en/transactions_and_verification/discard_loaded_seed.md)
 
 ### ⚙️ Device Configuration
 
 - **Basic Settings**
-  - [Language Configuration](/device_configuration/basic_settings/language_configuration.md)
-  - [Persistent Settings](/device_configuration/basic_settings/persistent_settings.md)
-  - [Coordinator Software Support](/device_configuration/basic_settings/coordinator_software_support.md)
-  - [Denomination Display](/device_configuration/basic_settings/denomination_display.md)
-  - [Hardware I/O Testing](/device_configuration/basic_settings/hardware_io_testing.md)
-  - [Donation Information](/device_configuration/basic_settings/donation_information.md)
+  - [Language Configuration](/en/device_configuration/basic_settings/language_configuration.md)
+  - [Persistent Settings](/en/device_configuration/basic_settings/persistent_settings.md)
+  - [Coordinator Software Support](/en/device_configuration/basic_settings/coordinator_software_support.md)
+  - [Denomination Display](/en/device_configuration/basic_settings/denomination_display.md)
+  - [Hardware I/O Testing](/en/device_configuration/basic_settings/hardware_io_testing.md)
+  - [Donation Information](/en/device_configuration/basic_settings/donation_information.md)
 
 - **Advanced Settings**
-  - [Bitcoin Network Selection](/device_configuration/advanced_settings/bitcoin_network_selection.md)
-  - [QR Code Density](/device_configuration/advanced_settings/qr_code_density.md)
-  - [Xpub Export Configuration](/device_configuration/advanced_settings/xpub_export_configuration.md)
-  - [Signature Types Configuration](/device_configuration/advanced_settings/signature_types_configuration.md)
-  - [Script Types Configuration](/device_configuration/advanced_settings/script_types_configuration.md)
-  - [Show Xpub Details](/device_configuration/advanced_settings/show_xpub_details.md)
-  - [BIP-39 Passphrase Configuration](/device_configuration/advanced_settings/bip-39_passphrase_configuration.md)
-  - [Camera Rotation](/device_configuration/advanced_settings/camera_rotation.md)
-  - [Compact SeedQR](/device_configuration/advanced_settings/compact_seedqr.md)
-  - [BIP-85 Child Seeds](/device_configuration/advanced_settings/bip-85_child_seeds.md)
-  - [Electrum Seeds](/device_configuration/advanced_settings/electrum_seeds.md)
-  - [Message Signing](/device_configuration/advanced_settings/message_signing.md)
-  - [Privacy Warnings](/device_configuration/advanced_settings/privacy_warnings.md)
-  - [Dire Warnings](/device_configuration/advanced_settings/dire_warnings.md)
-  - [QR Brightness Tips](/device_configuration/advanced_settings/qr_brightness_tips.md)
-  - [Partner Logos](/device_configuration/advanced_settings/partner_logos.md)
+  - [Bitcoin Network Selection](/en/device_configuration/advanced_settings/bitcoin_network_selection.md)
+  - [QR Code Density](/en/device_configuration/advanced_settings/qr_code_density.md)
+  - [Xpub Export Configuration](/en/device_configuration/advanced_settings/xpub_export_configuration.md)
+  - [Signature Types Configuration](/en/device_configuration/advanced_settings/signature_types_configuration.md)
+  - [Script Types Configuration](/en/device_configuration/advanced_settings/script_types_configuration.md)
+  - [Show Xpub Details](/en/device_configuration/advanced_settings/show_xpub_details.md)
+  - [BIP-39 Passphrase Configuration](/en/device_configuration/advanced_settings/bip-39_passphrase_configuration.md)
+  - [Camera Rotation](/en/device_configuration/advanced_settings/camera_rotation.md)
+  - [Compact SeedQR](/en/device_configuration/advanced_settings/compact_seedqr.md)
+  - [BIP-85 Child Seeds](/en/device_configuration/advanced_settings/bip-85_child_seeds.md)
+  - [Electrum Seeds](/en/device_configuration/advanced_settings/electrum_seeds.md)
+  - [Message Signing](/en/device_configuration/advanced_settings/message_signing.md)
+  - [Privacy Warnings](/en/device_configuration/advanced_settings/privacy_warnings.md)
+  - [Dire Warnings](/en/device_configuration/advanced_settings/dire_warnings.md)
+  - [QR Brightness Tips](/en/device_configuration/advanced_settings/qr_brightness_tips.md)
+  - [Partner Logos](/en/device_configuration/advanced_settings/partner_logos.md)
 
 - **Hardware Settings**
-  - [Display Type Configuration](/device_configuration/hardware_settings/display_type_configuration.md)
-  - [Color Inversion](/device_configuration/hardware_settings/color_inversion.md)
+  - [Display Type Configuration](/en/device_configuration/hardware_settings/display_type_configuration.md)
+  - [Color Inversion](/en/device_configuration/hardware_settings/color_inversion.md)
 
 ### 🔧 Support & Resources
 
-- [Troubleshooting](/support_and_resources/troubleshooting.md)
-- [Additional Resources](/support_and_resources/additional_resources.md)
-- [Security Considerations](/support_and_resources/security_considerations.md)
+- [Troubleshooting](/en/support_and_resources/troubleshooting.md)
+- [Additional Resources](/en/support_and_resources/additional_resources.md)
+- [Security Considerations](/en/support_and_resources/security_considerations.md)
 
 > 💡 **Quick Navigation Tip**: Use Ctrl+F (or Cmd+F on Mac) to search for specific topics within this guide.
 
