@@ -26,7 +26,7 @@ Invert display colors for different viewing preferences or hardware configuratio
 </div>
 
 <div align="center">
-     <img src="images/SettingsEntryUpdateSelectionView_invert_colors.png" alt="Color inversion configuration" width="250"/>
+     <img src="images/SettingsEntryUpdateSelectionView_color_inverted.png" alt="Color inversion configuration" width="250"/>
 </div>
 
 > **🔧 Troubleshooting Use**: Run hardware tests if you're experiencing issues with button responses, display problems, or camera malfunctions. This helps isolate hardware vs. software issues.

@@ -43,7 +43,7 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 5. **Navigate All Sections**: Use the joystick to review every part of the QR code for accuracy
 
 <div align="center">
-     <img src="images/SeedTranscribeSeedQRZoomedView.png" alt="Zoomed SeedQR transcription interface" width="250"/>
+     <img src="images/SeedTranscribeSeedQRZoomedInView_12_Standard.png" alt="Zoomed SeedQR transcription interface" width="250"/>
 </div>
 
 6. **Complete Review**: Press any key to proceed. You'll see two options:
