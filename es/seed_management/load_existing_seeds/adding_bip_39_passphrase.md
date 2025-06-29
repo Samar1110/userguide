@@ -1,46 +1,49 @@
-# Adding BIP-39 Passphrase
+# Añadiendo la contraseña BIP-39
 
-Enhance your seed security with an optional passphrase. This creates an entirely different wallet even with the same seed words.
+Mejora la seguridad de tus semillas con una contraseña opcional. Esto crea una billetera completamente diferente, incluso con las mismas contraseñas.
 
-## Complete Step-by-Step Process with All Screenshots
+## Proceso paso a paso con capturas de pantalla
 
-1. **Access Passphrase Entry**: From the "Finalize Seed" screen, select **"BIP-39 Passphrase"**
-
-<div align="center">
-     <img src="images/BIP-39PassphraseSelectView.png" alt="Accessing passphrase entry from finalize screen" width="250"/>
-</div>
-
-2. **Enter Your Passphrase**: Use the on-screen keyboard with multiple character sets:
-   - **Default Mode**: Lowercase letters (a-z)
+1. **Introducción de la contraseña**: En la pantalla "Finalizar semilla", seleccione **"Contraseña BIP-39"**
 
 <div align="center">
-     <img src="images/SeedAddPassphraseView_lowercase.png" alt="Passphrase entry screen - lowercase" width="250"/>
+     <img src="images/BIP-39PassphraseSelectView.png" alt="Acceso a la contraseña desde la pantalla de finalización" width="250"/>
 </div>
 
-- **Key A**: Switch to uppercase letters (A-Z)
+2. **Introduzca su contraseña**: Use el teclado en pantalla con varios conjuntos de caracteres:
+
+- **Modo predeterminado**: Minúsculas (a-z)
 
 <div align="center">
-     <img src="images/SeedAddPassphraseView_uppercase.png" alt="Passphrase entry screen - uppercase" width="250"/>
+     <img src="images/SeedAddPassphraseView_lowercase.png" alt="Pantalla de introducción de contraseña - minúsculas" width="250"/>
 </div>
 
-- **Key B**: Access numbers (0-9) and symbols
+- **Tecla A**: Cambiar a mayúsculas (A-Z)
 
 <div align="center">
-     <img src="images/SeedAddPassphraseView_digits.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
-</div>
-<div align="center">
-     <img src="images/SeedAddPassphraseView_symbols_1.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
-</div>
-<div align="center">
-     <img src="images/SeedAddPassphraseView_symbols_2.png" alt="Passphrase entry screen - symbols and numbers" width="250"/>
+     <img src="images/SeedAddPassphraseView_uppercase.png" alt="Pantalla de introducción de contraseña - mayúsculas" width="250"/>
 </div>
 
-3. **Review Your Entry**: Double-check your passphrase for accuracy
-
-4. **Confirm or Edit**: Select **"Done"** to confirm, or make corrections if needed
+- **Tecla B**: Números de acceso (0-9) y símbolos
 
 <div align="center">
-     <img src="images/SeedPassphraseReviewView.png" alt="Passphrase review screen" width="250"/>
+     <img src="images/SeedAddPassphraseView_digits.png" alt="Pantalla de introducción de contraseña - símbolos y números" width="250"/>
 </div>
 
-> **🔐 Critical Security Note**: A BIP-39 passphrase creates an entirely different wallet from the same seed words. You must store your passphrase separately from your seed words. Losing the passphrase means losing access to that wallet forever.
+<div align="center">
+     <img src="images/SeedAddPassphraseView_symbols_1.png" alt="Pantalla de introducción de contraseña - símbolos y números" width="250"/>
+</div>
+
+<div align="center">
+     <img src="images/SeedAddPassphraseView_symbols_2.png" alt="Pantalla de introducción de contraseña - símbolos y números" width="250"/>
+</div>
+
+3. **Revisar su entrada**: Verifique la precisión de su contraseña.
+
+4. **Confirmar o editar**: Seleccione **"Listo"** para confirmar o hacer correcciones si es necesario.
+
+<div align="center">
+     <img src="images/SeedPassphraseReviewView.png" alt="Pantalla de revisión de contraseña" width="250"/>
+</div>
+
+> **🔐 Nota de seguridad importante**: Una contraseña BIP-39 crea una billetera completamente diferente a partir de las mismas palabras clave. Debe guardar su contraseña por separado de las palabras clave. Perder la contraseña significa perder el acceso a esa billetera para siempre.

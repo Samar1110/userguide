@@ -1,35 +1,35 @@
-# SeedQR Scanning
+# Escaneo de SeedQR
 
-Quickly and securely load seeds from SeedQR codes - a compact QR code format specifically designed for seed phrases.
+Cargue semillas de forma rápida y segura desde códigos SeedQR: un formato de código QR compacto diseñado específicamente para frases de semillas.
 
-## Complete Step-by-Step Process with All Screenshots
+## Proceso completo paso a paso con todas las capturas de pantalla
 
-1. **Navigate**: Main Menu → **Scan**
-
-<div align="center">
-     <img src="images/MainMenuView.png" alt="Main menu highlighting Scan option" width="250"/>
-</div>
-
-2. **Position QR Code**: Point the camera at your SeedQR code
+1. **Navegar**: Menú principal → **Escanear**
 
 <div align="center">
-     <img src="images/SeedQRScan.png" alt="SeedQR scanning interface" width="250"/>
+     <img src="images/MainMenuView.png" alt="Opción de escaneo resaltada en el menú principal" width="250"/>
 </div>
 
-3. **Wait for Recognition**: The device will automatically detect and process valid SeedQR codes
-
-4. **Review Details**: Check the seed information on the "Finalize Seed" screen
+2. **Posicionar código QR**: Apunte la cámara a su código SeedQR
 
 <div align="center">
-     <img src="images/SeedFinalizeView.png" alt="SeedQR finalization screen" width="250"/>
+     <img src="images/SeedQRScan.png" alt="Interfaz de escaneo SeedQR" width="250"/>
 </div>
 
-5. **Handle Errors**: If you see "Unknown QR Type", the QR code format isn't recognized
+3. **Esperar reconocimiento**: El dispositivo detectará y procesará automáticamente los códigos SeedQR válidos.
+
+4. **Revisar detalles**: Verifique la información de la semilla en la pantalla "Finalizar semilla"
 
 <div align="center">
-     <img src="images/ScanInvalidQRTypeView.png" alt="Unknown QR type error message" width="250"/>
+     <img src="images/SeedFinalizeView.png" alt="Finalización de SeedQR screen" width="250"/>
 </div>
 
-6. **Complete Loading**: Select **"Done"** to load the seed
+5. **Gestionar errores**: Si ve "Tipo de QR desconocido", el formato del código QR no se reconoce.
 
-> **❌ Troubleshooting**: If you see "Unknown QR Type", the QR code format isn't recognized as a valid SeedQR. Press "Done" to return to scanning mode and verify you're using a properly formatted SeedQR code.
+<div align="center">
+     <img src="images/ScanInvalidQRTypeView.png" alt="Mensaje de error de tipo de QR desconocido" width="250"/>
+</div>
+
+6. **Finalizar carga**: Seleccione **"Listo"** para cargar la semilla.
+
+> **❌ Solución de problemas**: Si ve "Tipo de QR desconocido", el formato del código QR no se reconoce como un SeedQR válido. Pulse "Listo" para volver al modo de escaneo y verificar que está usando un código SeedQR con el formato correcto.

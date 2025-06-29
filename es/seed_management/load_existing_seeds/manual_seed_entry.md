@@ -1,46 +1,46 @@
-# Manual Seed Entry
+# Entrada manual de semilla
 
-Enter your existing mnemonic phrase using the on-screen keyboard system.
+Ingrese su frase mnemotécnica usando el teclado en pantalla.
 
-## Complete Step-by-Step Process with All Screenshots
+## Proceso completo paso a paso con todas las capturas de pantalla
 
-1. **Navigate**: Main Menu → **Seeds** → **"Load a Seed"**
-
-<div align="center">
-     <img src="images/SeedsOptionSelectView.png" alt="Tools menu selection" width="250"/>
-</div>
-<div align="center">
-     <img src="images/LoadASeedMainOptionSelectView.png" alt="Load seed menu" width="250"/>
-</div>
-
-2. **Choose Length**: Select **"Enter 12-word seed"** or **"Enter 24-word seed"**
+1. **Navegar**: Menú principal → **Semillas** → **"Cargar una semilla"**
 
 <div align="center">
-     <img src="images/LoadASeedMainMenuView.png" alt="Manual entry seed length selection" width="250"/>
+     <img src="images/SeedsOptionSelectView.png" alt="Selección del menú Herramientas" width="250"/>
 </div>
 <div align="center">
-     <img src="images/SeedMnemonicLengthView.png" alt="Manual entry seed length selection" width="250"/>
+     <img src="images/LoadASeedMainOptionSelectView.png" alt="Cargar menú de semillas" width="250"/>
 </div>
 
-3. **Enter Each Word**:
-   - Use the on-screen keyboard with intelligent word suggestions
-   - Type the first few letters and select from suggestions for faster entry
-   - **Key A**: Move up in the suggestions list
-   - **Key C**: Move down in the suggestions list  
-   - **Key B**: Select the highlighted suggested word
+2. **Elegir longitud**: Seleccionar **"Introducir semilla de 12 palabras"** o **"Introducir semilla de 24 palabras"**
 
 <div align="center">
-     <img src="images/SeedWordEnterView.png" alt="Seed word entry in progress" width="250"/>
+     <img src="images/LoadASeedMainMenuView.png" alt="Selección manual de la longitud de la semilla" width="250"/>
+</div>
+<div align="center">
+     <img src="images/SeedMnemonicLengthView.png" alt="Selección de longitud de la semilla para entrada manual" width="250"/>
 </div>
 
-4. **Review Seed Fingerprint**: Check the unique identifier on the "Finalize Seed" screen
+3. **Ingresar cada palabra**:
+- Usar el teclado en pantalla con sugerencias inteligentes de palabras.
+- Escribir las primeras letras y seleccionar entre las sugerencias para una entrada más rápida.
+- **Tecla A**: Subir en la lista de sugerencias.
+- **Tecla C**: Bajar en la lista de sugerencias.
+- **Tecla B**: Seleccionar la palabra sugerida resaltada.
 
 <div align="center">
-     <img src="images/SeedFinalizeView.png" alt="Seed finalization screen with fingerprint" width="250"/>
+     <img src="images/SeedWordEnterView.png" alt="Ingreso de palabra semilla en curso" width="250"/>
 </div>
 
-5. **Complete Loading**:
-   - Select **"Done"** to load the seed as-is
-   - Or select **"BIP-39 Passphrase"** to add an additional security layer
+4. **Revisar la huella de la semilla**: Verificar el identificador único en la pantalla "Finalizar semilla".
 
-> **⚡ Speed Tip**: The word suggestion feature dramatically speeds up entry. Type just the first 2-3 letters of each word and select from the filtered suggestions rather than typing each letter individually.
+<div align="center">
+     <img src="images/SeedFinalizeView.png" alt="Pantalla de finalización de la semilla con huella digital" width="250"/>
+</div>
+
+5. **Carga completa**:
+- Seleccione **"Listo"** para cargar la semilla tal cual.
+- O seleccione **"Frase de contraseña BIP-39"** para añadir una capa de seguridad adicional.
+
+> **⚡ Consejo rápido**: La función de sugerencia de palabras agiliza enormemente la entrada. Escriba solo las primeras 2 o 3 letras de cada palabra y seleccione entre las sugerencias filtradas en lugar de escribir cada letra individualmente.
