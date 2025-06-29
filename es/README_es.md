@@ -18,9 +18,9 @@ SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separa
 ### 🌱 Gestión de Semillas
 
 - **Crear Nuevas Semillas**
-  - [Generación de Semilla Basada en Cámara](/es/gestion_de_semillas/crear_nuevas_semillas/generacion_de_semilla_basada_en_camara.md)
-  - [Generación de Semilla Basada en Dados](/es/gestion_de_semillas/crear_nuevas_semillas/generacion_de_semilla_basada_en_dados.md)
-  - [Generación de Semilla Calculando la 12ª/24ª Palabra](/es/gestion_de_semillas/crear_nuevas_semillas/generacion_de_semilla_calc_12_24_palabra.md)
+  - [Generación de Semilla Basada en Cámara](/es/seed_management/creating_new_seeds/camera_based_seed_generation.md)
+  - [Generación de Semilla Basada en Dados](/es/seed_management/creating_new_seeds/dice_based_seed_generation.md)
+  - [Generación de Semilla Calculando la 12ª/24ª Palabra](/es/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
 - **Cargar Semillas Existentes**
   - [Entrada Manual de Semilla](/es/gestion_de_semillas/cargar_semillas_existentes/entrada_manual_de_semilla.md)
   - [Escaneo de SeedQR](/es/gestion_de_semillas/cargar_semillas_existentes/escaneo_seedqr.md)
