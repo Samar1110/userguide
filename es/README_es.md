@@ -22,17 +22,17 @@ SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separa
   - [Generación de Semilla Basada en Dados](/es/seed_management/creating_new_seeds/dice_based_seed_generation.md)
   - [Generación de Semilla Calculando la 12ª/24ª Palabra](/es/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
 - **Cargar Semillas Existentes**
-  - [Entrada Manual de Semilla](/es/gestion_de_semillas/cargar_semillas_existentes/entrada_manual_de_semilla.md)
-  - [Escaneo de SeedQR](/es/gestion_de_semillas/cargar_semillas_existentes/escaneo_seedqr.md)
-  - [Agregar Frase de Paso BIP-39](/es/gestion_de_semillas/cargar_semillas_existentes/agregar_frase_de_paso_bip_39.md)
+  - [Entrada Manual de Semilla](/es/seed_management/load_existing_seeds/manual_seed_entry.md)
+  - [Escaneo de SeedQR](/es/seed_management/load_existing_seeds/seedqr_scanning.md)
+  - [Agregar Frase de Paso BIP-39](/es/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
 
 ### 🔧 Trabajar con Semillas Cargadas
 
-- [Exportar Clave Pública (Xpub)](/es/trabajar_con_semillas_cargadas/exportar_clave_publica_xpub.md)
-- [Generar Direcciones de Recepción](/es/trabajar_con_semillas_cargadas/generar_direcciones_de_recepcion.md)
-- [Generar Direcciones de Cambio](/es/trabajar_con_semillas_cargadas/generar_direcciones_de_cambio.md)
-- [Ver Palabras de la Semilla](/es/trabajar_con_semillas_cargadas/ver_palabras_de_la_semilla.md)
-- [Crear Respaldo SeedQR](/es/trabajar_con_semillas_cargadas/crear_respaldo_seedqr.md)
+- [Exportar Clave Pública (Xpub)](/es/working_with_loaded_seeds/export_public_key_xpub.md)
+- [Generar Dirección de Recepción](/es/working_with_loaded_seeds/generate_receiving_addresses.md)
+- [Generar Cambio de Dirección](/es/working_with_loaded_seeds/generate_change_addresses.md)
+- [Ver Palabras Clave](/es/working_with_loaded_seeds/view_seed_words.md)
+- [Crear copia de seguridad de SeedQR](/es/working_with_loaded_seeds/create_seedqr_backup.md)
 
 ### ✍️ Transacciones y Verificación
 
