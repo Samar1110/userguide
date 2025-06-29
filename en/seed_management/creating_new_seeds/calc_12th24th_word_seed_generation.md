@@ -64,6 +64,10 @@ The system provides three different entropy sources to calculate the final word,
      <img src="images/ToolsCalcFinalWordEntropyView.png" alt="Word selection entropy method" width="250"/>
 </div>
 
+<div align="center">
+     <img src="images/ToolsCalcFinalWordEntropyResultView.png" alt="Word selection entropy method" width="250"/>
+</div>
+
 **🔢 Finalize with Zeros Method**
 
 - Uses a simple 7-bit string of zeros plus the calculated 4-bit checksum

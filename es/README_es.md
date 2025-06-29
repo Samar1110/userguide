@@ -10,10 +10,10 @@ SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separa
 
 ### 🚀 Primeros Pasos
 
-- [Configuración Inicial y Encendido](/es/primeros_pasos/configuracion_inicial_y_encendido.md)
-- [Fundamentos de Navegación](/es/primeros_pasos/fundamentos_de_navegacion.md)
-- [Apagado Seguro](/es/primeros_pasos/apagado_seguro.md)
-- [Reiniciar tu Dispositivo](/es/primeros_pasos/reiniciando_su_dispositivo.md)
+- [Configuración Inicial y Encendido](/es/getting_started/initial_setup_and_power_on.md)
+- [Fundamentos de Navegación](/es/getting_started/navigation_basics.md)
+- [Apagado Seguro](/es/getting_started/powering_off_safely.md)
+- [Reiniciar tu Dispositivo](/es/getting_started/restarting_your_device.md)
 
 ### 🌱 Gestión de Semillas
 
