@@ -36,9 +36,9 @@ SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separa
 
 ### ✍️ Transacciones y Verificación
 
-- [Firmar Transacción de Bitcoin (PSBT)](/es/transacciones_y_verificacion/firmar_transaccion_bitcoin_psbt.md)
-- [Verificar Propiedad de Dirección](/es/transacciones_y_verificacion/verificar_propiedad_de_direccion.md)
-- [Descartar Semilla Cargada](/es/transacciones_y_verificacion/descartar_semilla_cargada.md)
+- [Firmar Transacción de Bitcoin (PSBT)](/es/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
+- [Verificar Propiedad de Dirección](/es/transactions_and_verification/verify_address_ownership.md)
+- [Descartar Semilla Cargada](/es/transactions_and_verification/verify_address_ownership.md)
 
 ### ⚙️ Configuración del Dispositivo
 

@@ -4,7 +4,7 @@ Safely remove the current seed from memory when you're finished with your operat
 
 ## Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words`
+1. **Navigate**: `Home → Seeds → [Select Seed] → Discard Seed`
 
 <div align="center">
      <img src="images/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
