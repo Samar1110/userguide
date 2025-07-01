@@ -1,4 +1,4 @@
-Configuración de tipos de firma
+# Configuración de tipos de firma
 
 Configure los tipos de firma compatibles con el dispositivo.
 
