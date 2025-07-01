@@ -4,7 +4,7 @@ Invierte los colores de la pantalla según tus preferencias de visualización o 
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Hardware** → **Invert colors**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Hardware** → **Invert colors**
 2. **Seleccionar modo de color**:
      - **Activado** - Invertir colores de pantalla (predeterminado)
      - **Desactivado** - Pantalla a color estándar

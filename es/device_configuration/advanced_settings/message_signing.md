@@ -4,7 +4,7 @@ Habilite la función de firma criptográfica de mensajes.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Firma mensajes**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Firma mensajes**
 2. **Seleccionar modo**:
      - **Activado** - Permitir firma de mensajes
      - **Deactivado** - Deshabilitar firma de mensajes (predeterminado)

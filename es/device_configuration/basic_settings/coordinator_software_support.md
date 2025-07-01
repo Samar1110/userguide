@@ -4,7 +4,7 @@ Habilite o deshabilite la compatibilidad con aplicaciones de billetera específi
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Software coordinador**
+1. **Navegar**: Menú principal → **Ajustes** → **Software coordinador**
 
 2. **Configurar la compatibilidad** para cada billetera:
      - ✅ **BlueWallet** - Billetera Bitcoin móvil

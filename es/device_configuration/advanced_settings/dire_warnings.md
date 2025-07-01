@@ -4,7 +4,7 @@ Configure la visualización de advertencias de seguridad críticas.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Mostrar advertencias graves**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Mostrar advertencias graves**
 2. **Seleccionar modo de visualización**:
      - **Activado** - Mostrar advertencias críticas (predeterminado)
      - **Desactivado** - Ocultar advertencias graves

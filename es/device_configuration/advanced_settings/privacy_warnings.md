@@ -4,7 +4,7 @@ Controla la visualización de advertencias y notificaciones relacionadas con la 
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Mostrar Alertas de privacidad**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Mostrar Alertas de privacidad**
 2. **Seleccionar modo de visualización**:
      - **Activado** - Mostrar advertencias de privacidad (predeterminado)
      - **Desactivado** - Ocultar advertencias de privacidad

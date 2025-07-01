@@ -4,7 +4,7 @@ Controle cómo el dispositivo gestiona las contraseñas BIP-39.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Passphrase BIP-39**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Passphrase BIP-39**
 2. **Seleccionar modo**:
      - **Activado** - La contraseña es opcional (configuración recomendada por defecto)
      - **Desactivado** - No se admiten contraseñas

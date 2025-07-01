@@ -4,7 +4,7 @@ Configure si sus ajustes se guardan permanentemente o se restablecen en cada arr
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Ajustes persistentes**
+1. **Navegar**: Menú principal → **Ajustes** → **Ajustes persistentes**
 
 2. **Seleccionar modo**:
      - **"Activado"** - Guarda la configuración en la tarjeta SD (resiste reinicios)

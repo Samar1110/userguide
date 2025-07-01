@@ -4,7 +4,7 @@ Controla la visualización de los logotipos de socios y proveedores de billetera
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Mostrar Logos de asociados**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Mostrar Logos de asociados**
 2. **Seleccionar modo de visualización**:
      - **Activado** - Mostrar logotipos de socios (predeterminado)
      - **Desactivado** - Ocultar logotipos de socios

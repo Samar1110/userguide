@@ -4,7 +4,7 @@ Configure los tipos de firma compatibles con el dispositivo.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Tipos de firma**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Tipos de firma**
 2. **Seleccionar tipos compatibles**:
      - **Monofirma** - Transacciones con firma única
      - **Multifirma** - Transacciones con múltiples firmas

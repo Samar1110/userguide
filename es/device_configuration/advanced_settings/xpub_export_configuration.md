@@ -4,7 +4,7 @@ Controla la función de exportación de claves públicas extendidas.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Exportar Xpub**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Exportar Xpub**
 2. **Seleccionar modo**:
      - **Activado** - Permitir exportación a XPUB (predeterminado)
      - **Desactivado** - Deshabilitar la función de exportación a XPUB

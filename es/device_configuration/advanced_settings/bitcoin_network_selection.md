@@ -4,7 +4,7 @@ Seleccione la red Bitcoin que desea usar para direcciones y transacciones.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Red Bitcoin**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Red Bitcoin**
 2. **Seleccionar red**:
      - **Mainnet** - Red Bitcoin real (predeterminada para uso normal)
      - **Testnet** - Red de pruebas para desarrollo y experimentación

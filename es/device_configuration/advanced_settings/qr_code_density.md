@@ -4,7 +4,7 @@ Ajuste la densidad de los códigos QR generados para equilibrar el tamaño y la 
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Densidad del código QR**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Densidad del código QR**
 2. **Seleccionar densidad**:
      - **Bajo** - Códigos QR más grandes y fáciles de escanear
      - **Medio** - Tamaño equilibrado y compatibilidad (predeterminado)

@@ -4,7 +4,7 @@ Ajusta la orientación de la cámara según la configuración de tu dispositivo.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Rotación de la cámara**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Rotación de la cámara**
 2. **Seleccionar rotación**:
      - **0 grados** - Sin rotación
      - **90 grados** - Giro de un cuarto en sentido horario

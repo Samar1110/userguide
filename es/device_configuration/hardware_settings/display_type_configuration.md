@@ -4,7 +4,7 @@ Configure el controlador de pantalla para su configuración de hardware.
 
 ## Proceso paso a paso
 
-1. **Navegar**: Menú → **Ajustes** → **Avanzado** → **Hardware** → **Display type**
+1. **Navegar**: Menú principal → **Ajustes** → **Avanzado** → **Hardware** → **Display type**
 2. **Seleccionar controlador de pantalla**:
      - **st7789 240x240** - Pantalla cuadrada estándar (predeterminada)
      - **st7789 320x240** - Opción de pantalla rectangular
