@@ -9,7 +9,7 @@ Control whether extended public key details are displayed.
    - **Enabled** - Show detailed xpub information (default)
    - **Disabled** - Hide xpub details
 
-   <div align="center">
+<div align="center">
      <img src="images/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
 </div>
 
