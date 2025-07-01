@@ -43,40 +43,40 @@ SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separa
 ### ⚙️ Configuración del Dispositivo
 
 - **Configuraciones Básicas**
-  - [Configuración de Idioma](/es/configuracion_del_dispositivo/configuraciones_basicas/configuracion_de_idioma.md)
-  - [Configuraciones Persistentes](/es/configuracion_del_dispositivo/configuraciones_basicas/configuraciones_persistentes.md)
-  - [Soporte de Software Coordinador](/es/configuracion_del_dispositivo/configuraciones_basicas/soporte_software_coordinador.md)
-  - [Visualización de Denominación](/es/configuracion_del_dispositivo/configuraciones_basicas/visualizacion_de_denominacion.md)
-  - [Prueba de E/S de Hardware](/es/configuracion_del_dispositivo/configuraciones_basicas/prueba_es_hardware.md)
-  - [Información de Donaciones](/es/configuracion_del_dispositivo/configuraciones_basicas/informacion_de_donaciones.md)
+  - [Configuración de Idioma](/es/device_configuration/basic_settings/language_configuration.md)
+  - [Configuraciones Persistentes](/es/device_configuration/basic_settings/persistent_settings.md)
+  - [Soporte de Software Coordinador](/es/device_configuration/basic_settings/coordinator_software_support.md)
+  - [Visualización de Denominación](/es/device_configuration/basic_settings/denomination_display.md)
+  - [Prueba de E/S de Hardware](/es/device_configuration/basic_settings/hardware_io_testing.md)
+  - [Información de Donaciones](/es/device_configuration/basic_settings/donation_information.md)
 
 - **Configuraciones Avanzadas**
-  - [Selección de Red Bitcoin](/es/configuracion_del_dispositivo/configuraciones_avanzadas/seleccion_de_red_bitcoin.md)
-  - [Densidad de Código QR](/es/configuracion_del_dispositivo/configuraciones_avanzadas/densidad_de_codigo_qr.md)
-  - [Configuración de Exportación Xpub](/es/configuracion_del_dispositivo/configuraciones_avanzadas/configuracion_exportacion_xpub.md)
-  - [Configuración de Tipos de Firma](/es/configuracion_del_dispositivo/configuraciones_avanzadas/configuracion_tipos_de_firma.md)
-  - [Configuración de Tipos de Script](/es/configuracion_del_dispositivo/configuraciones_avanzadas/configuracion_tipos_de_script.md)
-  - [Mostrar Detalles de Xpub](/es/configuracion_del_dispositivo/configuraciones_avanzadas/mostrar_detalles_xpub.md)
-  - [Configuración de Frase de Paso BIP-39](/es/configuracion_del_dispositivo/configuraciones_avanzadas/configuracion_frase_de_paso_bip-39.md)
-  - [Rotación de Cámara](/es/configuracion_del_dispositivo/configuraciones_avanzadas/rotacion_de_camara.md)
-  - [SeedQR Compacto](/es/configuracion_del_dispositivo/configuraciones_avanzadas/seedqr_compacto.md)
-  - [Semillas Hijas BIP-85](/es/configuracion_del_dispositivo/configuraciones_avanzadas/semillas_hijas_bip-85.md)
-  - [Semillas Electrum](/es/configuracion_del_dispositivo/configuraciones_avanzadas/semillas_electrum.md)
-  - [Firma de Mensajes](/es/configuracion_del_dispositivo/configuraciones_avanzadas/firma_de_mensajes.md)
-  - [Advertencias de Privacidad](/es/configuracion_del_dispositivo/configuraciones_avanzadas/advertencias_de_privacidad.md)
-  - [Advertencias Graves](/es/configuracion_del_dispositivo/configuraciones_avanzadas/advertencias_graves.md)
-  - [Consejos de Brillo QR](/es/configuracion_del_dispositivo/configuraciones_avanzadas/consejos_brillo_qr.md)
-  - [Logos de Socios](/es/configuracion_del_dispositivo/configuraciones_avanzadas/logos_de_socios.md)
+  - [Selección de Red Bitcoin](/es/device_configuration/advanced_settings/bitcoin_network_selection.md)
+  - [Densidad de Código QR](/es/device_configuration/advanced_settings/qr_code_density.md)
+  - [Configuración de Exportación Xpub](/es/device_configuration/advanced_settings/xpub_export_configuration.md)
+  - [Configuración de Tipos de Firma](/es/device_configuration/advanced_settings/signature_types_configuration.md)
+  - [Configuración de Tipos de Script](/es/device_configuration/advanced_settings/script_types_configuration.md)
+  - [Mostrar Detalles de Xpub](/es/device_configuration/advanced_settings/mostrar_detalles_xpub.md)
+  - [Configuración de Frase de Paso BIP-39](/es/device_configuration/advanced_settings/show_xpub_details.md)
+  - [Rotación de Cámara](/es/device_configuration/advanced_settings/camera_rotation.md)
+  - [SeedQR Compacto](/es/device_configuration/advanced_settings/compact_seedqr.md)
+  - [Semillas Hijas BIP-85](/es/device_configuration/advanced_settings/bip-85_child_seeds.md)
+  - [Semillas Electrum](/es/device_configuration/advanced_settings/electrum_seeds.md)
+  - [Firma de Mensajes](/es/device_configuration/advanced_settings/message_signing.md)
+  - [Advertencias de Privacidad](/es/device_configuration/advanced_settings/privacy_warnings.md)
+  - [Advertencias Graves](/es/device_configuration/advanced_settings/dire_warnings.md)
+  - [Consejos de Brillo QR](/es/device_configuration/advanced_settings/qr_brightness_tips.md)
+  - [Logos de Socios](/es/device_configuration/advanced_settings/partner_logos.md)
 
 - **Configuraciones de Hardware**
-  - [Configuración de Tipo de Pantalla](/es/configuracion_del_dispositivo/configuraciones_hardware/configuracion_tipo_de_pantalla.md)
-  - [Inversión de Color](/es/configuracion_del_dispositivo/configuraciones_hardware/inversion_de_color.md)
+  - [Configuración de Tipo de Pantalla](/es/device_configuration/hardware_settings/display_type_configuration.md)
+  - [Inversión de Color](/es/device_configuration/hardware_settings/color_inversion.md)
 
 ### 🔧 Soporte y Recursos
 
-- [Solución de Problemas](/es/soporte_y_recursos/solucion_de_problemas.md)
-- [Recursos Adicionales](/es/soporte_y_recursos/recursos_adicionales.md)
-- [Consideraciones de Seguridad](/es/soporte_y_recursos/consideraciones_de_seguridad.md)
+- [Solución de Problemas](/es/support_and_resources/troubleshooting.md)
+- [Recursos Adicionales](/es/support_and_resources/additional_resources.md)
+- [Consideraciones de Seguridad](/es/support_and_resources/security_considerations.md)
 
 > 💡 **Consejo de Navegación Rápida**: Usa Ctrl+F (o Cmd+F en Mac) para buscar temas específicos dentro de esta guía.
 
