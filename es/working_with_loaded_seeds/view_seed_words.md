@@ -4,7 +4,7 @@ Acceda a sus palabras clave para verificar copias de seguridad o realizar recupe
 
 ## Proceso completo paso a paso con capturas de pantalla
 
-1. **Navegar**: `Inicio → Semillas → [Seleccionar Semilla] → Respaldar Semilla → Ver frase semilla`
+1. **Navegar**: `Inicio → Semillas → [Seleccionar Semilla] → Salvar Semilla → Ver frase semilla`
 
 <div align="center">
      <img src="images/SeedOptionSelectView.png" alt="Flujo de navegación de Seeds" width="250"/>
