@@ -4,7 +4,7 @@ Ver las direcciones utilizadas para la devolución de cambios de transacciones
 
 ## Proceso paso a paso con capturas de pantalla
 
-**Ruta de navegación**: Inicio → Semillas → [Seleccionar semilla] → Ver Direccions`
+**Ruta de navegación**: `Inicio → Semillas → [Seleccionar semilla] → Ver Direccions`
 <div align="center">
      <img src="images/SeedOptionSelectView.png" alt="Flujo de navegación de Seeds" width="250"/>
 </div>

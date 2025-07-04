@@ -11,17 +11,17 @@ Crea monederos de solo lectura en tu software de Bitcoin favorito exportando tu 
 </div>
 
 2. **Seleccionar el tipo de firma**:
-- **"Monofirma"** - Para monederos personales estándar
-- **"Multifirma"** - Para monederos multifirma que requieren varios dispositivos
+     - **"Monofirma"** - Para monederos personales estándar
+     - **"Multifirma"** - Para monederos multifirma que requieren varios dispositivos
 
 <div align="center">
      <img src="images/SeedExportXpubSigTypeView.png" alt="Selección del tipo de firma Xpub" width="250"/>
 </div>
 
 3. **Seleccionar el tipo de script**:
-- **Native Segwit** (bech32) - Recomendado para las comisiones más bajas
-- **Nested Segwit** (P2SH) - Para compatibilidad con sistemas antiguos
-- **Taproot** - Para funciones avanzadas de privacidad y contratos inteligentes
+     - **Native Segwit** (bech32) - Recomendado para las comisiones más bajas
+     - **Nested Segwit** (P2SH) - Para compatibilidad con sistemas antiguos
+     - **Taproot** - Para funciones avanzadas de privacidad y contratos inteligentes
 
 <div align="center">
      <img src="images/SeedExportXpubScriptTypeView.png" alt="Selección del tipo de script para Xpub" width="250"/>

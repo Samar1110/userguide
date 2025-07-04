@@ -26,11 +26,11 @@ SeedSigner is an open-source, air-gapped Bitcoin signing device that helps you m
 Choose your preferred language to access the complete SeedSigner user guide:
 
 ### 🇺🇸 English
-**[📖 English User Guide](/en/README_en.md)**
+**[📖 English User Guide](guides/en/README_en.md)**
 *Complete documentation in English*
 
 ### 🇪🇸 Español
-**[📖 Guía del Usuario en Español](/es/README_es.md)**
+**[📖 Guía del Usuario en Español](guides/es/README_es.md)**
 *Documentación completa en español*
 
 ### 🇫🇷 Français
