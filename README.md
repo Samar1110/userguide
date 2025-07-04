@@ -1,7 +1,7 @@
 # SeedSigner User Guide
 
 <div align="center">
-  <img src="/en/images/SeedSigner_Logo.png" alt="SeedSigner Logo" width="400"/>
+  <img src="/guides/en/images/SeedSigner_Logo.png" alt="SeedSigner Logo" width="400"/>
 </div>
 
 ---
