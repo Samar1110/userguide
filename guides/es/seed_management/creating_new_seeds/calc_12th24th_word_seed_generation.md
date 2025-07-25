@@ -68,7 +68,7 @@ El sistema proporciona tres fuentes de entropía diferentes para calcular la pal
      <img src="images/ToolsCalcFinalWordEntropyResultView.png" alt="Método de entropía por selección de palabras" width="250"/>
 </div>
 
-**🔢 Método de terminación en cero**
+**🔢 Método de finalizar con ceros**
 
 - Utiliza una cadena simple de ceros de 7 bits más la suma de comprobación de 4 bits calculada. - Este es el método más simple, pero aun así produce una palabra final válida.
 

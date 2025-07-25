@@ -4,7 +4,7 @@
   <img src="/guides/en/images/SeedSigner_Logo.png" alt="Logo de SeedSigner" width="400"/>
 </div>
 
-SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separación de aire que te ayuda a gestionar frases semilla y firmar transacciones de forma segura. Esta guía proporciona instrucciones paso a paso organizadas por flujos de trabajo comunes.
+SeedSigner es un dispositivo de firma de Bitcoin de código abierto y con separación física que te ayuda a gestionar frases semilla y firmar transacciones de forma segura. Esta guía proporciona instrucciones paso a paso organizadas por flujos de trabajo comunes.
 
 ## 📋 Tabla de Contenidos
 
@@ -133,13 +133,13 @@ SeedSigner proporciona una solución segura y de código abierto para la gestió
 - ✅ Firmar transacciones de Bitcoin sin exponer claves privadas a dispositivos conectados en red
 - ✅ Exportar claves públicas para configuración de carteras de solo lectura
 - ✅ Verificar la propiedad de direcciones y detalles de transacciones
-- ✅ Mantener seguridad completa de separación de aire durante todas las operaciones
+- ✅ Mantener seguridad completa de separación física durante todas las operaciones
 
 ### Recuerda las Reglas de Oro
 
 1. **Nunca omitas la verificación del respaldo de la semilla** - Una palabra incorrecta significa Bitcoin perdido
 2. **Siempre verifica los detalles de la transacción** - Las transacciones de Bitcoin son irreversibles
-3. **Mantén la seguridad de separación de aire** - Nunca conectes SeedSigner a redes
+3. **Mantén la seguridad de separación física** - Nunca conectes SeedSigner a redes
 4. **Usa entornos privados** - Protégete contra vigilancia y grabación
 5. **Almacena los respaldos de forma segura** - Trata las frases semilla como los activos valiosos que protegen
 

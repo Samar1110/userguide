@@ -26,38 +26,47 @@ SeedSigner is an open-source, air-gapped Bitcoin signing device that helps you m
 Choose your preferred language to access the complete SeedSigner user guide:
 
 ### 🇺🇸 English
+
 **[📖 English User Guide](guides/en/README_en.md)**
 *Complete documentation in English*
 
 ### 🇪🇸 Español
+
 **[📖 Guía del Usuario en Español](guides/es/README_es.md)**
 *Documentación completa en español*
 
 ### 🇫🇷 Français
+
 **[📖 Guide d'Utilisation en Français](./guides/fr/README.md)**
 *Documentation complète en français*
 
 ### 🇩🇪 Deutsch
+
 **[📖 Benutzerhandbuch auf Deutsch](./guides/de/README.md)**
 *Vollständige Dokumentation auf Deutsch*
 
 ### 🇮🇹 Italiano
+
 **[📖 Guida Utente in Italiano](./guides/it/README.md)**
 *Documentazione completa in italiano*
 
 ### 🇳🇱 Nederlands
+
 **[📖 Gebruikershandleiding in het Nederlands](./guides/nl/README.md)**
 *Volledige documentatie in het Nederlands*
 
 ### ​🇨​​🇦​ Català
+
 **[📖 Guia d'Usuari en Català](./guides/ca/README.md)**
 *Documentació completa en català*
 
 ### 🇯🇵 日本語 (Beta)
+
 **[📖 日本語ユーザーガイド](./guides/ja/README.md)**
 *日本語での完全なドキュメント*
 
 ### 🇨🇳 简体中文 (Beta)
+
 **[📖 简体中文用户指南](./guides/zh/README.md)**
 *简体中文完整文档*
 
@@ -85,6 +94,7 @@ We welcome contributions to improve and expand this user guide!
 ### Language Codes
 
 We use ISO 639-1 language codes for directory naming:
+
 - `en` - English
 - `es` - Spanish
 - `fr` - French
