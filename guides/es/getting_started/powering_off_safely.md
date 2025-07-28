@@ -1,6 +1,6 @@
 # Apagado Seguro
 
-**Método 1: Apagado Correcto**
+## Método 1: Apagado Correcto
 
 1. Navega hasta el **ícono de encendido** (esquina superior derecha del menú principal)
 
@@ -20,5 +20,6 @@
     <img src="images/PowerOffView.png" alt="Pantalla de menú de apagado" width="250"/>
 </div>
 
-**Método 2: Desconexión Directa**
+## Método 2: Desconexión Directa
+
 Puedes desconectar el dispositivo de forma segura en cualquier momento. SeedSigner no almacena nada de forma permanente, por lo que todos los datos confidenciales se borran automáticamente cuando se corta la energía.

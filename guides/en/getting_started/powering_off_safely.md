@@ -1,6 +1,6 @@
 # Powering Off Safely
 
-**Method 1: Proper Shutdown**
+## Method 1: Proper Shutdown 
 
 1. Navigate to the **power icon** (top right of main menu)
 
@@ -20,5 +20,6 @@
      <img src="images/PowerOffView.png" alt="Power off menu screen" width="250"/>
 </div>
 
-**Method 2: Direct Unplugging**
+## Method 2: Direct Unplugging
+
 You can safely unplug the device at any time. SeedSigner stores nothing permanently, so all sensitive data is automatically cleared when power is removed.
