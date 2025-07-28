@@ -4,7 +4,7 @@
 
 1. **Connexion à l'alimentation** : Utilisez un câble micro-USB pour alimenter votre SeedSigner.
 2. **Attendre le démarrage** : Patientez quelques secondes pendant la séquence de démarrage complète.
-3. **Fermer la notification initiale** : Appuyez sur n'importe quelle touche (A, B ou C) pour fermer le message « Vous pouvez retirer la carte SD maintenant ».
+3. **Fermer la notification initiale** : Appuyez sur n'importe quelle touche (A, B ou C) pour fermer le message « Vous pouvez retirer la carte SD ».
 
 <div align="center">
      <img src="images/MainMenuView_gs_fr.png" alt="Menu principal après un démarrage réussi" width="250"/>
