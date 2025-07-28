@@ -18,13 +18,14 @@ SeedSigner est un outil de signature Bitcoin open source et isolé qui vous perm
 ### 🌱 Gestion des graines
 
 - **Création de nouvelles graines**
-- [Génération de graines par caméra](/guides/fr/seed_management/creating_new_seeds/camera_based_seed_generation.md)
-- [Génération de graines par dés Génération](/guides/fr/seed_management/creating_new_seeds/dice_based_seed_generation.md)
-- [Calcul de la génération des graines de mots 12e/24e](/guides/fr/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
+  - [Génération de graines par caméra](/guides/fr/seed_management/creating_new_seeds/camera_based_seed_generation.md)
+  - [Génération de graines par dés Génération](/guides/fr/seed_management/creating_new_seeds/dice_based_seed_generation.md)
+  - [Calcul de la génération des graines de mots 12e/24e](/guides/fr/seed_management/creating_new_seeds/calc_12th24th_word_seed_generation.md)
+
 - **Chargement des graines existantes**
-- [Saisie manuelle des graines](/guides/fr/seed_management/load_existing_seeds/manual_seed_entry.md)
-- [Scan des graines QR](/guides/fr/seed_management/load_existing_seeds/seedqr_scanning.md)
-- [Ajout de BIP-39 Phrase secrète](/guides/fr/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
+  - [Saisie manuelle des graines](/guides/fr/seed_management/load_existing_seeds/manual_seed_entry.md)
+  - [Scan des graines QR](/guides/fr/seed_management/load_existing_seeds/seedqr_scanning.md)
+  - [Ajout de BIP-39 Phrase secrète](/guides/fr/seed_management/load_existing_seeds/adding_bip_39_passphrase.md)
 
 ### 🔧 Utilisation des graines chargées
 
@@ -43,34 +44,34 @@ SeedSigner est un outil de signature Bitcoin open source et isolé qui vous perm
 ### ⚙️ Configuration de l'appareil
 
 - **Paramètres de base**
-- [Configuration de la langue](/guides/fr/device_configuration/basic_settings/language_configuration.md)
-- [Persistant Paramètres](/guides/fr/device_configuration/basic_settings/persistent_settings.md)
-- [Support logiciel du coordinateur](/guides/fr/device_configuration/basic_settings/coordinator_software_support.md)
-- [Affichage de la valeur nominale](/guides/fr/device_configuration/basic_settings/denomination_display.md)
-- [Tests d'E/S matérielles](/guides/fr/device_configuration/basic_settings/hardware_io_testing.md)
-- [Informations sur les dons](/guides/fr/device_configuration/basic_settings/donation_information.md)
+  - [Configuration de la langue](/guides/fr/device_configuration/basic_settings/language_configuration.md)
+  - [Persistant Paramètres](/guides/fr/device_configuration/basic_settings/persistent_settings.md)
+  - [Support logiciel du coordinateur](/guides/fr/device_configuration/basic_settings/coordinator_software_support.md)
+  - [Affichage de la valeur nominale](/guides/fr/device_configuration/basic_settings/denomination_display.md)
+  - [Tests d'E/S matérielles](/guides/fr/device_configuration/basic_settings/hardware_io_testing.md)
+  - [Informations sur les dons](/guides/fr/device_configuration/basic_settings/donation_information.md)
 
 - **Paramètres avancés**
-- [Sélection du réseau Bitcoin](/guides/fr/device_configuration/advanced_settings/bitcoin_network_selection.md)
-- [Code QR Densité](/guides/fr/device_configuration/advanced_settings/qr_code_density.md)
-- [Configuration d'exportation Xpub](/guides/fr/device_configuration/advanced_settings/xpub_export_configuration.md)
-- [Configuration des types de signature](/guides/fr/device_configuration/advanced_settings/signature_types_configuration.md)
-- [Configuration des types de script](/guides/fr/device_configuration/advanced_settings/script_types_configuration.md)
-- [Afficher les détails Xpub](/guides/fr/device_configuration/advanced_settings/show_xpub_details.md)
-- [Phrase secrète BIP-39 Configuration](/guides/fr/device_configuration/advanced_settings/bip-39_passphrase_configuration.md)
-- [Rotation de la caméra](/guides/fr/device_configuration/advanced_settings/camera_rotation.md)
-- [Compact SeedQR](/guides/fr/device_configuration/advanced_settings/compact_seedqr.md)
-- [Enfants Seeds BIP-85](/guides/fr/device_configuration/advanced_settings/bip-85_child_seeds.md)
-- [Enfants Seeds Electrum](/guides/fr/device_configuration/advanced_settings/electrum_seeds.md)
-- [Signature des messages](/guides/fr/device_configuration/advanced_settings/message_signing.md)
-- [Avertissements relatifs à la confidentialité](/guides/fr/device_configuration/advanced_settings/privacy_warnings.md)
-- [Avertissements importants](/guides/fr/device_configuration/advanced_settings/dire_warnings.md)
-- [Conseils concernant la luminosité du QR Code](/guides/fr/device_configuration/advanced_settings/qr_brightness_tips.md)
-- [Logos partenaires](/guides/fr/device_configuration/advanced_settings/partner_logos.md)
+  - [Sélection du réseau Bitcoin](/guides/fr/device_configuration/advanced_settings/bitcoin_network_selection.md)
+  - [Code QR Densité](/guides/fr/device_configuration/advanced_settings/qr_code_density.md)
+  - [Configuration d'exportation Xpub](/guides/fr/device_configuration/advanced_settings/xpub_export_configuration.md)
+  - [Configuration des types de signature](/guides/fr/device_configuration/advanced_settings/signature_types_configuration.md)
+  - [Configuration des types de script](/guides/fr/device_configuration/advanced_settings/script_types_configuration.md)
+  - [Afficher les détails Xpub](/guides/fr/device_configuration/advanced_settings/show_xpub_details.md)
+  - [Phrase secrète BIP-39 Configuration](/guides/fr/device_configuration/advanced_settings/bip-39_passphrase_configuration.md)
+  - [Rotation de la caméra](/guides/fr/device_configuration/advanced_settings/camera_rotation.md)
+  - [Compact SeedQR](/guides/fr/device_configuration/advanced_settings/compact_seedqr.md)
+  - [Enfants Seeds BIP-85](/guides/fr/device_configuration/advanced_settings/bip-85_child_seeds.md)
+  - [Enfants Seeds Electrum](/guides/fr/device_configuration/advanced_settings/electrum_seeds.md)
+  - [Signature des messages](/guides/fr/device_configuration/advanced_settings/message_signing.md)
+  - [Avertissements relatifs à la confidentialité](/guides/fr/device_configuration/advanced_settings/privacy_warnings.md)
+  - [Avertissements importants](/guides/fr/device_configuration/advanced_settings/dire_warnings.md)
+  - [Conseils concernant la luminosité du QR Code](/guides/fr/device_configuration/advanced_settings/qr_brightness_tips.md)
+  - [Logos partenaires](/guides/fr/device_configuration/advanced_settings/partner_logos.md)
 
 - **Paramètres matériels**
-- [Configuration du type d'affichage](/guides/fr/device_configuration/hardware_settings/display_type_configuration.md)
-- [Inversion des couleurs](/guides/fr/device_configuration/hardware_settings/color_inversion.md)
+  - [Configuration du type d'affichage](/guides/fr/device_configuration/hardware_settings/display_type_configuration.md)
+  - [Inversion des couleurs](/guides/fr/device_configuration/hardware_settings/color_inversion.md)
 
 ### 🔧 Assistance et ressources
 
