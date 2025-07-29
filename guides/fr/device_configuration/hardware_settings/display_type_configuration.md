@@ -1,31 +1,31 @@
-# Display Type Configuration
+# Configuration du type d'affichage
 
-Configure the display driver for your specific hardware setup.
+Configurez le pilote d'affichage en fonction de votre configuration matérielle.
 
-## Step-by-Step Process
+## Procédure étape par étape
 
-1. **Navigate**: Settings → **Advanced** → **Hardware** → **Display Type**
-2. **Select Display Driver**:
-   - **st7789 240x240** - Standard square display (default)
-   - **st7789 320x240** - Rectangular display option
-   - **ili9341 320x240 (beta)** - Alternative display driver (beta)
+1. **Naviguer** : Paramètres → **Avancé** → **Hardware** → **Display Type**
+2. **Sélectionner le pilote d'affichage** :
+     - **st7789 240x240** - Affichage carré standard (par défaut)
+     - **st7789 320x240** - Affichage rectangulaire
+     - **ili9341 320x240 (bêta)** - Pilote d'affichage alternatif (bêta)
 
 <div align="center">
-     <img src="images/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+     <img src="images/HomeScreenSettingsSelectView_dc_hw_fr.png" alt="Menu de sélection des paramètres" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+     <img src="images/SettingsMainMenuAdvancedSelectView_dc_hw_fr.png" alt="Sélection avancée menu" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/HardwareSelectView.png" alt="Hardware selection menu" width="250"/>
+     <img src="images/HardwareSelectView_dc_hw_fr.png" alt="Menu de sélection du matériel" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/DisplayTypeSelectView.png" alt="Display type selection menu" width="250"/>
+     <img src="images/DisplayTypeSelectView_dc_hw_fr.png" alt="Menu de sélection du type d'affichage" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsEntryUpdateSelectionView_display_type.png" alt="Display type configuration" width="250"/>
+     <img src="images/SettingsEntryUpdateSelectionView_display_type_dc_hw_fr.png" alt="Configuration du type d'affichage" width="250"/>
 </div>

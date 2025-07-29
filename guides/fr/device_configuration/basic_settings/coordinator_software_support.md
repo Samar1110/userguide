@@ -1,25 +1,25 @@
-# Coordinator Software Support
+# Support logiciel coordinateur
 
-Enable or disable support for specific wallet applications. This customizes QR code formats and compatibility.
+Activez ou désactivez la prise en charge d'applications de portefeuille spécifiques. Cela permet de personnaliser les formats et la compatibilité des codes QR.
 
-## Step-by-Step Process
+## Procédure étape par étape
 
-1. **Navigate**: Main Menu → **Settings** → **Coordinator Software**
-2. **Configure Support** for each wallet:
-   - ✅ **BlueWallet** - Mobile Bitcoin wallet
-   - ✅ **Nunchuk** - Collaborative custody wallet  
-   - ✅ **Sparrow Wallet** - Desktop Bitcoin wallet
-   - ✅ **Specter Desktop** - Privacy-focused wallet
-   - ✅ **Keeper** - Inheritance planning wallet
+1. **Naviguer** : Menu principal → **Paramètres** → **Logiciel coordinateur**
+2. **Configurer la prise en charge** pour chaque portefeuille :
+     - ✅ **BlueWallet** - Portefeuille Bitcoin mobile
+     - ✅ **Nunchuk** - Portefeuille collaboratif
+     - ✅ **Sparrow Wallet** - Portefeuille Bitcoin de bureau
+     - ✅ **Specter Desktop** - Portefeuille axé sur la confidentialité
+     - ✅ **Keeper** - Portefeuille de planification successorale
 
 <div align="center">
-     <img src="images/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+     <img src="images/HomeScreenSettingsSelectView_dc_bs_fr.png" alt="Menu de sélection des paramètres" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsMainMenuCoordinatorSoftwareSelectView.png" alt="Coordinate selection menu" width="250"/>
+     <img src="images/SettingsMainMenuCoordinatorSoftwareSelectView_dc_bs_fr.png" alt="Menu de sélection des coordonnées" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsEntryUpdateSelectionView_coordinators.png" alt="Wallet software compatibility settings" width="250"/>
+     <img src="images/SettingsEntryUpdateSelectionView_coordinators_dc_bs_fr.png" alt="Paramètres de compatibilité du logiciel Wallet" width="250"/>
 </div>

@@ -1,21 +1,21 @@
-# Donation Information
+# Informations sur les dons
 
-Access donation details to support SeedSigner development.
+Accédez aux informations sur les dons pour soutenir le développement de SeedSigner.
 
-## Step-by-Step Process
+## Procédure étape par étape
 
-1. **Navigate**: Main Menu → **Settings** → **Donate**
-2. **View Details**: Review donation information and addresses
-3. **Support Development**: Consider contributing to the project
+1. **Naviguer** : Menu principal → **Paramètres** → **Fair un Don**
+2. **Voir les détails** : Consultez les informations et les adresses de don
+3. **Soutenir le développement** : Envisagez de contribuer au projet
 
 <div align="center">
-     <img src="images/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+     <img src="images/HomeScreenSettingsSelectView_dc_bs_fr.png" alt="Menu de sélection des paramètres" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsMainMenuDonateSelectView.png" alt="Donate selection menu" width="250"/>
+     <img src="images/SettingsMainMenuDonateSelectView_dc_bs_fr.png" alt="Menu de sélection des dons" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsEntryUpdateSelectionView_donate.png" alt="Donation information screen" width="250"/>
+     <img src="images/SettingsEntryUpdateSelectionView_donate_dc_bs_fr.png" alt="Écran d'informations sur les dons" width="250"/>
 </div>

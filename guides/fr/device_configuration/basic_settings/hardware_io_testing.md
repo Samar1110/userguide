@@ -1,21 +1,21 @@
-# Hardware I/O Testing
+# Test Entrée / Sortie matérielles
 
-Verify that all device components are functioning correctly.
+Vérifiez le bon fonctionnement de tous les composants de l'appareil.
 
-## Step-by-Step Process
+## Procédure étape par étape
 
-1. **Navigate**: Main Menu → **Settings** → **I/O Test**
-2. **Test Controllers**: Use this screen to test your device's input/output functionality
-3. **Verify Components**: Ensure all buttons, display, and camera are working properly
+1. **Naviguer** : Menu principal → **Paramètres** → **Test Entrée / Sortie**
+2. **Tester les contrôleurs** : Utilisez cet écran pour tester les fonctionnalités d'entrée/sortie de votre appareil.
+3. **Vérifier les composants** : Assurez-vous que tous les boutons, l'écran et l'appareil photo fonctionnent correctement.
 
 <div align="center">
-     <img src="images/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+     <img src="images/HomeScreenSettingsSelectView_dc_bs_fr.png" alt="Menu de sélection des paramètres" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsMainMenuInputOutputSelectView.png" alt="I/O selection menu" width="250"/>
+     <img src="images/SettingsMainMenuInputOutputSelectView_dc_bs_fr.png" alt="Menu de sélection des E/S" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsEntryUpdateSelectionView_io_test.png" alt="I/O testing interface" width="250"/>
+     <img src="images/SettingsEntryUpdateSelectionView_io_test_dc_bs_fr.png" alt="Interface de test d'E/S" width="250"/>
 </div>

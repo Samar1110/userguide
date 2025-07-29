@@ -1,32 +1,32 @@
-# Color Inversion
+# Inversion des couleurs
 
-Invert display colors for different viewing preferences or hardware configurations.
+Inversez les couleurs d'affichage selon vos préférences d'affichage ou configurations matérielles.
 
-## Step-by-Step Process
+## Procédure étape par étape
 
-1. **Navigate**: Settings → **Advanced** → **Hardware** → **Invert Colors**
-2. **Choose Color Mode**:
-   - **Enabled** - Invert display colors (default)
-   - **Disabled** - Standard color display
+1. **Naviguer** : Paramètres → **Avancé** → **Hardware** → **Invert Colors**
+2. **Choisir le mode couleur** :
+     - **Activé** - Invert colors d'affichage (par défaut)
+     - **Désactivé** - Affichage couleur standard
 
 <div align="center">
-     <img src="images/HomeScreenSettingsSelectView.png" alt="Settings selection menu" width="250"/>
+     <img src="images/HomeScreenSettingsSelectView_dc_hw_fr.png" alt="Menu de sélection des paramètres" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsMainMenuAdvancedSelectView.png" alt="Advanced selection menu" width="250"/>
+     <img src="images/SettingsMainMenuAdvancedSelectView_dc_hw_fr.png" alt="Menu de sélection avancé" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/HardwareSelectView.png" alt="Hardware selection menu" width="250"/>
+     <img src="images/HardwareSelectView_dc_hw_fr.png" alt="Menu de sélection du matériel" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/InvertColorsSelectView.png" alt="Invert Colors selection menu" width="250"/>
+     <img src="images/InvertColorsSelectView_dc_hw_fr.png" alt="Menu de sélection Inverser les couleurs" width="250"/>
 </div>
 
 <div align="center">
-     <img src="images/SettingsEntryUpdateSelectionView_color_inverted.png" alt="Color inversion configuration" width="250"/>
+     <img src="images/SettingsEntryUpdateSelectionView_color_inverted_dc_hw_fr.png" alt="Configuration de l'inversion des couleurs" width="250"/>
 </div>
 
-> **🔧 Troubleshooting Use**: Run hardware tests if you're experiencing issues with button responses, display problems, or camera malfunctions. This helps isolate hardware vs. software issues.
+> **🔧 Dépannage** : Exécutez des tests matériels si vous rencontrez des problèmes de réponse des boutons, d'affichage ou de dysfonctionnement de l'appareil photo. Cela permet d'isoler les problèmes matériels des problèmes logiciels.
