@@ -1,7 +1,7 @@
 # Guide d'utilisation de SeedSigner
 
 <div align="center">
-    <img src="../fr/images/SeedSigner_Logo.png" alt="Logo SeedSigner" width="400"/>
+    <img src="../en/images/SeedSigner_Logo.png" alt="Logo SeedSigner" width="400"/>
 </div>
 
 SeedSigner est un outil de signature Bitcoin open source et isolé qui vous permet de gérer les phrases de signature et de signer des transactions en toute sécurité. Ce guide fournit des instructions étape par étape, organisées selon les flux de travail courants.
