@@ -29,6 +29,7 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 ### 🔧 Working with Loaded Seeds
 
 - [Export Public Key (Xpub)](/guides/en/working_with_loaded_seeds/export_public_key_xpub.md)
+- [Verify Address Ownership](/guides/en/transactions_and_verification/verify_address_ownership.md)
 - [Generate Receiving Addresses](/guides/en/working_with_loaded_seeds/generate_receiving_addresses.md)
 - [Generate Change Addresses](/guides/en/working_with_loaded_seeds/generate_change_addresses.md)
 - [View Seed Words](/guides/en/working_with_loaded_seeds/view_seed_words.md)
@@ -37,7 +38,6 @@ SeedSigner is an air-gapped, open-source Bitcoin signing device that helps you m
 ### ✍️ Transactions & Verification
 
 - [Sign Bitcoin Transaction (PSBT)](/guides/en/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
-- [Verify Address Ownership](/guides/en/transactions_and_verification/verify_address_ownership.md)
 - [Discard Loaded Seed](/guides/en/transactions_and_verification/discard_loaded_seed.md)
 
 ### ⚙️ Device Configuration
