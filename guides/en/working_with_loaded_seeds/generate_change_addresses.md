@@ -5,6 +5,7 @@ View addresses used for transaction change return
 ## Complete Step-by-Step Process with All Screenshots
 
 **Navigation Path**: `Home → Seeds → [Select Seed] → Address Explorer`
+
 <div align="center">
      <img src="images/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
 </div>
@@ -46,11 +47,11 @@ View addresses used for transaction change return
 **Address Types Available**:
 
 - Native Segwit (recommended)
-- Nested Segwit (compatibility)  
+- Nested Segwit (compatibility)
 - Taproot (advanced features)
 
 **Privacy Best Practice**: Use a fresh receiving address for each transaction
 
 **Technical Note**: Change addresses automatically handle transaction remainder funds
 
->**💡 Best Practice**: Change addresses are automatically managed by your wallet - you typically don't need to manually generate or share them.
+> **💡 Best Practice**: Change addresses are automatically managed by your wallet - you typically don't need to manually generate or share them.

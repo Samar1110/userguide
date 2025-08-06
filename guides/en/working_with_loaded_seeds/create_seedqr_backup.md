@@ -4,7 +4,7 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
 
 ## Complete Step-by-Step Process with All Screenshots
 
-1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → View Seed Words`
+1. **Navigate**: `Home → Seeds → [Select Seed] → Backup Seed → Export as SeedQR`
 
 <div align="center">
      <img src="images/SeedOptionSelectView.png" alt="Seeds navigation flow" width="250"/>
@@ -54,7 +54,7 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
      <img src="images/SeedTranscribeSeedQRConfirmQRPromptView.png" alt="SeedQR completion options" width="250"/>
 </div>
 
-   **If you select "Confirm SeedQR":**
+**If you select "Confirm SeedQR":**
 
 - The device camera will open to scan the transcribed QR code
 - Show the transcribed QR image to the camera for verification
@@ -64,17 +64,19 @@ Generate compact QR code backups of your seed phrase for convenient storage and 
      <img src="images/SeedQRCameraView.png" alt="Camera scanning transcribed QR code" width="250"/>
 </div>
 
-   **Success Message:**
+**Success Message:**
+
 <div align="center">
      <img src="images/SeedTranscribeSeedQRConfirmSuccessView.png" alt="SeedQR verification success" width="250"/>
 </div>
 
-   **Failure Message:**
+**Failure Message:**
+
 <div align="center">
      <img src="images/SeedTranscribeSeedQRConfirmWrongSeedView.png" alt="SeedQR verification failure" width="250"/>
 </div>
 
-   **If you select "Done":**
+**If you select "Done":**
 
 - You'll be redirected back to the Seeds main screen
 
