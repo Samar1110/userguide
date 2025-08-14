@@ -37,9 +37,9 @@ SeedSigner est un outil de signature Bitcoin open source et isolé qui vous perm
 
 ### ✍️ Transactions et vérification
 
-- [Signature d'une transaction Bitcoin (PSBT)](/guides/fr/transactions_and_verification/sign_bitcoin_transaction_psbt.md)
-- [Vérification de la propriété de l'adresse](/guides/fr/transactions_and_verification/verify_address_ownership.md)
-- [Supprimer la graine chargée](/guides/fr/transactions_and_verification/discard_loaded_seed.md)
+- [Signature d'une transaction Bitcoin (PSBT)](/guides/fr/psbt_signing_and_seed_ops/sign_bitcoin_transaction_psbt.md)
+- [Vérification de la propriété de l'adresse](/guides/fr/psbt_signing_and_seed_ops/verify_address_ownership.md)
+- [Supprimer la graine chargée](/guides/fr/psbt_signing_and_seed_ops/discard_loaded_seed.md)
 
 ### ⚙️ Configuration de l'appareil
 

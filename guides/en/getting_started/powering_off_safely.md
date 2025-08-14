@@ -1,6 +1,6 @@
 # Powering Off Safely
 
-## Method 1: Proper Shutdown 
+## Method 1: Proper Shutdown
 
 1. Navigate to the **power icon** (top right of main menu)
 
