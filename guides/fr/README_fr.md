@@ -30,6 +30,7 @@ SeedSigner est un outil de signature Bitcoin open source et isolé qui vous perm
 ### 🔧 Utilisation des graines chargées
 
 - [Exporter la clé publique (Xpub)](/guides/fr/working_with_loaded_seeds/export_public_key_xpub.md)
+- [Vérification de la propriété de l'adresse](/guides/fr/working_with_loaded_seeds/verify_address_ownership.md)
 - [Générer les adresses de réception](/guides/fr/working_with_loaded_seeds/generate_receiving_addresses.md)
 - [Générer les adresses de modification](/guides/fr/working_with_loaded_seeds/generate_change_addresses.md)
 - [Afficher les mots clés](/guides/fr/working_with_loaded_seeds/view_seed_words.md)
@@ -38,7 +39,6 @@ SeedSigner est un outil de signature Bitcoin open source et isolé qui vous perm
 ### ✍️ Transactions et vérification
 
 - [Signature d'une transaction Bitcoin (PSBT)](/guides/fr/psbt_signing_and_seed_ops/sign_bitcoin_transaction_psbt.md)
-- [Vérification de la propriété de l'adresse](/guides/fr/psbt_signing_and_seed_ops/verify_address_ownership.md)
 - [Supprimer la graine chargée](/guides/fr/psbt_signing_and_seed_ops/discard_loaded_seed.md)
 
 ### ⚙️ Configuration de l'appareil

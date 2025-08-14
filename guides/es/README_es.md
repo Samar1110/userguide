@@ -29,6 +29,7 @@ SeedSigner es un dispositivo de firma &criptográfica& de Bitcoin de código abi
 ### 🔧 Trabajar con Semillas Cargadas
 
 - [Exportar Clave Pública (Xpub)](/guides/es/working_with_loaded_seeds/export_public_key_xpub.md)
+- [Verificar Propiedad de Dirección](/guides/es/working_with_loaded_seeds/verify_address_ownership.md)
 - [Generar Dirección de Recepción](/guides/es/working_with_loaded_seeds/generate_receiving_addresses.md)
 - [Generar Cambio de Dirección](/guides/es/working_with_loaded_seeds/generate_change_addresses.md)
 - [Ver Palabras Clave](/guides/es/working_with_loaded_seeds/view_seed_words.md)
@@ -37,7 +38,6 @@ SeedSigner es un dispositivo de firma &criptográfica& de Bitcoin de código abi
 ### ✍️ Transacciones y Verificación
 
 - [Firmar Transacción de Bitcoin (PSBT)](/guides/es/psbt_signing_and_seed_ops/sign_bitcoin_transaction_psbt.md)
-- [Verificar Propiedad de Dirección](/guides/es/psbt_signing_and_seed_ops/verify_address_ownership.md)
 - [Descartar Semilla Cargada](/guides/es/psbt_signing_and_seed_ops/discard_loaded_seed.md)
 
 ### ⚙️ Configuración del Dispositivo
